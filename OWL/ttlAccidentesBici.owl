@@ -1,0 +1,371 @@
+@prefix : <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#> .
+@prefix schema: <http://schema.org#> .
+@prefix www-geonames-org: <http://www.geonames.org/> .
+@base <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+<http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> rdf:type owl:Ontology ;
+                                                             owl:versionIRI <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici/1.0.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geonames.org/ontology#officialName
+<http://www.geonames.org/ontology#officialName> rdf:type owl:AnnotationProperty ;
+                                                rdfs:range <http://www.geonames.org/ontology#officialName> ;
+                                                rdfs:domain :Calle .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://schema.org/gender
+<http://schema.org/gender> rdf:type rdfs:Datatype .
+
+
+###  http://schema.org/typicalAgeRange
+<http://schema.org/typicalAgeRange> rdf:type rdfs:Datatype .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
+esadm:municipio rdf:type rdfs:Datatype .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal
+escjr:portal rdf:type rdfs:Datatype .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia
+escjr:tipoVia rdf:type rdfs:Datatype .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via
+escjr:via rdf:type rdfs:Datatype .
+
+
+###  http://www.geonames.org/ontology#officialName
+<http://www.geonames.org/ontology#officialName> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://schema.org/gender
+<http://schema.org/gender> rdf:type owl:ObjectProperty ;
+                           rdfs:domain :PersonaAfectada ;
+                           rdfs:range [ rdf:type owl:Restriction ;
+                                        owl:onProperty owl:topDataProperty ;
+                                        owl:someValuesFrom <http://schema.org/gender>
+                                      ] .
+
+
+###  http://schema.org/typicalAgeRange
+<http://schema.org/typicalAgeRange> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :Accidente ;
+                                    rdfs:range [ rdf:type owl:Restriction ;
+                                                 owl:onProperty owl:topDataProperty ;
+                                                 owl:someValuesFrom <http://schema.org/typicalAgeRange>
+                                               ] .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#esCruce
+:esCruce rdf:type owl:ObjectProperty ;
+         rdfs:domain :LugarAccidente ;
+         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+         rdfs:comment """﻿Si el accidente ocurrió en un cruce entre 2 o más vías. Se han definido los siguientes elementos:
+http://vocab.ciudadesabiertas.es/def/accidente/accid-bici/esCruce/TRUE
+http://vocab.ciudadesabiertas.es/def/accidente/accid-bici/esCruce/FALSE"""@es ;
+         rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneLesividad
+:tieneLesividad rdf:type owl:ObjectProperty ;
+                rdfs:domain :Accidente ;
+                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                rdfs:comment """﻿Codigo que indica la gravedad del siniestro para la persona afectada.
+
+Para su uso se han definido los siguientes elementos:
+01 Atencion en urgencias sin posterior ingreso. - LEVE:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/01
+02 Ingreso inferior o igual a 24 horas - LEVE:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/02
+03 Ingreso superior a 24 horas. - GRAVE:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/03
+04 Fallecido 24 horas - FALLECIDO:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/04
+05 Asistencia sanitaria ambulatoria con posterioridad - LEVE:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/05
+06 Asistencia sanitaria inmediata en centro de salud o mutua - LEVE:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/06
+07 Asistencia sanitaria solo en el lugar del accidente - LEVE:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/07
+14 Sin asistencia sanitaria:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/14
+77 Se desconoce:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/77"""@es ;
+                rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneLugarAccidente
+:tieneLugarAccidente rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Accidente ;
+                     rdfs:range :LugarAccidente ;
+                     rdfs:comment "﻿Lugar de los acontecimientos asociados a un accidente."@es ;
+                     rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneMeteorologia
+:tieneMeteorologia rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Accidente ;
+                   rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                   rdfs:comment """Condiciones ambientales que se dan en el momento del siniestro. Se han definido varios tipos posibles:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/DEPEJADO
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/LLUVIA-DEBIL
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/LLUVIA-INTENSA
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/NUBLADO
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/GRANIZANDO
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/DESCONOCIDO"""@es ;
+                   rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneNumExped
+:tieneNumExped rdf:type owl:ObjectProperty ;
+               rdfs:domain :Accidente ;
+               rdfs:range :numeroExpediente ;
+               rdfs:comment "﻿El identificador del siniestro que proporciona el ayuntamiento."@es ;
+               rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tienePersonaAfectada
+:tienePersonaAfectada rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Accidente ;
+                      rdfs:range :PersonaAfectada ;
+                      rdfs:comment <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tienePortal
+:tienePortal rdf:type owl:ObjectProperty ;
+             rdfs:domain :Calle ;
+             rdfs:range escjr:portal ;
+             rdfs:comment "﻿Numero de la calle donde ha ocurrido el accidente, si procede."@es ;
+             rdfs:isDefinedBy <﻿ttp://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneTipoAccid
+:tieneTipoAccid rdf:type owl:ObjectProperty ;
+                rdfs:domain :Accidente ;
+                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                rdfs:comment """Tipo de accidente asociado. Se han definido para ello varios tipos posibles:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/COLISION
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/COLISION-DOBLE
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/COLISION-MULTIPLE
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/ALCANCE
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/CHOQUE-NO-VEHICULO
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/ATROPELLO-PEATON
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/VUELCO
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/CAIDA
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/OTROS"""@es ;
+                rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneTipoPersAfect
+:tieneTipoPersAfect rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Accidente ;
+                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    rdfs:comment """Persona a la que afecta el accidente. Puede ser Conductor, peaton, testigo o viajero. Se han definido los siguientes elementos:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/persAfec/CONDUCTOR
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/persAfec/PEATON
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/persAfec/TESTIGO
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/persAfec/VIAJERO"""@es ;
+                    rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneTipoVehiculo
+:tieneTipoVehiculo rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Accidente ;
+                   rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                   rdfs:comment """﻿Tipo de vehiculo afectado, p.ej. Bicicleta, Bicicleta EPAC (pedaleo asistido). Se han definido los siguientes elementos:
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoVehiculo/BICICLETA
+http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoVehiculo/BICICLETA-EPAC"""@es ;
+                   rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#﻿tieneCalle
+:﻿tieneCalle rdf:type owl:ObjectProperty ;
+             rdfs:domain :LugarAccidente ;
+             rdfs:range :Calle ;
+             rdfs:comment "﻿Calle en la que ocurre un accidente."@es ;
+             rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#﻿tieneIdVia
+:﻿tieneIdVia rdf:type owl:ObjectProperty ;
+             rdfs:domain :Calle ;
+             rdfs:range escjr:Via ;
+             rdfs:comment "﻿Identificador de calle asociado."@es ;
+             rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> ;
+             rdfs:label "﻿Identificador"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#﻿tieneMunicipio
+:﻿tieneMunicipio rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LugarAccidente ;
+                 rdfs:range esadm:municipio ;
+                 rdfs:comment "﻿Municipio en el que ha ocurrido el accidente."@es ;
+                 rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> ;
+                 rdfs:label "Municipio"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia
+escjr:tipoVia rdf:type owl:ObjectProperty ;
+              rdfs:domain :Calle ;
+              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#fecha
+:fecha rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Accidente ;
+       rdfs:range xsd:date ;
+       rdfs:comment "Fecha en la que ocurrió el accidente."@es ;
+       rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#hora
+:hora rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Accidente ;
+      rdfs:range xsd:time ;
+      rdfs:comment "Hora del dia a la que ocurrió el accidente."@es ;
+      rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://www.geonames.org/ontology#officialName
+<http://www.geonames.org/ontology#officialName> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#Accidente
+:Accidente rdf:type owl:Class ;
+           rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#Calle
+:Calle rdf:type owl:Class ;
+       rdfs:subClassOf :LugarAccidente ;
+       rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#LugarAccidente
+:LugarAccidente rdf:type owl:Class ;
+                rdfs:subClassOf :Accidente ;
+                rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#PersonaAfectada
+:PersonaAfectada rdf:type owl:Class ;
+                 rdfs:subClassOf :Accidente ;
+                 rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#numeroExpediente
+:numeroExpediente rdf:type owl:Class ;
+                  rdfs:subClassOf :Accidente ;
+                  rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
+esadm:municipio rdf:type owl:Class ;
+                rdfs:subClassOf :LugarAccidente .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via
+escjr:Via rdf:type owl:Class ;
+          rdfs:subClassOf :Calle ;
+          rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal
+escjr:portal rdf:type owl:Class ;
+             rdfs:subClassOf :Calle .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                              rdfs:label "Concept"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "An idea or notion; a unit of thought."@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://schema.org/gender> rdfs:isDefinedBy <﻿https://schema.org/gender> ;
+                           rdfs:comment """Género de la persona afectada.
+Seguirá el formato definido por Schema.org
+Se utilizarán las siguientes definidas en la clase:
+http://schema.org/Male
+http://schema.org/Female
+http://schema.org/Mixed"""@es .
+
+
+<http://schema.org/typicalAgeRange> rdfs:comment """﻿Rango de edad en el que se encuentra la persona afectada.
+Seguirá el siguiente formato definido por Schema.org: 
+<span property=\"typicalAgeRange\">$10-12</span>"""@es ;
+                                    rdfs:isDefinedBy <﻿https://schema.org/typicalAgeRange> .
+
+
+esadm:municipio rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+
+
+escjr:portal rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+
+
+escjr:tipoVia rdfs:comment """Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via. 
+Por ejemplo, estas serán las URIs correspondientes a calles y plazas
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"""@es ;
+              rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+              rdfs:label "Tipo de via."@es .
+
+
+<http://www.geonames.org/ontology#officialName> rdfs:isDefinedBy <﻿http://www.geonames.org/ontology> ;
+                                                rdfs:label "Nombre de la via en el idioma oficial local."@es .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

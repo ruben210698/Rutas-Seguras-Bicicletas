@@ -1,0 +1,225 @@
+\subsection{Clases}
+
+
+
+\begin{mybox}{Accidente}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+
+\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#Accidente}
+\newline
+
+Siniestro ocurrido con implicación de bicicletas.
+\newline
+
+\underline{\textbf{Definida por:}}
+\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\newline
+
+
+\underline{\textbf{En dominio de:}}
+\newline PersonaAfectada, \hspace{2em} LugarAccidente,	\hspace{2em}meteorología,
+\newline lesividad,	\hspace{2em}tipoVehiculo,	\hspace{2em}tipoAccidente,
+\newline numeroExpediente
+	
+\underline{\textbf{Tiene Superclases:}}
+\newline fecha, \hspace{2em} time
+
+
+
+\end{flushleft}
+\end{mybox}
+
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\begin{mybox}{PersonaAfectada}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+
+\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#PersonaAfectada}
+\newline
+
+La persona perjudicada por el accidente de tráfico.
+\newline
+
+\underline{\textbf{Definida por:}}
+
+\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\newline
+
+\underline{\textbf{Subclase de:}}
+\newline Accidente
+\newline
+
+\underline{\textbf{En dominio de:}}
+\newline tipoPersonaAfectada, \hspace{2em} gender, \hspace{2em} typicalAgeRange
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\begin{mybox}{LugarAccidente}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#LugarAccidente}
+\newline
+
+El momento en el que ocurrió el siniestro.
+\newline
+
+\underline{\textbf{Definida por:}}
+\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\newline
+
+\underline{\textbf{Subclase de:}}
+\newline Accidente
+\newline
+
+\underline{\textbf{En dominio de:}}
+\newline esCruce, \hspace{2em} municipio, \hspace{2em} Calle
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\begin{mybox}{Calle}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#Calle}
+\newline
+
+Representación de una via de una ciudad.
+\newline
+
+\underline{\textbf{Definida por:}}
+\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\newline
+
+\underline{\textbf{Tiene subclase:}}
+\newline tipoVia,\hspace{2em} Via,\hspace{2em} portal
+\newline 
+
+\underline{\textbf{Tiene Superclases:}}
+\newline LugarAccidente \hspace{2em} nombre oficial
+
+\end{flushleft}
+\end{mybox}
+
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+\begin{mybox}{Portal}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal}
+\newline
+
+Ha sido definido por la plataforma ciudadesabiertas \cite{datosabiertos_portal}.
+Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]
+\newline
+
+\underline{\textbf{Definida por:}}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero}
+\newline
+
+\underline{\textbf{Tiene Superclases:}}
+	LugarAccidente
+\newline
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+\begin{mybox}{municipio}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio}
+\newline
+
+Se ha reutilizado la definición de Municipio proporcionada por vocab.linkeddata.es \cite{datoabiertos_municipio}
+Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en \url{http://www.ine.es/nomen2/index.do}
+\newline
+
+
+\underline{\textbf{Definida por:}}
+\url{http://purl.org/derecho/vocabulario}
+\url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio}
+\url{http://www.ign.es/ign/resources/acercaDe/tablon/ModeloDireccionesAGE}
+\newline
+
+\underline{\textbf{Tiene Superclases:}}
+\newline LugarAccidente
+
+
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+\begin{mybox}{Via}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via}
+\newline
+
+Se ha reutilizado la definición de Municipio proporcionada por vocab.linkeddata.es \cite{datoabiertos_idVia}
+
+Vía de comunicación construida para la circulación. En su definición según el modelo de direcciones de la Administración General del Estado, Incluye calles, carreteras de todo tipo, caminos, vías de agua, pantalanes, etc. Asimismo, incluye la pseudovía., es decir todo aquello que complementa o sustituye a la vía. En nuestro caso, este término se utiliza para hacer referencia a las vías urbanas.
+Representación numérica de la misma.
+\newline
+
+\underline{\textbf{Definida por:}}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero}
+\newline
+
+\underline{\textbf{Tiene Superclases:}}
+\newline Calle
+
+
+
+
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+\begin{mybox}{numeroExpediente}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#numeroExpediente}
+\newline
+
+El identificador del siniestro que proporciona el ayuntamiento.
+\newline
+
+\underline{\textbf{Definida por:}}
+\newline \url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\newline
+
+\underline{\textbf{Tiene Superclases:}}
+\newline Accidente
+\newline
+
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+

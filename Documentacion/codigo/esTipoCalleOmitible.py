@@ -1,0 +1,89 @@
+import csv
+import os
+import difflib
+import unicodedata
+
+def esTipoCalleOmitible(nombreVia = ""):
+    if(nombreVia == ""):
+        return True
+    nombreVia = nombreVia.upper().replace("Á", "A").replace("É", "E").replace("Í", "I") \
+            .replace("Ó", "O").replace("Ú", "U").replace("Ü", "U").replace(" ", "")
+    if (nombreVia.__contains__("CALLE")):
+        return True
+    elif (nombreVia.__contains__("PASEO")):
+        return True
+    elif (nombreVia.__contains__("PLAZA")):
+        return True
+    elif (nombreVia.__contains__("GLORIETA")):
+        return True
+    elif (nombreVia.__contains__("RONDA")):
+        return False
+    elif (nombreVia.__contains__("CAMINO")):
+        return True
+    elif (nombreVia.__contains__("PISTA")):
+        return True
+    elif (nombreVia.__contains__("ANILLO")):
+        return True
+    elif (nombreVia.__contains__("CRUCE")):
+        return True
+    elif (nombreVia.__contains__("AUTOVIA")):
+        return False
+    elif (nombreVia.__contains__("CARRETERA")):
+        return True
+    elif (nombreVia.__contains__("PARQUE")):
+        return False
+    elif (nombreVia.__contains__("CUESTA")):
+        return True
+    elif (nombreVia.__contains__("CAÑADA")):
+        return False
+    elif (nombreVia.__contains__("AVENIDA")):
+        return True
+    elif (nombreVia.__contains__("BULEVAR")):
+        return True
+    elif (nombreVia.__contains__("JARDIN")):
+        return False
+    elif (nombreVia.__contains__("PARTICULAR")):
+        return False
+    elif (nombreVia.__contains__("POLIGONO")):
+        return False
+    elif (nombreVia.__contains__("GALERIA")):
+        return False
+    elif (nombreVia.__contains__("ESCALINATA")):
+        return False
+    elif (nombreVia.__contains__("VIA")):
+        return True
+    elif (nombreVia.__contains__("PASARELA")):
+        return True
+    elif (nombreVia.__contains__("PASAJE")):
+        return True
+    elif (nombreVia.__contains__("PUENTE")):
+        return False
+    elif (nombreVia.__contains__("COSTANILLA")):
+        return False
+    elif (nombreVia.__contains__("COLONIA")):
+        return False
+    elif (nombreVia.__contains__("CARRERA")):
+        return True
+    elif (nombreVia.__contains__("PLAZUELA")):
+        return False
+    elif (nombreVia.__contains__("ACCESO")):
+        return True
+    elif (nombreVia.__contains__("POBLADO")):
+        return False
+    elif (nombreVia.__contains__("PASADIZO")):
+        return False
+    elif (nombreVia.__contains__("TRASERA")):
+        return False
+    elif (nombreVia.__contains__("SENDA")):
+        return True
+    elif (nombreVia.__contains__("ARROYO")):
+        return False
+    elif (nombreVia.__contains__("VALLE")):
+        return False
+    elif (nombreVia.__contains__("AEROPUERTO")):
+        return False
+    elif (nombreVia.__contains__("PASO_ELEVADO")):
+        return False
+    elif (nombreVia.__contains__("SENDA_CICLABLE")):
+        return False
+    return True

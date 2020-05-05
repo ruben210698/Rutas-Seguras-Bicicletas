@@ -1,0 +1,247 @@
+
+\section{Transformaciones en los vocabularios: Fase 1}
+
+Partiendo de los datos proporcionados por el ayuntamiento de Madrid y con el fin de plasmar las estructuras antes definidas, se han realizados ciertos cambios con respecto al dataset original. Campos añadidos o modificaciones o transformaciones en los ya existentes son algunos de los motivos para realizarlos.
+
+Con el fin de repetir el proceso en datasets iguales referentes a otros años o posibles similitudes con otros, a continuación se detallan los pasos que se han seguido en este caso para poder replicarlos:
+
+\begin{itemize}
+    \item Transformar a codificación ISO-8859-1.
+    \item Modificar palabras básicas como por ejemplo C/ por calle y demás casuística. Para ello se ha definido el siguiente código para aplicarlo a todos los registros del dataset por igual.
+
+
+
+\lstinputlisting[style=Python1, caption=Función cambiosBasicos]{codigo/cambiosBasicos.py}
+
+La finalidad de la función definida en Listing 2.1 es modificar ciertas palabras para que posteriormente se puedan entender mejor e inferir información a partir de ellas sin llegar a errores.
+\newline
+Es el caso por ejemplo de los cruces. Se pueden escribir de múltiples formas, pero en el tratamiento que vamos a realizar será del modo "calle1 / calle2". Para conseguir ese formato han de modificarse otros nombres como por ejemplo "CRUCE calle1 CON calle1" para que posteriormente las funciones sean aplicables a estos casos.
+\newline
+También se eliminan elementos como "S/N" (Sur/Norte) que no tienen excesiva relevancia, no forman parte del nombre, pero en cambio si pueden llegar a producir errores graves.
+\newline
+Otras transformaciones serian en palabras que consideramos clave, por ejemplo Paso elevado o Senda Ciclable, a las cuales se les considerará tipo de via, que sean formadas como una única palabra, facilitando asi su posterior búsqueda y que no se cometa el error de incluirlas en las palabras clave del nombre de la via.
+\newline
+También, de nuevo debido a la importancia que tienen guiones o barras en la detección de elementos inusuales o cruces, para carreteras como M-30, M-40 o elementos como KM-0 se les eliminará el guión, considerandolos de esa forma una única palabra.
+\newline
+Por último, se llama a la función palabrasMalEscritas, definida en Listing 2.2, la cual es en parte una continuación de esta aunque para casos más concretos.
+
+\lstinputlisting[style=Python1, caption=Función palabrasMalEscritas]{codigo/palabrasMalEscritas.py}
+
+En este caso se vuelven a transformar palabras de forma que sea más clara y fácil su utilización.
+En primer lugar se eliminan abreviaturas y se sustituyen por las palabras completas.
+\newline
+En segundo lugar se corrigen errores de codificación. Aunque esto a priori no debería ocurrir, el dataset de ciclocarriles no fue posible descargarlo y tratarlo con la correcta, por tanto muchos de sus elementos estaban corruptos. Aunque se tuvo que hacer algún cambio manual si fue posible determinar los elementos más comunes que habían sido modificados y de esta forma es posible hacer la gran mayoria de forma automática, y por si volviera a ocurrir con otro dataset.
+\newline
+
+%------------------------------- CICLOCARRILES --------------------------------------------------
+
+  \item Cambios realizados de forma manual al conjunto de datos de ciclocarriles:
+\newline
+\newline
+Debido a los errores de codificación en sus registros, además de los cambios ya expuestos anteriormente en Listing 2.2, se han tenido que realizar manualmente. Son los siguientes:
+\begin{tiny}
+\newline - ln 52: M$/$ndez ?lvaro--> Méndez Álvaro
+\newline - ln 64-65: Men$/$ndez Pelayo --> Menéndez Pelayo
+\newline - ln 72-73: Ortega y Gasset --> Jose Ortega y Gasset (Igual al nombre del Callejero de Madrid)
+\newline - ln 103: Donoso Cort$/$s --> Donoso Cortés
+\newline - ln 112: Gral Moscardæ --> Gral Moscardó
+\newline - ln 114: Camilo Jos$/$Cela - Azcona --> Camilo José Cela (Tambéin elminado Azcona ya que no esta previsto la existencia de cruces)
+\newline - ln 117: Gral Yag$>$e --> Gral Yagüe
+\newline - ln 125: MARQUÉS DE VIANA - SOR ANGELA DE LA CRUZ --> Divido en 2 registros con caracteristicas similares.
+\newline
+\end{tiny}
+
+%------------------------------- CALLES TRANQUILAS ---------------------------------------------
+
+	\item Cambios realizados de forma manual al dataset de CallesTranquilas:
+\begin{tiny}
+\newline ln 1292-1292: Calle de la Cooperativa ElÚctrica --> Calle de la Cooperativa Eléctrica
+\newline ln 1822-1823: Doctor MartÝn ArÚvalo --> Doctor Martín Arévalo
+\newline - ln 1919-1921: Errores en el formato del csv o de codificación. Mismo registro en varias lineas.
+%\newline 	- ln 1673: AVENIDA ALBUFERA CON FELIPE ÁLVAREZ --> AVENIDA ALBUFERA
+% Esta la dejo asi porque tendria que eliminarla porque es de cruces
+\newline - ln 2040: ENLACE CALLE AMERICIO CON MADRID RÍO --> CALLE AMERICIO
+% - ln 1716: PARQUE LINEAL DE PALOMERAS CON GONZÁLEZ DÁVILA --> deberia eliminarla porque es peatonal
+% -ln 1846: MARMOLINA CON AVENIDA COMUNIDADES --> Deberia eliminarla
+\newline 
+Para la realización de estos cambios se ha observado el mapa proporcionado por el ayuntamiento <https://datos.madrid.es/egob/new/detalle/auxiliar/mapa.jsp?geoUrl=/egob/catalogo/205115-4-calles-tranquilas.kml> y se ha determinado la mejor forma de representar los datos.
+\newline 
+\end{tiny}
+
+
+
+%------------------------------- ACCIDENTES ---------------------------------------------------
+%-------------------------------------------------------------------------------------------------
+
+
+
+
+%------------------------------- CALLEJERO ---------------------------------------------------
+
+
+	\item Vias añadidas al dataset del Callejero:
+\begin{tiny}
+\newline 201600;CALLE;DEL;COMANDANTE ZORITA;AVIADOR ZORITA;6;1;59;2;50 --> Igual que el registro "Aviador Zorita"
+\newline 334200;CALLE;DE;GENERAL YAGUE;GENERAL YAGÜE;6;1;57;4;76 --> Igual que el registro "San German". Cambio de nombre de la via posterior a la realizacion de varios dataserts \url{https://es.wikipedia.org/wiki/Calle_de_San_Germán}.
+\newline 331600;CALLE;DE;GENERAL MOSCARDO;GENERAL MOSCARDÓ;6;1;39;2;34 --> Igual que el registro "Edgar Neville". Cambio de nombre de la via posterior a la realizacion de varios dataserts \url{https://www.elmundo.es/madrid/2017/05/31/592dbf00e2704ed5058b4688.html}.
+\newline 765800;RONDA;DE;RONDA VALENCIA;RONDA VALENCIA;1;;;2;18 --> Se considera nombre completo "Ronda de Valencia", y no separado como muestra inicialmente
+\newline
+\end{tiny}
+
+Estos cambios se realizan directamente en el dataset del callejero ya que pueden ser aplicables a todos los datasets. Elementos que se consideran básicos en casos concretos, calles nuevas o nuevos nombres (como es el caso de algunos referidos a personajes militares o políticos) cambiados en los ultimos años, deben añadirse por si no han sido actualizados en algunos casos, conservando ambos.\newline
+Para ello se ha seguido la lista proporcionada por El Pais en \url{https://elpais.com/ccaa/2017/04/28/madrid/1493369660_675682.html}
+y se han añadido tanto los cambios ya realizados, como los aprobados aun no actualizados en el dataset, para que estén ambos nombres.
+\begin{tiny}
+\newline 96200;CALLE;;BATALLA DE BELCHITE;BATALLA DE BELCHITE;2;1;15;2;22
+\newline 917;PASEO;DEL;DOCTOR VALLEJO-NAJERA;DOCTOR VALLEJO-NÁJERA;2;1;61;2;56
+\newline 356700;PLAZA;DE LOS;HERMANOS FALCO Y ALVAREZ;HERMANOS FALCÓ Y ÁLVAREZ;21;1;25;2;24
+\newline 526000;PASEO;DE;MUÑOZ GRANDES;MUÑOZ GRANDES;11;1;53;2;64
+\newline 329900;CALLE;DEL;GARCIA DE LA HERRANZ;GARCÍA DE LA HERRANZ;11;1;19;2;10
+\newline 329700;CALLE;DEL;GENERAL FRANCO;GENERAL FRANCO;11;1;15;2;12
+\newline 73600;PLAZA;;ARRIBA ESPAÑA;ARRIBA ESPAÑA;5;1;13;2;12
+\newline 123600;CALLE;;CAIDOS DE LA DIVISION AZUL;CAÍDOS DE LA DIVISIÓN AZUL;5;1;15;2;28
+\newline 82000;PLAZA;;AUNOS;AUNÓS;5;1;11;2;10
+\newline 328950;CALLE;DE LA;POETA ANGELA FIGUERA;POETA ÁNGELA FIGUERA;7;1;41;2;22
+\newline 329400;CALLE;DE;GENERAL DAVILA;GENERAL DÁVILA;7;1;15;2;12
+\newline 419300;CALLE;DE;JUAN VIGON;JUAN VIGÓN;7;1;25;2;10
+\newline 332950;CALLE;DEL;GENERAL RODRIGO;GENERAL RODRIGO;7;1;17;2;12
+\newline 417850;PLAZA;;JUAN PUJOL;JUAN PUJOL;1;1;1;;
+\newline 402600;CALLE;DE;JOSE LUIS DE ARRESE;JOSÉ LUIS DE ARRESE;15;1;91;2;66
+\newline 48900;CALLE;DEL;ANGEL DEL ALCAZAR;ÁNGEL DEL ALCÁZAR;15;1;7;2;8
+\newline 330300;CALLE;DEL;GENERAL KIRKPATRICK;GENERAL KIRKPATRICK;15;1;37;2;46
+\newline 158300;PLAZA;DEL;CAUDILLO;CAUDILLO;8;1;5;2;4
+\newline 609700;CALLE;;PRIMERO DE OCTUBRE;PRIMERO DE OCTUBRE;8;1;15;2;20
+\newline 772400;PLAZA;DEL;VEINTIOCHO DE MARZO;VEINTIOCHO DE MARZO;8;1;11;2;10
+\newline 137100;CALLE;DEL;CAPITAN CORTES;CAPITÁN CORTÉS;16;1;13;2;14
+\newline 31000067;AVENIDA;DEL;ALCALDE CONDE MAYALDE;ALCALDE CONDE MAYALDE;8;;;;
+\newline 28150;CALLE;DEL;ALGABEÑO;ALGABEÑO;16;1;125;2;192
+\newline 329500;AVENIDA;DEL;GENERAL FANJUL;GENERAL FANJUL;10;1;185;2;144
+\newline 331250;CALLE;DEL;GENERAL MILLAN ASTRAY;GENERAL MILLÁN ASTRAY;10;1;81;2;72
+\newline 333250;CALLE;DEL;GENERAL SALIQUET;GENERAL SALIQUET;10;1;109;2;54
+\newline 325200;CALLE;DE;GARCIA MORATO;GARCÍA MORATO;10;5;9;22;26
+\newline 329850;CALLE;DEL;GENERAL GARCIA ESCAMEZ;GENERAL GARCÍA ESCÁMEZ;10;3;27;2;52
+\newline 333000;CALLE;DEL;GENERAL ROMERO BASART;GENERAL ROMERO BASART;10;1;149;2;90
+\newline 67700;AVENIDA;DEL;ARCO DE LA VICTORIA;ARCO DE LA VICTORIA;9;1;3;2;4
+\newline 333200;PASEO;DEL;GENERAL SAGARDIA RAMOS;GENERAL SAGARDÍA RAMOS;9;1;7;2;24
+\newline 31004081;GLORIETA;DE;RAMON GAYA;RAMÓN GAYA;9;;;;
+\newline 144900;CALLE;DE;CARLOS RUIZ;CARLOS RUIZ;9;1;3;2;10
+\newline 33025;CALLE;DEL;ALMIRANTE FRANCISCO MORENO;ALMIRANTE FRANCISCO MORENO;9;1;13;;
+\newline 263650;PLAZA;DE;EMILIO JIMENEZ MILLAS;EMILIO JIMÉNEZ MILLAS;9;1;1;2;4
+\newline 1887;CALLE;DEL;PUERTO DE LOS LEONES;PUERTO DE LOS LEONES;9;1;61;2;92
+\newline 360800;CALLE;DE LOS;HEROES DEL ALCAZAR;HÉROES DEL ALCAZAR;13;;;2;12
+\newline 166500;CALLE;DEL;CERRO DE GARABITAS;CERRO DE GARABITAS;13;1;17;2;12
+\newline 220600;CALLE;DEL;CRUCERO BALEARES;CRUCERO BALEARES;13;1;25;2;16
+\newline 338200;PLAZA;DEL;GOBERNADOR CARLOS RUIZ;GOBERNADOR CARLOS RUIZ;13;1;7;2;8
+\newline 256300;CALLE;DE;EDUARDO AUNOS;EDUARDO AUNÓS;4;1;41;2;56
+\newline 331500;PASAJE;DEL;GENERAL MOLA;GENERAL MOLA;4;1;9;2;6
+\newline 357000;CALLE;DE LOS;HERMANOS GARCIA NOBLEJAS;HERMANOS GARCÍA NOBLEJAS;15;;;2;198
+\newline 331800;CALLE;DEL;GENERAL ORGAZ;GENERAL ORGAZ;6;1;31;2;18
+\newline 333900;CALLE;DEL;GENERAL VARELA;GENERAL VARELA;6;1;37;2;38
+\newline 328800;CALLE;DEL;GENERAL ARANDA;GENERAL ARANDA;6;1;55;2;98
+\newline 328900;ESCALINATA;DEL;GENERAL ARANDA;GENERAL ARANDA;6;;;;
+\newline 466800;CALLE;DE;MANUEL SARRION;MANUEL SARRIÓN;6;1;13;2;12
+\newline 137400;CALLE;;CAPITAN HAYA;CAPITAN HAYA;6;1;65;2;66
+\newline 293200;PLAZA;DE;FERNANDEZ LADREDA;FERNÁNDEZ LADREDA;11;3;5;;
+\newline 293200;PLAZA;DE;FERNANDEZ LADREDA;FERNÁNDEZ LADREDA;12;1;1;2;2
+\end{tiny}
+
+
+
+
+
+
+
+
+
+
+   \item Añadir la propiedad esCruce únicamente al dataset de Accidentes.Inferida a partir del nombre de la via aplicando el siguiente código:
+   
+   \lstinputlisting[style=Python1, caption=Función annadirEsCruceAccidentes]{codigo/annadirEsCruceAccidentes.py}
+
+En el caso de que el accidente haya ocurrido en la intersección entre varias vias, se añaden al nombre siguiendo ciertos patrones (antes englobados en uno: calle1 / calle2) y en esta propiedad se detalla si se ha detectado o no que sea cruce.
+\newline
+Únicamente se realiza para el dataset de accidentes ya que los demás no dispondrán de esta propiedad.
+\newline
+
+
+    \item Añadir la propiedad Tipo de Via a los conjuntos de datos. Inferida a partir del nombre de la via aplicando el siguiente código:
+    
+       \lstinputlisting[style=Python1, caption=Función annadirTipoVia]{codigo/annadirTipoVia.py}
+      
+En el código mostrado en Listing 2.4 se observa la función annadirTipoVia. Aplcada a los datasets de CallesTranquilas y Accidentes, pero no a Ciclocarriles debido a la naturaleza de los nombres de sus calles, los cuales no contienen estas palabras que determinan el tipo que es (Solo disponen de la parte esencial del nombre).
+\newline
+Esta función recorre las filas del dataset analizando el nombre (ya formateado para que se más sencilla su lectura) y se añade la colunma tipoCalle con esta información. Para obtener el tipo se llamará a la función getTipoVia, la cual se muestra en Listing 2.5.
+\newline
+
+       \lstinputlisting[style=Python1, caption=Función getTipoVia]{codigo/getTipoVia.py}
+       
+A pesar de su simpleza actual esta función esta creada además para que si en futuras ocasiones se observasen nuevos tipos o abreviaturas sean sencillas da añadir sin necesidad de modificar el dataset desde el origen.
+\newline
+      
+    \item Crear una nueva propiedad llamada "palabras clave" que nos permita reducir al máximo los elementos del nombre de la via para asi comparar de forma más satisfactoria con los registros del Callejero de la ciudad.
+    
+      \lstinputlisting[style=Python1, caption=Función annadirPalabrasClave]{codigo/annadirPalabrasClave.py}
+    
+En el código de Listinf 2.6 se añade a este nuevo campo una palabra obtenida a partir del nombre a la que le han sido eliminados los conectores y palabras que se consideran genéricas o conflictivas (por ejemplo todas las referidas a tipos de via, elementos ya añadidos a este nuevo campo y que pueden estar en un dataset y no en otro por su caracter genérico).
+
+      \lstinputlisting[style=Python1, caption=Función quitarConectores]{codigo/quitarConectores.py}
+    
+      \lstinputlisting[style=Python1, caption=Función quitarPalabrasConflicto]{codigo/quitarPalabrasConflicto.py}
+      
+      En los códigos mostrado en Listing 2.7 y 2.8 se observan las funciones antes mencionadas. Los conectores han sido obtenidos de los propios datasets aquí utilizados por lo tanto pueden ocurrir errores puntuales en el caso de que apareciesen nuevos no esperados. Se ha optado por esta opción en vez de buscar palabras monosílabas por ejemplo debido a que da mayor seguridad en cuanto a errores, y es preferible detectar un conector sin omitir que una palabra eliminada que si era parte esencial.
+      \newline
+      En el caso de las palabras conflicto, la función está destinada a eliminar los tipos de vias como ya se mencionó anteriormente.
+       \newline
+       \newline
+       Cabe destacar que esta función es llamada por todos los datasets incluido el Callejero de Madrid. Ésto permite que todos por igual hayan recibido las mismas transformaciones para obtener sus palabras clave, de tal forma que sea más sencillo su cruce para obtener los identificadores.
+\newline
+
+	    \item Para finalizar esta primera fase, todos los vocabularios son comparados con el Callejero de Madrid. Para ello se comparan las palabras claves de sus nombres, anteriormente obtenidas, y se comprueba que sean las mismas para así asignarles el identificador. Éste identificador lo proporciona el ayuntamiento, por ello es importante este cruce con el Callejero, del cual se obtendrán.
+	    
+	     \lstinputlisting[style=Python1, caption=Función crearFichNombresId]{codigo/crearFichNombresId.py}
+    
+En Listing 2.9 se muestra la funcion crearFichNombresId. Ésta funcion realiza numerosas vueltas para cada registro. Primero selecciona el elemento del dataset que se va a analizar (que aun no tenga id). Segundo comprueba que no sea un cruce, y en caso de serlo llama a la funcion getArrCalles (Listing 2.10) para obtener las dos o más vias que lo componen (y comprobar los ids para cada una de ellas). Tercero recorre el dataset del callejero para comparar las palabras clave y obtener coincidencias. Para ello sigue los siguientes pasos:
+\newline 1. Compara el tipo de via, en caso de no coincidir será distinto tipo de calle y por tanto diferente (esto no es válido para el caso de cruces ya que la via secundaria no tendría tipo, por tanto se omite).
+\newline 2. En caso de no coincidir en ningún elemento, vuelve a dar otra vuelta al callejero rebajando las restricciones. No se comprueba que sea del mismo tipo de via y se aplica una fórmula que se detallará posteriormente para que se permitan letras añadidas, suprimidas o modificadas (por erratas, plurales, femeninos y masculinos... )
+\newline
+Por último se imprime por pantalla los conteos de los elementos que han coincidido y los que no para determinar la eficacia del proceso (aproximado, ya que pueden haberse cometido errores no detectados y que se hayan dado paso a identificadores mal asociados).
+\newline
+
+    
+	   \lstinputlisting[style=Python1, caption=Función getArrCalles]{codigo/getArrCalles.py}
+
+En este codigo se obtiene un array de calles a partir del nombre. Siguiendo el patrón  $"$calle1 / calle2 $"$ que se ha utilizado para los cruces, se separan sus elementos devolviendo un array con los nombres completos de cada una de ellas separados.
+\newline
+
+
+
+
+    \lstinputlisting[style=Python1, caption=Función checkearPalabras]{codigo/checkearPalabras.py}
+    
+En esta función primero se sustituyen los elementos como tildes y se comparan para obtener coincidencias.
+\newline
+En caso de que ésta no se diese, el programa daría una segunda vuelta, a la cual la función actuaria de diferente manera. Primero igual, ya que podría darse coincidencia por haber eliminado el tipo de via de la restricción. Si tampoco se diese el caso se comprobaría primero con una letra añadida o eliminada, despues con 2 (lo que permitiría letras cambiadas) y despúes con una diferencia variable dependiendo de su dimensión.
+\newline
+Se han añadido numerosas restricciones observadas en el proceso y también se imprime por pantalla los cambios realizados para que puedan ser vistos y modificados en caso de errores.
+
+% escribir que esto se hace asi para la eficiencia, porque cada proceso de estos es más costoso computacionalmente pero en cada fase hay menos elementos y entonces es "eficiente" mas o menos
+%Poner ejemplos de cada: p.ej. FERNADO VI  ::   FERNANDO VI
+    
+    
+    
+    
+    \lstinputlisting[style=Python1, caption=Función esTipoCalleOmitible]{codigo/esTipoCalleOmitible.py}
+    
+Esta función es llamada en la segunda vuelta del bucle por si el tipo de via al que hace referencia no pudiese ser obviado. Esto es por ejemplo en Parque, Polígono... No es posible comparar un parque con una calle que tengan el mismo nombre y aceptar que es válido, en cambio una avenida con una calle si. Para ello se debe especificar los tipos que pueden ser comparables y los que no.
+
+
+
+
+
+
+\end{itemize}
+
+
+
+
+

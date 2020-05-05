@@ -1,0 +1,136 @@
+\section{Transformaciones en los vocabularios: Fase 2}
+
+En esta segunda fase de transformaciones se realizarán cambios menores. Una vez ya se han realizado los cambios necesarios para obtener las palabras clave y los identificadores, se realizarán cambios de nombres en las propiedades de los datasets y se añadirán nuevos elementos como por ejemplo municipio.
+\newline
+Estos cambios se realizarán a partir de lo generado en la Fase1.
+\newline
+
+En esta sección los cambios serán diferentes por cada Dataset por tanto se detallarán por separado.
+\newline
+
+%-------------------------------------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------------------------------------------------------------
+\subsection{Cambios relativos a CicloCarriles}
+
+Los relativos a CicloCarriles serán los siguientes:
+
+\begin{itemize}
+	\item Resumen de cambios:
+	\newline out: CAPA; TX$\_$NOMBRE; MaxSimpTol; MinSimpTol; FECHA; Longitud; TIPO$\_$VIA; PALABRAS$\_$CLAVE; ID$\_$CALLE
+	\newline in: tipoUso; nombreVia; distMaxExclusBici; longitud; TIPO$\_$VIA; PALABRAS$\_$CLAVE; ID$\_$CALLE; carrilExclusBici; municipio
+	\newline
+    \newline Para el caso de tipoUso, nombreVia, distMaxExclusBici y longitud no se realizará ninguna modificación en los registros. Únicamente se ha cambiado el nombrado.
+    \newline Se han eliminado las propiedades MinSimpTol y FECHA, junto con sus datos, debido a que no aportan información añadida y por ejemplo en el caso de la distancia minima, se sustituirá por la propiedad carrilExclusBici que dará la misma información de forma más clara con otros tipos de datos.
+    \newline Se han añadido carrilExclusBici y municipio.
+    \newline Se modificarán los datos de Longitud, ya que están en kilómetros y es preferible, para la longitud de las calles en una ciudad, que se representen en metros por ser el formato estándar.
+    \newline
+    
+    \item Cambios en los nombres y añadir carrilExclusBici y municipio:
+    
+    \lstinputlisting[label = {cod:fase2CambCicloCarr}, style=Python1, caption=Función variosCambiosEnCicloCarriles]{codigo/cicloCarril/variosCambiosEnCicloCarriles.py}
+
+En el código mostrado primero se cambian los nombres de las propiedades a tipoUso, nombreVia, distMaxExclusBici y longitud. Posteriormente se añaden las de carrilExclusBici y municipio. Para su cálculo, en el primer caso se multiplica por 1.000 la longitud (para convertir kilometros en metros y en el segundo se añade la palabra Madrid, ya que siempre será el municipio para los datos aqui utilizados.
+\newline
+
+    \lstinputlisting[label = {cod:fase2elimColCompl}, style=Python1, caption=Función eliminarColumnaCompleta]{codigo/cicloCarril/eliminarColumnaCompleta.py}
+    
+    En el codigo de Listing 2.14 se muestra una función que se reutilizará para todos los datasets. En ella se elimina una columna completa, tanto su nombre como sus datos en todos los registros.
+\newline En el caso del dataset de CicloCarriles se eliminarán las columnas FECHA y MinSimplTol, como se observa en las siguientes llamadas a esta función.
+    
+\begin{lstlisting}[style=Python, caption=Llamadas a eliminarColumnaCompleta]
+eliminarColumnaCompleta(nombreCarpeta, nombreSinCsv, "2", "3", "FECHA")
+eliminarColumnaCompleta(nombreCarpeta, nombreSinCsv, "3", "4", "MinSimpTol")
+\end{lstlisting}
+
+
+\end{itemize}
+
+
+%-------------------------------------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+\subsection{Cambios relativos a Accidentes de Bicicletas}
+
+Los relativos a Accidentes de Bicicletas serán los siguientes:
+    
+\begin{itemize}
+	\item Resumen de cambios:
+	\newline out: Nº  EXPEDIENTE; FECHA; HORA; CALLE; NÚMERO; DISTRITO; TIPO ACCIDENTE; ESTADO METEREOLÓGICO; TIPO VEHÍCULO; TIPO PERSONA; RANGO EDAD; SEXO; LESIVIDAD*;esCruce;tipoVia;palabrasClave;idVia
+	\newline in: numeroExpediente; fecha; hora; nombreVia; portal; distrito; tipoAccidente; meteorologia; tipoVehiculo; tipoPersonaAfectada; typicalAgeRange; gender; lesividad; esCruce; tipoVia; palabrasClave; idVia; municipio
+	\newline
+
+
+Se modifican el nombre de las columnas  NºExpediente, FECHA, HORA, CALLE, NÚMERO , DISTRITO, TIPO ACCIDENTE, ESTADO METEREOLÓGICO, TIPO VEHÍCULO, TIPO PERSONA, RANGO EDAD, SEXO, LESIVIDAD* para que sea más entendible y coincida con la definición antes desarrollada.
+	\newline
+Se han modificado los datos de las columnas typicalAgeRange (RANGO EDAD) para que seguir el formato definido por schema.org (añoInicio - añoFin) (p.ej. 10-12)
+	\newline
+Se han mofificado los datos de gender (SEXO) de para que también concuerden con los definidos en schema.org. En este caso el dataset solo proporciona los valores Hombre y Mujer, por lo tanto solo se sustituirán por Male y Female.
+	\newline
+Se añade la columna municipio asignandole a cada registro el valor "Madrid" para esta propiedad.
+	\newline
+	
+	    \lstinputlisting[label = {cod:fase2CambAccBici}, style=Python1, caption=Función variosCambiosEnAccidentesBici]{codigo/accidBici/variosCambiosEnAccidentesBici.py}
+
+	    
+En \ref{cod:fase2CambAccBici} se muestra el codigo de los cambios en el dataset de Accidentes de Bicicleta.
+\newline
+Primero se cambian los nombres antes mencionados por los nuevos para que coincidan con los definidos en el vocabulario.
+\newline
+Segundo se realizan las transformaciones para typicalAgeRange y para gender. Para Gender únicamente el dataset tiene 2 valores posibles, Hombre y Mujer, por lo que se ha optado por considerar únicamente esas posibilidades y sustituirlos por sus nombres en inglés, lo definido por schema.org. Si se diese el caso de nuevas posiblidades en esta propiedad se deberían añadir. En [1] \url{https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=20f4a87ebb65b510VgnVCM1000001d4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default} se puede consultar la documentación asociada a este dataset y hasta el momento solo puede haber estas 2 opciones y no asignado.
+\newline
+Para typicalAgeRange se ha creado una nueva función a la que llama para obtener el rango de edad en el formato estandar definido por schema.org. Se muestra en el siguiente código:
+
+	\lstinputlisting[label = {cod:fase2getTypicalAge}, style=Python1, caption=Función getTypicalAgeRangeOk]{codigo/accidBici/getTypicalAgeRangeOk.py}
+	
+	En \ref{cod:fase2getTypicalAge} comprueba primero el formato en el que vienen la totalidad de los datos de esta columna (De 10 A 20 AÑOS) y lo devuelve en el formato estandar de schema.org (10-20). En caso de que el dataset contenga la información con distinta representación, se comprueba de forma básica si es posible encontrar en todo el texto dos números separados. En este caso se considerará que el primero es la fecha inicio y el segundo la final. Si es posible esta combinación se devolverán con el formato antes mencionado.
+	\newline
+	Por si se diera el caso de que la fecha estuviese cambiada de sentido, se comprueba que el inicio sea menor que el fin, en caso contrario se invierten para seguir el estandar.
+    
+
+%-------------------------------------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+\subsection{Cambios relativos a Calles Tranquilas}
+
+Los relativos a Calles Tranquilas serán los siguientes:
+    
+\begin{itemize}
+    \item Resumen de cambios:
+\newline out: OBJECTID; ID$\_$EJE; ID$\_$GRUPO; ID$\_$TIPO; TX$\_$CAPA; NU$\_$DIRECCI; NU$\_$DOBLE$\_$S; TX$\_$NOMBRE; TX$\_$NOMBRE$\_$; Shape$\_$Leng; tipoVia; palabrasClave; idVia
+\newline in: idObject; idEje; idGrupo; tipoUso; nuDireccion; nuDobleS; nombreVia; nombreViaReduc; longitud; tipoVia; palabrasClave; idVia; municipio
+    \newline
+   % nombreViaReduc; --> nombre que le daria si no la quitase TX$\_$NOMBRE$\_$ 
+
+Se modifican el nombre de las columnas OBJECTID, ID$\_$EJE, ID$\_$GRUPO, TX$\_$CAPA, NU$\_$DIRECCI, NU$\_$DOBLE$\_$S, TX$\_$NOMBRE, NU$\_$DOBLE$\_$S y Shape$\_$Leng para que sean más entendibles y coincida con la definición antes desarrollada.
+    \newline
+En este caso los datos de la longitud si están en metros por lo tanto no es necsario cmabiarlos.
+    \newline
+Se ha eliminado la columna ID$\_$TIPO ya que representa con un codigo numérico lo mismo que TX$\_$CAPA (llamada a partir de ahora tipoUso). Se ha optado por esta última propiedad ya que comparte valores con tipoUso del dataset CicloCarriles, y por lo tanto se entiende que es más utilizado en otros dataset que la primera propiedad y que, al representar lo mismo, es mñas recomendable conservar si la segunda.
+\newline
+%También se ha eliminado la columna TX$\_$NOMBRE$\_$ ya que representa el nombre de forma reducida y sin tildes. Esta información ya viene dada por 
+   % \newline
+Se añade la columna municipio asignandole a cada registro el valor "Madrid" para esta propiedad.
+	\newline
+	
+	
+	
+	    \lstinputlisting[label = {cod:fase2CambCallTranq}, style=Python1, caption=Función variosCambiosEnCallesTranquilas]{codigo/callesTranq/variosCambiosEnCallesTranquilas.py}
+
+	    
+En \ref{cod:fase2CambCallTranq} se muestra el codigo de los cambios en el dataset de Calles Tranquilas
+\newline
+En este caso se cambian los nombres antes mencionados por los nuevos para que coincidan con los definidos en el vocabulario y se añade la columna municipio con el valor "Madrid" en todos los registros.
+\newline
+
+En el siguiente código se muestra la llamada a la funcion eliminarColumnaCompleta \ref{fase2elimColCompl} para suprimir del dataset ID$\_$TIPO.
+
+\begin{lstlisting}[style=Python, caption=Llamadas a eliminarColumnaCompleta]
+eliminarColumnaCompleta(nombreCarpeta, nombreSinCsv, "2", "3", "ID_TIPO")
+\end{lstlisting}
+
+
+\end{itemize}
+
+
+
+\end{itemize}
