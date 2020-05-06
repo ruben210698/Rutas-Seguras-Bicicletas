@@ -82,19 +82,11 @@ xsd:time rdf:type rdfs:Datatype .
 ###  http://schema.org/gender
 <http://schema.org/gender> rdf:type owl:ObjectProperty ;
                            rdfs:domain :PersonaAfectada ;
+                           rdf:type owl:Class ;
                            rdfs:range [ rdf:type owl:Restriction ;
                                         owl:onProperty owl:topDataProperty ;
                                         owl:someValuesFrom <http://schema.org/gender>
                                       ] .
-
-
-###  http://schema.org/typicalAgeRange
-<http://schema.org/typicalAgeRange> rdf:type owl:ObjectProperty ;
-                                    rdfs:domain :Accidente ;
-                                    rdfs:range [ rdf:type owl:Restriction ;
-                                                 owl:onProperty owl:topDataProperty ;
-                                                 owl:someValuesFrom <http://schema.org/typicalAgeRange>
-                                               ] .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#esCruce
@@ -251,9 +243,23 @@ escjr:tipoVia rdf:type owl:ObjectProperty ;
               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
 
 
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://schema.org/﻿typicalAgeRange
+<http://schema.org/﻿typicalAgeRange> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain :PersonaAfectada ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment """Rango de edad en el que se encuentra la persona afectada.
+Seguirá el siguiente formato definido por Schema.org: 
+<span property=\\\"typicalAgeRange\\\">$10-12</span>"""@es ;
+                                     rdfs:isDefinedBy <﻿https://schema.org/typicalAgeRange> .
+
 
 ###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#fecha
 :fecha rdf:type owl:DatatypeProperty ;
@@ -342,12 +348,6 @@ Se utilizarán las siguientes definidas en la clase:
 http://schema.org/Male
 http://schema.org/Female
 http://schema.org/Mixed"""@es .
-
-
-<http://schema.org/typicalAgeRange> rdfs:comment """﻿Rango de edad en el que se encuentra la persona afectada.
-Seguirá el siguiente formato definido por Schema.org: 
-<span property=\"typicalAgeRange\">$10-12</span>"""@es ;
-                                    rdfs:isDefinedBy <﻿https://schema.org/typicalAgeRange> .
 
 
 esadm:municipio rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
