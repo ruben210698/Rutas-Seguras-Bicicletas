@@ -34,18 +34,6 @@ skos:definition rdf:type owl:AnnotationProperty .
 #    Datatypes
 #################################################################
 
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
-esadm:municipio rdf:type rdfs:Datatype .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia
-escjr:tipoVia rdf:type rdfs:Datatype .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via
-escjr:via rdf:type rdfs:Datatype .
-
-
 ###  http://www.geonames.org/ontology#officialName
 <http://www.geonames.org/ontology#officialName> rdf:type rdfs:Datatype .
 
@@ -114,7 +102,7 @@ Esta definición esta basada en datos aproximados proporcionados por mapas y otr
 ###  http://vocab.ciudadesabiertas.es/def/calles-tranquilas#﻿tieneMunicipio
 :﻿tieneMunicipio rdf:type owl:ObjectProperty ;
                  rdfs:domain :CalleTranquila ;
-                 rdfs:range esadm:municipio ;
+                 rdfs:range esadm:Municipio ;
                  rdfs:comment "﻿Municipio que contiene una calle."@es ;
                  rdfs:isDefinedBy <h﻿ttp://vocab.ciudadesabiertas.es/def/calle-bici/calle-tranquila> ;
                  rdfs:label "Municipio"@es .
@@ -198,8 +186,8 @@ Es propiedad de CalleTranquila y no de calle porque cabe la posibilidad de que n
           rdfs:subClassOf :CalleTranquila .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
-esadm:municipio rdf:type owl:Class ;
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+esadm:Municipio rdf:type owl:Class ;
                 rdfs:subClassOf :CalleTranquila .
 
 
@@ -218,14 +206,6 @@ skos:Concept rdf:type owl:Class ;
 #################################################################
 #    Annotations
 #################################################################
-
-escjr:tipoVia rdfs:comment """Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via. 
-Por ejemplo, estas serán las URIs correspondientes a calles y plazas
-http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL
-http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"""@es ;
-              rdfs:label "Tipo de Via"@es ;
-              rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
-
 
 <http://www.geonames.org/ontology#officialName> rdfs:isDefinedBy <﻿http://www.geonames.org/ontology> ;
                                                 rdfs:label "Nombre de la via en el idioma oficial local."@es .

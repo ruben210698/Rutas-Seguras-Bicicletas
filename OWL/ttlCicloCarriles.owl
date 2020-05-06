@@ -34,14 +34,6 @@ skos:definition rdf:type owl:AnnotationProperty .
 #    Datatypes
 #################################################################
 
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
-esadm:municipio rdf:type rdfs:Datatype .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via
-escjr:via rdf:type rdfs:Datatype .
-
-
 ###  http://www.geonames.org/ontology#officialName
 <http://www.geonames.org/ontology#officialName> rdf:type rdfs:Datatype .
 
@@ -72,7 +64,7 @@ http://vocab.ciudadesabiertas.es/recurso/calle-bici/ciclo-carril/carrilExlus/NO-
 ###  http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneMunicipio
 <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneMunicipio> rdf:type owl:ObjectProperty ;
                                                                               rdfs:domain <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> ;
-                                                                              rdfs:range esadm:municipio ;
+                                                                              rdfs:range esadm:Municipio ;
                                                                               rdfs:comment "﻿Municipio que contiene una calle."@es ;
                                                                               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> ;
                                                                               rdfs:label "Municipio."@es .
@@ -139,8 +131,8 @@ En caso de que no haya ciclocarril, el valor será 0."""@es ;
        rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
-esadm:municipio rdf:type owl:Class ;
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+esadm:Municipio rdf:type owl:Class ;
                 rdfs:subClassOf <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> .
 
 

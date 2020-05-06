@@ -47,22 +47,6 @@ rdfs:comment rdf:type owl:AnnotationProperty .
 <http://schema.org/typicalAgeRange> rdf:type rdfs:Datatype .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
-esadm:municipio rdf:type rdfs:Datatype .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal
-escjr:portal rdf:type rdfs:Datatype .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia
-escjr:tipoVia rdf:type rdfs:Datatype .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via
-escjr:via rdf:type rdfs:Datatype .
-
-
 ###  http://www.geonames.org/ontology#officialName
 <http://www.geonames.org/ontology#officialName> rdf:type rdfs:Datatype .
 
@@ -81,12 +65,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  http://schema.org/gender
 <http://schema.org/gender> rdf:type owl:ObjectProperty ;
-                           rdfs:domain :PersonaAfectada ;
-                           rdf:type owl:Class ;
-                           rdfs:range [ rdf:type owl:Restriction ;
-                                        owl:onProperty owl:topDataProperty ;
-                                        owl:someValuesFrom <http://schema.org/gender>
-                                      ] .
+                           rdfs:domain :PersonaAfectada .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#esCruce
@@ -231,7 +210,7 @@ http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoVehiculo/BICIC
 ###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#﻿tieneMunicipio
 :﻿tieneMunicipio rdf:type owl:ObjectProperty ;
                  rdfs:domain :LugarAccidente ;
-                 rdfs:range esadm:municipio ;
+                 rdfs:range esadm:Municipio ;
                  rdfs:comment "﻿Municipio en el que ha ocurrido el accidente."@es ;
                  rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> ;
                  rdfs:label "Municipio"@es .
@@ -285,6 +264,10 @@ Seguirá el siguiente formato definido por Schema.org:
 #    Classes
 #################################################################
 
+###  http://schema.org/gender
+<http://schema.org/gender> rdf:type owl:Class .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#Accidente
 :Accidente rdf:type owl:Class ;
            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
@@ -314,8 +297,8 @@ Seguirá el siguiente formato definido por Schema.org:
                   rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
-esadm:municipio rdf:type owl:Class ;
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+esadm:Municipio rdf:type owl:Class ;
                 rdfs:subClassOf :LugarAccidente .
 
 
@@ -348,20 +331,6 @@ Se utilizarán las siguientes definidas en la clase:
 http://schema.org/Male
 http://schema.org/Female
 http://schema.org/Mixed"""@es .
-
-
-esadm:municipio rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
-
-
-escjr:portal rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
-
-
-escjr:tipoVia rdfs:comment """Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via. 
-Por ejemplo, estas serán las URIs correspondientes a calles y plazas
-http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL
-http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"""@es ;
-              rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-              rdfs:label "Tipo de via."@es .
 
 
 <http://www.geonames.org/ontology#officialName> rdfs:isDefinedBy <﻿http://www.geonames.org/ontology> ;
