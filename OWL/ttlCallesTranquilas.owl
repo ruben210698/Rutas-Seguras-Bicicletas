@@ -125,8 +125,8 @@ Esta definición esta basada en datos aproximados proporcionados por mapas y otr
           rdfs:domain :CalleTranquila ;
           rdfs:range skos:Concept ;
           rdfs:comment """﻿Identificador del tipo de uso que puede tener la calle. Se han definido 2 clases para ello:
-http://vocab.ciudadesabiertas.es/recurso/calle-bici/tipoUso/CICLOCALLE
-http://vocab.ciudadesabiertas.es/recurso/calle-bici/tipoUso/PEATONAL"""@es ;
+http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLE
+http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/PEATONAL"""@es ;
           rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/calle-bici> ;
           rdfs:label "Tipo de uso dado a la via."@es .
 
