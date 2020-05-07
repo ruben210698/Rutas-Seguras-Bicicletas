@@ -65,17 +65,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  http://schema.org/gender
 <http://schema.org/gender> rdf:type owl:ObjectProperty ;
-                           rdfs:domain :PersonaAfectada .
-
-
-###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#esCruce
-:esCruce rdf:type owl:ObjectProperty ;
-         rdfs:domain :LugarAccidente ;
-         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-         rdfs:comment """﻿Si el accidente ocurrió en un cruce entre 2 o más vías. Se han definido los siguientes elementos:
-http://vocab.ciudadesabiertas.es/def/accidente/accid-bici/esCruce/TRUE
-http://vocab.ciudadesabiertas.es/def/accidente/accid-bici/esCruce/FALSE"""@es ;
-         rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
+                           rdfs:domain :PersonaAfectada ;
+                           rdfs:range <http://schema.org/gender> .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneLesividad
@@ -236,6 +227,14 @@ owl:topDataProperty rdf:type owl:ObjectProperty .
 Seguirá el siguiente formato definido por Schema.org: 
 <span property=\\\"typicalAgeRange\\\">$10-12</span>"""@es ;
                                      rdfs:isDefinedBy <﻿https://schema.org/typicalAgeRange> .
+
+
+###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#en-cruce
+:en-cruce rdf:type owl:DatatypeProperty ;
+          rdfs:domain :LugarAccidente ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "﻿Si el accidente ocurrió en un cruce entre 2 o más vías."@es ;
+          rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#fecha
