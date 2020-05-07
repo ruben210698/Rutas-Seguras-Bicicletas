@@ -61,14 +61,14 @@ http://vocab.ciudadesabiertas.es/recurso/calle-bici/ciclo-carril/carrilExlus/NO-
                                                                           rdfs:label "﻿Identificador"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#tieneTipoUso
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#tieneTipoUso> rdf:type owl:ObjectProperty ;
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipo-uso
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipo-uso> rdf:type owl:ObjectProperty ;
                                                                             rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#CicloCarril> ;
                                                                             rdfs:range skos:Concept ;
                                                                             rdfs:comment """﻿Identificador del tipo de uso que puede tener la calle. Se han definido 2 clases para ello:
 http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLE
 http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/PEATONAL"""@es ;
-                                                                            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/calle-bici> ;
+                                                                            rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> ;
                                                                             rdfs:label "Tipo de uso dado a la via."@es .
 
 

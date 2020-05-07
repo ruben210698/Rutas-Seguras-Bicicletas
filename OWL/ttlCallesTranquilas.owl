@@ -120,14 +120,14 @@ Esta definición esta basada en datos aproximados proporcionados por mapas y otr
                  rdfs:label "Municipio"@es .
 
 
-###  http://vocab.ciudadesabiertas.es/def/calles-tranquilas#﻿tipoUso
-:﻿tipoUso rdf:type owl:ObjectProperty ;
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipo-uso
+:﻿tipo-uso rdf:type owl:ObjectProperty ;
           rdfs:domain :CalleTranquila ;
           rdfs:range skos:Concept ;
           rdfs:comment """﻿Identificador del tipo de uso que puede tener la calle. Se han definido 2 clases para ello:
 http://vocab.ciudadesabiertas.es/recurso/calle-bici/tipoUso/CICLOCALLE
 http://vocab.ciudadesabiertas.es/recurso/calle-bici/tipoUso/PEATONAL"""@es ;
-          rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/calle-bici> ;
+          rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> ;
           rdfs:label "Tipo de uso dado a la via."@es .
 
 
