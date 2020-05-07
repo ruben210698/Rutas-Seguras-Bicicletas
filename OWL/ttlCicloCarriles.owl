@@ -1,4 +1,4 @@
-@prefix : <http://vocab.ciudadesabiertas.es/def/﻿calle-bici/﻿ciclo-carril#> .
+@prefix : <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -9,10 +9,10 @@
 @prefix escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#> .
 @prefix schema: <http://schema.org#> .
 @prefix www-geonames-org: <http://www.geonames.org/> .
-@base <http://vocab.ciudadesabiertas.es/def/﻿calle-bici/﻿ciclo-carril> .
+@base <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> .
 
-<http://vocab.ciudadesabiertas.es/def/﻿calle-bici/﻿ciclo-carril> rdf:type owl:Ontology ;
-                                                                  owl:versionIRI <http://vocab.ciudadesabiertas.es/def/﻿calle-bici/﻿ciclo-carril/1.0.0> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> rdf:type owl:Ontology ;
+                                                                  owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril/1.0.0> .
 
 #################################################################
 #    Annotation properties
@@ -42,28 +42,28 @@ skos:definition rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneCarrilExclusBici
-<http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneCarrilExclusBici> rdf:type owl:ObjectProperty ;
-                                                                                     rdfs:domain <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> ;
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#tieneCarrilExclusBici
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#tieneCarrilExclusBici> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#CicloCarril> ;
                                                                                      rdfs:range skos:Concept ;
                                                                                      rdfs:comment """﻿Indicador de si las bicicletas disponen o no de un carril propio para su circulación.Se han definido 2 clases para ello:
 	http://vocab.ciudadesabiertas.es/recurso/calle-bici/ciclo-carril/carrilExlus/EXCLUSIVO-BICI
 http://vocab.ciudadesabiertas.es/recurso/calle-bici/ciclo-carril/carrilExlus/NO-EXLUSIVO-BICI"""@es ;
-                                                                                     rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> .
+                                                                                     rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> .
 
 
-###  http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneIdVia
-<http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneIdVia> rdf:type owl:ObjectProperty ;
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#tieneIdVia
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#tieneIdVia> rdf:type owl:ObjectProperty ;
                                                                           rdfs:domain :Calle ;
                                                                           rdfs:range escjr:Via ;
                                                                           rdfs:comment "﻿Identificador de calle asociado."@es ;
-                                                                          rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> ;
+                                                                          rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> ;
                                                                           rdfs:label "﻿Identificador"@es .
 
 
-###  http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneTipoUso
-<http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneTipoUso> rdf:type owl:ObjectProperty ;
-                                                                            rdfs:domain <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> ;
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#tieneTipoUso
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#tieneTipoUso> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#CicloCarril> ;
                                                                             rdfs:range skos:Concept ;
                                                                             rdfs:comment """﻿Identificador del tipo de uso que puede tener la calle. Se han definido 2 clases para ello:
 http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLE
@@ -72,17 +72,17 @@ http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/P
                                                                             rdfs:label "Tipo de uso dado a la via."@es .
 
 
-###  http://vocab.ciudadesabiertas.es/def/﻿calle-bici/﻿ciclo-carril#tieneCalle
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#tieneCalle
 :tieneCalle rdf:type owl:ObjectProperty ;
-            rdfs:domain <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> ;
+            rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#CicloCarril> ;
             rdfs:range :Calle ;
             rdfs:comment "Calle asociada a un CicloCarril."@es ;
-            rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> .
+            rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
 esadm:municipio rdf:type owl:ObjectProperty ;
-                rdfs:domain <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> ;
+                rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#CicloCarril> ;
                 rdfs:range esadm:Municipio ;
                 rdfs:comment "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa."@es ;
                 rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
@@ -92,20 +92,20 @@ esadm:municipio rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#distMaxExclusBici
-<http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#distMaxExclusBici> rdf:type owl:DatatypeProperty ;
-                                                                                 rdfs:domain <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> ;
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#distMaxExclusBici
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#distMaxExclusBici> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#CicloCarril> ;
                                                                                  rdfs:range xsd:double ;
                                                                                  rdfs:comment """﻿Longitud del carril exclusivo de bicicletas dentro de la calle.
 En caso de que no haya ciclocarril, el valor será 0."""@es ;
-                                                                                 rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> .
+                                                                                 rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> .
 
 
-###  http://vocab.ciudadesabiertas.es/def/﻿calle-bici/﻿ciclo-carril#longitud
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#longitud
 :longitud rdf:type owl:DatatypeProperty ;
           rdfs:domain :Calle ;
           rdfs:range xsd:double ;
-          rdfs:comment <﻿http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> ,
+          rdfs:comment <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> ,
                        "﻿Longitud de la calle descrita. Esta propiedad está referida a la calle que contiene un ciclocarril (calle completa). La longitud del ciclocarril estará representada por la propiedad distMaxExlusBici."@es .
 
 
@@ -119,15 +119,15 @@ En caso de que no haya ciclocarril, el valor será 0."""@es ;
 #    Classes
 #################################################################
 
-###  http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril
-<http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> rdf:type owl:Class ;
-                                                                           rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> .
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#CicloCarril
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#CicloCarril> rdf:type owl:Class ;
+                                                                           rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> .
 
 
-###  http://vocab.ciudadesabiertas.es/def/﻿calle-bici/﻿ciclo-carril#Calle
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#Calle
 :Calle rdf:type owl:Class ;
-       rdfs:subClassOf <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> ;
-       rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> .
+       rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#CicloCarril> ;
+       rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
