@@ -207,13 +207,11 @@ http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoVehiculo/BICIC
              rdfs:label "﻿Identificador"@es .
 
 
-###  http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#﻿tieneMunicipio
-:﻿tieneMunicipio rdf:type owl:ObjectProperty ;
-                 rdfs:domain :LugarAccidente ;
-                 rdfs:range esadm:Municipio ;
-                 rdfs:comment "﻿Municipio en el que ha ocurrido el accidente."@es ;
-                 rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/accidente/accid-bici> ;
-                 rdfs:label "Municipio"@es .
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
+esadm:municipio rdf:type owl:ObjectProperty ;
+                rdfs:range esadm:Municipio ;
+                rdfs:comment "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia
@@ -299,7 +297,10 @@ Seguirá el siguiente formato definido por Schema.org:
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
 esadm:Municipio rdf:type owl:Class ;
-                rdfs:subClassOf :LugarAccidente .
+                rdfs:comment "Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do"@es ;
+                rdfs:isDefinedBy """http://purl.org/derecho/vocabulario
+http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio
+http://www.ign.es/ign/resources/acercaDe/tablon/ModeloDireccionesAGE.pdf‎""" .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via

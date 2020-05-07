@@ -61,15 +61,6 @@ http://vocab.ciudadesabiertas.es/recurso/calle-bici/ciclo-carril/carrilExlus/NO-
                                                                           rdfs:label "﻿Identificador"@es .
 
 
-###  http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneMunicipio
-<http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneMunicipio> rdf:type owl:ObjectProperty ;
-                                                                              rdfs:domain <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> ;
-                                                                              rdfs:range esadm:Municipio ;
-                                                                              rdfs:comment "﻿Municipio que contiene una calle."@es ;
-                                                                              rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> ;
-                                                                              rdfs:label "Municipio."@es .
-
-
 ###  http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneTipoUso
 <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#tieneTipoUso> rdf:type owl:ObjectProperty ;
                                                                             rdfs:domain <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> ;
@@ -87,6 +78,14 @@ http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/P
             rdfs:range :Calle ;
             rdfs:comment "Calle asociada a un CicloCarril."@es ;
             rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
+esadm:municipio rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> ;
+                rdfs:range esadm:Municipio ;
+                rdfs:comment "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa."@es ;
+                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
 
 
 #################################################################
@@ -133,7 +132,10 @@ En caso de que no haya ciclocarril, el valor será 0."""@es ;
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
 esadm:Municipio rdf:type owl:Class ;
-                rdfs:subClassOf <http://vocab.ciudadesabiertas.es/def/calle-bici/ciclo-carril#CicloCarril> .
+                rdfs:comment "Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do"@es ;
+                rdfs:isDefinedBy """http://purl.org/derecho/vocabulario
+http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio
+http://www.ign.es/ign/resources/acercaDe/tablon/ModeloDireccionesAGE.pdf‎""" .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via

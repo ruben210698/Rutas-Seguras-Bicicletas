@@ -34,6 +34,18 @@ skos:definition rdf:type owl:AnnotationProperty .
 #    Datatypes
 #################################################################
 
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+esadm:Municipio rdf:type rdfs:Datatype .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia
+escjr:tipoVia rdf:type rdfs:Datatype .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via
+escjr:via rdf:type rdfs:Datatype .
+
+
 ###  http://www.geonames.org/ontology#officialName
 <http://www.geonames.org/ontology#officialName> rdf:type rdfs:Datatype .
 
@@ -113,10 +125,17 @@ Esta definición esta basada en datos aproximados proporcionados por mapas y otr
           rdfs:domain :CalleTranquila ;
           rdfs:range skos:Concept ;
           rdfs:comment """﻿Identificador del tipo de uso que puede tener la calle. Se han definido 2 clases para ello:
-http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLE
-http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/PEATONAL"""@es ;
+http://vocab.ciudadesabiertas.es/recurso/calle-bici/tipoUso/CICLOCALLE
+http://vocab.ciudadesabiertas.es/recurso/calle-bici/tipoUso/PEATONAL"""@es ;
           rdfs:isDefinedBy <﻿http://vocab.ciudadesabiertas.es/def/calle-bici> ;
           rdfs:label "Tipo de uso dado a la via."@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
+esadm:municipio rdf:type owl:ObjectProperty ;
+                rdfs:range esadm:Municipio ;
+                rdfs:comment "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa."@es ;
+                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia
@@ -187,8 +206,7 @@ Es propiedad de CalleTranquila y no de calle porque cabe la posibilidad de que n
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
-esadm:Municipio rdf:type owl:Class ;
-                rdfs:subClassOf :CalleTranquila .
+esadm:Municipio rdf:type owl:Class .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via
@@ -206,6 +224,20 @@ skos:Concept rdf:type owl:Class ;
 #################################################################
 #    Annotations
 #################################################################
+
+esadm:Municipio rdfs:comment "Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do"@es ;
+                rdfs:isDefinedBy """http://purl.org/derecho/vocabulario
+http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio
+http://www.ign.es/ign/resources/acercaDe/tablon/ModeloDireccionesAGE.pdf‎""" .
+
+
+escjr:tipoVia rdfs:comment """Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via. 
+Por ejemplo, estas serán las URIs correspondientes a calles y plazas
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"""@es ;
+              rdfs:label "Tipo de Via"@es ;
+              rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+
 
 <http://www.geonames.org/ontology#officialName> rdfs:isDefinedBy <﻿http://www.geonames.org/ontology> ;
                                                 rdfs:label "Nombre de la via en el idioma oficial local."@es .
