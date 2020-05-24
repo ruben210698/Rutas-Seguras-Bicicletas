@@ -1,0 +1,736 @@
+@prefix geo: <http://www.geonames.org/ontology> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cl-ciclo: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/ciclo-carril/> .
+
+
+escjr:560600 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "298,75623300200"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "299"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Palos de la Frontera" .
+
+escjr:158600 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "193,85804659900"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "194"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Cava Alta" .
+
+escjr:596300 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "503,99345505900"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "504"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Pintor Rosales" .
+
+escjr:523800 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "425,29511490100"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "554,43685686100"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "425"^^<http://www.w3.org/2001/XMLSchema#int>, "554"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "P? Moret" .
+
+escjr:449000 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "314,36302313900"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "314"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Luisa Fernanda" .
+
+escjr:290400 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "369,01443931100"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "369"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Felipe IV" .
+
+escjr:489700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "1189,53997440000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "1190"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "MartÝn de los Heros" .
+
+escjr:273600 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "244,32468011400"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "244"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Pza. Espa±a" .
+
+escjr:610000 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "1338,33235540000"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "1444,15708861000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "1338"^^<http://www.w3.org/2001/XMLSchema#int>, "1444"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Princesa" .
+
+escjr:623700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "446,56058226000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "447"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Quintana" .
+
+escjr:710500 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "164,23510849000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "164"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Serrano Jover" .
+
+escjr:661700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "987,32092673200"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "988,43260161800"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "987"^^<http://www.w3.org/2001/XMLSchema#int>, "988"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "San Bernardo" .
+
+escjr:467700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "319,46922086300"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "319"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Manuela Malasa±a" .
+
+escjr:694000 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "711,04956738600"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "711"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Sta. Cruz de Marcenado" .
+
+escjr:308800 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "222,01697924100"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "230,17675309100"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "222"^^<http://www.w3.org/2001/XMLSchema#int>, "230"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Francisco de Rojas" .
+
+escjr:500000 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "133,50477174500"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "327,44984617400"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "134"^^<http://www.w3.org/2001/XMLSchema#int>, "327"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "MejÝa Lequerica" .
+
+escjr:295400 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "290,83343565200"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "69,55349268290"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "291"^^<http://www.w3.org/2001/XMLSchema#int>, "70"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Fernado VI", "Fernando VI" .
+
+escjr:91900 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "271,56289930300"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "277,19216473200"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "272"^^<http://www.w3.org/2001/XMLSchema#int>, "277"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Bßrbara de Braganza" .
+
+escjr:609000 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "269,97870488200"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "270"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Prim" .
+
+escjr:81800 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "326,15807702100"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "326"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Augusto Figueroa" .
+
+escjr:656500 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "217,03230731600"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "217"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Salud" .
+
+escjr:678100 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "134,87476280000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "135"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "San MartÝn" .
+
+escjr:112100 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "142,35791072900"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "142"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Bordadores" .
+
+escjr:274000 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "185,20375611100"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "185"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Esparteros" .
+
+escjr:342500 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "128,13869791600"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "128"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Grafal" .
+
+escjr:743600 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "688,23131394500"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "692,82339937700"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "688"^^<http://www.w3.org/2001/XMLSchema#int>, "693"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Toledo" .
+
+escjr:262000 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "440,93005567100"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "451,58495333800"^^<http://www.w3.org/2001/XMLSchema#double>, "722,47721250300"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "441"^^<http://www.w3.org/2001/XMLSchema#int>, "452"^^<http://www.w3.org/2001/XMLSchema#int>,
+    "722"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Embajadores" .
+
+escjr:486400 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "267,80661501500"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "268"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "MarquÚs de Riscal" .
+
+escjr:139000 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "346,41279707800"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "346"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Caracas" .
+
+escjr:461900 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "228,73377437100"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "229"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Manuel Cortina" .
+
+escjr:31400 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "644,07388244600"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "654,36887478100"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "644"^^<http://www.w3.org/2001/XMLSchema#int>, "654"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Almagro" .
+
+escjr:365400 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "940,96916987500"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "941"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Hortaleza" .
+
+escjr:444200 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "480,92489184100"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "488,89959646800"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "481"^^<http://www.w3.org/2001/XMLSchema#int>, "489"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Luchana" .
+
+escjr:256500 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "746,23324291400"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "747,26989954900"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "746"^^<http://www.w3.org/2001/XMLSchema#int>, "747"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Eduardo Dato" .
+
+escjr:697175 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "850,14369508600"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "850"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Sta. MarÝa de la Cabeza" .
+
+escjr:234600 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "693,99411438000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "694"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Paseo de las Delicias" .
+
+escjr:45400 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "479,55141192600"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "480"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Ancora" .
+
+escjr:501700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "978,39089387800"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "978"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Méndez Álvaro" .
+
+escjr:673100 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "357,86375828900"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "358"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "C¬ de San Jer¾nimo" .
+
+escjr:153500 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "1079,94843012000"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "829,89944693400"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "1080"^^<http://www.w3.org/2001/XMLSchema#int>, "830"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "P? Castellana" .
+
+escjr:27500 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "1337,96928989000"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "1352,62459342000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "1338"^^<http://www.w3.org/2001/XMLSchema#int>, "1353"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Alfonso XII" .
+
+escjr:171800 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "1181,35506352000"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "1273,70795080000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "1181"^^<http://www.w3.org/2001/XMLSchema#int>, "1274"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Ciudad de Barcelona" .
+
+escjr:392700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "297,26022782000"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "451,02037128200"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "297"^^<http://www.w3.org/2001/XMLSchema#int>, "451"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Jes·s Aprendiz" .
+
+escjr:439100 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "310,11734600000"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "399,99361196600"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "310"^^<http://www.w3.org/2001/XMLSchema#int>, "400"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Lira" .
+
+escjr:502300 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "2169,10110617000"^^<http://www.w3.org/2001/XMLSchema#double>,
+    "2185,76477451000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "2169"^^<http://www.w3.org/2001/XMLSchema#int>, "2186"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Menéndez Pelayo" .
+
+escjr:610450 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:distMaxExclusBici "1775,12165474000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1802,28361392000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  escjr:longitud "1775"^^<http://www.w3.org/2001/XMLSchema#int>, "1802"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "PrÝncipe de Vergara" .
+
+escjr:529200 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,
+    cl-ciclo:Ciclocarril;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  cl-ciclo:distMaxExclusBici "996,07436258500"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>,
+    <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "995,71894839100"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  escjr:longitud "996"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <http://www.geonames.org/ontology#officialName> "Narvßez" .
+
+escjr:206100 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1066,64871190000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  escjr:longitud "1067"^^<http://www.w3.org/2001/XMLSchema#int>, "1070"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1069,53785071000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  <http://www.geonames.org/ontology#officialName> "Conde de Pe±alver" .
+
+escjr:405300 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  escjr:longitud "1587"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1586,77976118000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Jose Ortega y Gasset";
+  escjr:longitud "1582"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1582,17005478000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:310200 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Francisco Silvela";
+  escjr:longitud "1608"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1607,68640899000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Francisco Silvela";
+  escjr:longitud "1614"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1613,95567824000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:241300 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Doctor Esquerdo";
+  escjr:longitud "3055"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "3054,85107905000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Doctor Esquerdo";
+  escjr:longitud "3042"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "3041,68123908000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:341900 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Goya";
+  escjr:longitud "1795"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1794,55779169000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Goya";
+  escjr:longitud "1793"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1792,90263043000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:18900 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Alcalß";
+  escjr:longitud "1346"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1346,26265061000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Alcalß";
+  escjr:longitud "1371"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "1370,99166437000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:352700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Guzmßn El Bueno";
+  escjr:longitud "787"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "786,98990482800"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:343000 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Granada";
+  escjr:longitud "702"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "701,76168596300"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:81600 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Atocha";
+  escjr:longitud "316"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "315,50262046900"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Atocha";
+  escjr:longitud "671"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "670,55119080900"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:768800 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Vallehermoso";
+  escjr:longitud "959"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "959,46535179500"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:153500 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Paseo Castellana";
+  escjr:longitud "3464"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Paseo Castellana";
+  escjr:longitud "3426"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:610450 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "PrÝncipe de Vergara";
+  escjr:longitud "3163"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:710300 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Serrano";
+  escjr:longitud "829"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Serrano";
+  escjr:longitud "1331"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:395300 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Joaquin Costa";
+  escjr:longitud "1222"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:768800 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Vallehermoso";
+  escjr:longitud "218"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:699700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Santander";
+  escjr:longitud "402"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:330200 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Gral Iba±ez de Ibero";
+  escjr:longitud "341"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:352700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Guzman el Bueno";
+  escjr:longitud "823"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:114600 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Bravo Murillo";
+  escjr:longitud "2596"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:311500 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "San Bernardino Sahag·n";
+  escjr:longitud "486"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:494900 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Mateo Inurria";
+  escjr:longitud "236"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true;
+  a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Mateo Inurria";
+  escjr:longitud "1013"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:599100 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "PlaterÝas";
+  escjr:longitud "186"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:661700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "San Bernardo";
+  escjr:longitud "452"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:249300 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Donoso Cortés";
+  escjr:longitud "1163"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:293500 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Fernßndez de los Rios";
+  escjr:longitud "1191"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:114600 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Bravo Murillo";
+  escjr:longitud "262"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:331100 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Gral Martinez Campos";
+  escjr:longitud "1276"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:114600 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Bravo Murillo";
+  escjr:longitud "1190"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:694525 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Sta Engracia";
+  escjr:longitud "1689"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:328400 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Gral ?lvarez de Castro";
+  escjr:longitud "369"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:512200 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Modesto Lafuente";
+  escjr:longitud "1276"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
+
+escjr:34700 a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+  <http://www.geonames.org/ontology#officialName> "Alonso Cano";
+  escjr:longitud "1278"^^<http://www.w3.org/2001/XMLSchema#int>;
+  cl-ciclo:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+  a cl-ciclo:Ciclocarril;
+  cl-ciclo:distMaxExclusBici "0,00000000000"^^<http://www.w3.org/2001/XMLSchema#double>;
+  cl-ciclo:carrilExclusBici true .
