@@ -6,24 +6,16 @@
 \begin{flushleft}
 \underline{\textbf{IRI:}}
 
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#Accidente}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#Accidente}
 \newline
 
-Siniestro ocurrido con implicación de bicicletas.
+Siniestro ocurrido en la via pública con implicación de algún vehíclo. El recurso se construirá a partir de su número de expediente.
 \newline
 
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
 
-
-\underline{\textbf{En dominio de:}}
-\newline PersonaAfectada, \hspace{2em} LugarAccidente,	\hspace{2em}meteorología,
-\newline lesividad,	\hspace{2em}tipoVehiculo,	\hspace{2em}tipoAccidente,
-\newline numeroExpediente
-	
-\underline{\textbf{Tiene Superclases:}}
-\newline fecha, \hspace{2em} time
 
 
 
@@ -36,79 +28,20 @@ Siniestro ocurrido con implicación de bicicletas.
 \begin{flushleft}
 \underline{\textbf{IRI:}}
 
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#PersonaAfectada}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#PersonaAfectada}
 \newline
 
 La persona perjudicada por el accidente de tráfico.
 \newline
 
 \underline{\textbf{Definida por:}}
-
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
 \newline
-
-\underline{\textbf{Subclase de:}}
-\newline Accidente
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
-
-\underline{\textbf{En dominio de:}}
-\newline tipoPersonaAfectada, \hspace{2em} gender, \hspace{2em} typicalAgeRange
 
 \end{flushleft}
 \end{mybox}
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-\begin{mybox}{LugarAccidente}
-\begin{flushleft}
-\underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#LugarAccidente}
-\newline
-
-El momento en el que ocurrió el siniestro.
-\newline
-
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
-\newline
-
-\underline{\textbf{Subclase de:}}
-\newline Accidente
-\newline
-
-\underline{\textbf{En dominio de:}}
-\newline esCruce, \hspace{2em} municipio, \hspace{2em} Calle
-
-\end{flushleft}
-\end{mybox}
-%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-\begin{mybox}{Calle}
-\begin{flushleft}
-\underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#Calle}
-\newline
-
-Representación de una via de una ciudad.
-\newline
-
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
-\newline
-
-\underline{\textbf{Tiene subclase:}}
-\newline tipoVia,\hspace{2em} Via,\hspace{2em} portal
-\newline 
-
-\underline{\textbf{Tiene Superclases:}}
-\newline LugarAccidente \hspace{2em} nombre oficial
-
-\end{flushleft}
-\end{mybox}
-
-%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 
 \begin{mybox}{Portal}
@@ -121,13 +54,10 @@ Ha sido definido por la plataforma ciudadesabiertas \cite{datosabiertos_portal}.
 Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]
 \newline
 
-\underline{\textbf{Definida por:}}
+\underline{\textbf{Definida por:}}\newline
 \url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero}
 \newline
 
-\underline{\textbf{Tiene Superclases:}}
-	LugarAccidente
-\newline
 
 \end{flushleft}
 \end{mybox}
@@ -151,11 +81,7 @@ Un Municipio es el ente local definido en el artículo 140 de la Constitución e
 \newline \url{http://www.ign.es/ign/resources/acercaDe/tablon/ModeloDireccionesAGE}
 \newline
 
-\underline{\textbf{Esta en rango de:}}
-\newline municipio
-
-%\underline{\textbf{Tiene Superclases:}}
-%\newline CicloCarril
+\underline{\textbf{Esta en rango de:}} municipio
 
 
 
@@ -179,14 +105,10 @@ Vía de comunicación construida para la circulación. En su definición según 
 Representación numérica de la misma.
 \newline
 
-\underline{\textbf{Definida por:}}
+\underline{\textbf{Definida por:}}\newline
 \url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero}
 \newline
 
-\underline{\textbf{Tiene Superclases:}}
-\newline Calle
-
-
 
 
 
@@ -197,27 +119,32 @@ Representación numérica de la misma.
 
 
 
-\begin{mybox}{numeroExpediente}
+
+\begin{mybox}{Gender}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#numeroExpediente}
+\url{https://schema.org/gender}
 \newline
 
-El identificador del siniestro que proporciona el ayuntamiento.
+Género de la persona afectada.
+\\Seguirá el formato definido por Schema.org
+\\Se utilizarán las siguientes definidas en la clase:
+\\http://schema.org/Male
+\\http://schema.org/Female
+\\http://schema.org/Mixed
 \newline
 
-\underline{\textbf{Definida por:}}
-\newline \url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\underline{\textbf{Definida por:}}\newline
+\url{https://schema.org/gender}
 \newline
 
-\underline{\textbf{Tiene Superclases:}}
-\newline Accidente
-\newline
+
 
 
 \end{flushleft}
 \end{mybox}
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

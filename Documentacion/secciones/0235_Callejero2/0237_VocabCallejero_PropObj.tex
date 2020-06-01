@@ -7,39 +7,6 @@
 
 
 
-
-\begin{mybox}{municipio}
-\begin{flushleft}
-\underline{\textbf{IRI:}}
-\url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio}
-\newline
-
-Municipio al que pertenece un fenómeno geográfico o una entidad administrativa.
-\newline
-
-\underline{\textbf{Definida por:}}
-\url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio}
-\newline
-
-\underline{\textbf{Dominio:}}
-		CicloCarril
-\newline
-
-\underline{\textbf{Rango:}}
-		Municipio
-
-\end{flushleft}
-\end{mybox}
-
-
-
-%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
 \begin{mybox}{tipoUso}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
@@ -52,16 +19,52 @@ Identificador del tipo de uso que puede tener la calle. Se han definido 2 clases
 \newline
 
 
+\underline{\textbf{Definida por:}}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero}
+\newline
+
+\underline{\textbf{Dominio:}} Via
+\newline
+
+\underline{\textbf{Rango:}}
+	concept
+\newline
+
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+\begin{mybox}{dobleSentido}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#dobleSentido}
+\newline
+
+Doble sentido o sentido único de una calle.
+Puede tomar los siguientes valores definidos en datos.ign.es \cite{datosIgn_calzada}:
+%\newline 1: Calle de doble sentido.
+%\newline 0: Calle de sentido único.
+%\newline { A la espera de conocer su significado oficial, basado en datos aproximados }
+\newline \url{http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/doble-sentido/SENTIDO-UNICO}
+\newline \url{http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/doble-sentido/DOBLE-SENTIDO}
+\newline
+
 \underline{\textbf{Definida por:}}\newline
 \url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero}
 \newline
 
 \underline{\textbf{Dominio:}}
-	 Via
+		Via
+\newline
 
 \underline{\textbf{Rango:}}
-		concept
-
+ concept
+ \newline
 
 \end{flushleft}
 \end{mybox}

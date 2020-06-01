@@ -9,22 +9,21 @@
 \begin{mybox}{fecha}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#fecha}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#fecha}
 \newline
 
-Fecha en la que ocurre el siniestro.
+Fecha en la que ocurre el siniestro. Dia, mes y año, sin incluir la hora del accidente.
 \newline
 
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
 
-\underline{\textbf{Dominio:}}
-\newline Accidente
+\underline{\textbf{Dominio:}} Accidente
 \newline
 
-\underline{\textbf{Rango:}} 
-\newline xsd:date
+\underline{\textbf{Rango:}}  xsd:date
+\newline
 
 \end{flushleft}
 \end{mybox}
@@ -35,22 +34,21 @@ Fecha en la que ocurre el siniestro.
 \begin{mybox}{hora}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#hora}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#hora}
 \newline
 
 Hora en la que ocurre el siniestro.
 \newline
 
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
 
-\underline{\textbf{Dominio:}} 
-\newline Accidente
+\underline{\textbf{Dominio:}}  Accidente
 \newline
 
-\underline{\textbf{Rango:}} 
-\newline xsd:time
+\underline{\textbf{Rango:}}  xsd:time
+\newline
 
 \end{flushleft}
 \end{mybox}
@@ -58,25 +56,26 @@ Hora en la que ocurre el siniestro.
 
 
 
-\begin{mybox}{nombre oficial}
+\begin{mybox}{officialName}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
 \url{http://www.geonames.org/ontology#officialName}
 \newline
 
-Definido en el callejero de DatosAbiertos \cite{ciudadesbiertas_callejero}.
-Un nombre en el idioma oficial local.
+Definición reutilizada del Callejero de DatosAbiertos \cite{ciudadesbiertas_callejero}.
+\\Un nombre en el idioma oficial local.
 \newline
 
 
-\underline{\textbf{Definida por:}}
+\underline{\textbf{Definida por:}}\newline
 \url{http://www.geonames.org/ontology}
 \newline
 
-\underline{\textbf{Dominio:}}
-	Calle
+\underline{\textbf{Dominio:}}	Via
 \newline
 
+\underline{\textbf{Rango:}}  xsd:string
+\newline
 
 \end{flushleft}
 \end{mybox}
@@ -93,24 +92,25 @@ Un nombre en el idioma oficial local.
 
 Rango de edad en el que se encuentra la persona afectada.
 \newline Seguirá el siguiente formato definido por Schema.org: 
-\newline  \textcolor{red}{ $<$span property="typicalAgeRange"$>$10-12</span$>$ } \cite{schema_typicalAgeRange}
+\newline  %\textcolor{red}{ 
+$<$span property="typicalAgeRange"$>$10-12</span$>$  \cite{schema_typicalAgeRange}
 \newline
 
-\underline{\textbf{Definida por:}}
+\underline{\textbf{Definida por:}}\newline
 \url{https://schema.org/typicalAgeRange}
 \newline
 
-\underline{\textbf{Dominio:}} 
-\newline PersonaAfectada
+\underline{\textbf{Dominio:}}  PersonaAfectada
 \newline
 
-\underline{\textbf{Rango:}}
-\newline xsd:string
+\underline{\textbf{Rango:}} xsd:string
 \newline
 
 \end{flushleft}
 \end{mybox}
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
@@ -122,22 +122,22 @@ Rango de edad en el que se encuentra la persona afectada.
 \begin{mybox}{enCruce}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#en-cruce}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#enCruce}
 \newline
 
 Si el accidente ocurrió en un cruce entre 2 o más vías.
+\\Está representado como un integer ya que puede ser un cruce de múltiples calles. En caso de ser un valor booleano solo podria representarse la intersección entre calles. Esta propiedad representa el numero de calles asociadas. En caso de que no fuese cruce se le asignaria el valor 0, en los casos en los que si se asignaria 2, 3 o números sucesivos dependiendo del numero de calles de la intersección.
 \newline
 
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
 
-\underline{\textbf{Dominio:}} 
-	LugarAccidente
+\underline{\textbf{Dominio:}} 	Accidente
 \newline
 
-\underline{\textbf{Rango:}}
-	xsd:boolean
+\underline{\textbf{Rango:}} 	xsd:integer
+\newline
 
 \end{flushleft}
 \end{mybox}
@@ -148,6 +148,63 @@ Si el accidente ocurrió en un cruce entre 2 o más vías.
 
 
 
+
+
+\begin{mybox}{identifier}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://purl.org/dc/terms/identifier}
+\newline
+
+An unambiguous reference to the resource within a given context.
+\\Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs \cite{dc_identifier}.
+\newline
+
+\underline{\textbf{Definida por:}}\newline
+\url{http://purl.org/dc/elements}
+\newline
+
+\underline{\textbf{Dominio:}} 	Accidente
+\newline
+
+\underline{\textbf{Rango:}}\newline
+	http://www.w3.org/2000/01/rdf-schema\#Literal
+\newline
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+\begin{mybox}{codigoINE}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE}
+\newline
+
+Indicador de si las bicicletas disponen o no de un carril propio para su circulación.
+\newline
+
+
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio}
+\newline
+
+\underline{\textbf{Dominio:}}
+	Municipio
+\newline
+
+\underline{\textbf{Rango:}}
+	xsd:integer
+\newline
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

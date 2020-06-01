@@ -8,18 +8,18 @@
 \begin{mybox}{longitud}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#longitud}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#longitud}
 \newline
 
-Longitud de la calle descrita. Esta propiedad está referida a la calle que contiene un ciclocarril (calle completa). La longitud del ciclocarril estará representada por la propiedad distMaxExlusBici.
+Longitud de la calle descrita. Esta propiedad está referida a la via que contiene un ciclocarril (calle completa).
 \newline
 
-\underline{\textbf{Definida por:}}
-\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril}
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero}
 \newline
 
 \underline{\textbf{Dominio:}}
-	Calle
+	Via
 \newline
 
 \underline{\textbf{Rango:}}
@@ -43,7 +43,7 @@ En caso de que no haya ciclocarril, el valor será 0.
 \newline
 
 
-\underline{\textbf{Definida por:}}
+\underline{\textbf{Definida por:}}\newline
 \url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril}
 \newline
 
@@ -61,7 +61,7 @@ En caso de que no haya ciclocarril, el valor será 0.
 
 
 
-\begin{mybox}{nombre oficial}
+\begin{mybox}{officialName}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
 \url{http://www.geonames.org/ontology#officialName}
@@ -72,12 +72,16 @@ Un nombre en el idioma oficial local.
 \newline
 
 
-\underline{\textbf{Definida por:}}
+\underline{\textbf{Definida por:}}\newline
 \url{http://www.geonames.org/ontology}
 \newline
 
 \underline{\textbf{Dominio:}}
-	Calle
+	Via
+\newline
+
+\underline{\textbf{Rango:}}
+	xsd:string
 \newline
 
 
@@ -100,12 +104,12 @@ Indicador de si las bicicletas disponen o no de un carril propio para su circula
 \newline
 
 
-\underline{\textbf{Definida por:}}
+\underline{\textbf{Definida por:}}\newline
 \url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril}
 \newline
 
 \underline{\textbf{Dominio:}}
-	Calle
+	CicloCarril
 \newline
 
 \underline{\textbf{Rango:}}
@@ -117,6 +121,36 @@ Indicador de si las bicicletas disponen o no de un carril propio para su circula
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+
+
+
+
+\begin{mybox}{codigoINE}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE}
+\newline
+
+Indicador de si las bicicletas disponen o no de un carril propio para su circulación.
+\newline
+
+
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio}
+\newline
+
+\underline{\textbf{Dominio:}}
+	Municipio
+\newline
+
+\underline{\textbf{Rango:}}
+	xsd:integer
+\newline
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

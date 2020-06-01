@@ -1,4 +1,4 @@
-\subsection{Propiedades de objeto}
+\subsection{Propiedades de datos}
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -7,48 +7,13 @@
 
 
 
-
-\begin{mybox}{municipio}
+\begin{mybox}{esCalleTranquila}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#esCalleTranquila}
 \newline
 
-Municipio al que pertenece un fenómeno geográfico o una entidad administrativa.
-\newline
-
-\underline{\textbf{Definida por:}}
-\url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio}
-\newline
-
-\underline{\textbf{Dominio:}}
-		CicloCarril
-\newline
-
-\underline{\textbf{Rango:}}
-		Municipio
-
-\end{flushleft}
-\end{mybox}
-
-
-
-%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-\begin{mybox}{tipoUso}
-\begin{flushleft}
-\underline{\textbf{IRI:}}
-\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoUso}
-\newline
-
-Identificador del tipo de uso que puede tener la calle. Se han definido 2 clases para ello:
-\newline -	\url{http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLE}
-\newline -	 \url{http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/PEATONAL}
+Propiedad que indica si una via es calle tranquila o no para bicicletas. Vias con poco tráfico, mucha visibilidad o con mucho porcentaje de accidentes pueden ser algunos de los criterios seguidos para esta valoración.
 \newline
 
 
@@ -57,15 +22,44 @@ Identificador del tipo de uso que puede tener la calle. Se han definido 2 clases
 \newline
 
 \underline{\textbf{Dominio:}}
-	 Via
+	Via
+\newline
 
 \underline{\textbf{Rango:}}
-		concept
-
+		xsd:boolean
 
 \end{flushleft}
 \end{mybox}
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+\begin{mybox}{longitud}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#longitud}
+\newline
+
+Longitud de la calle o tramo de la calle descrito. Su unidad de medida es el metro aunque en muchos casos puede venir representado como Shape$\_$leng.
+\newline
+
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero}
+\newline
+
+\underline{\textbf{Dominio:}}
+		Via
+\newline
+
+\underline{\textbf{Rango:}}
+		xsd:double
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 

@@ -7,17 +7,17 @@
 
 
 
-\begin{mybox}{tienePersonaAfectada}
+\begin{mybox}{hasPersonaAfectada}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tienePersonaAfectada}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#hasPersonaAfectada}
 \newline
 
-Persona que se asocia a un accidente.
+Persona que se asocia a un accidente. Esta a su vez puede tener más características como por ejemplo el rol que tuvo (peaton, conductor), edad y género.
 \newline
 
 \underline{\textbf{Definida por:}}
-\newline \url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\newline \url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
 
 \underline{\textbf{Dominio:}} 	
@@ -34,83 +34,25 @@ Persona que se asocia a un accidente.
 
 
 
-\begin{mybox}{tieneLugarAccidente}
+\begin{mybox}{tipoVehiculo}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneLugarAccidente}
-\newline
-
-Lugar de los acontecimientos asociados a un accidente.
-\newline
-
-\underline{\textbf{Definida por:}}
-\newline \url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
-\newline
-
-\underline{\textbf{Dominio:}} 
-\newline Accidente
-\newline
-
-\underline{\textbf{Rango:}} 
-\newline LugarAccidente
-\newline
-
-\end{flushleft}
-\end{mybox}
-%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-\begin{mybox}{tieneCalle}
-\begin{flushleft}
-\underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneCalle}
-\newline
-
-Calle asociada al lugar donde ocurrió el accidente.
-\newline
-
-\underline{\textbf{Definida por:}}
-\newline \url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
-\newline
-
-\underline{\textbf{Dominio:}}
-\newline LugarAccidente
-\newline
-
-\underline{\textbf{Rango:}}
-\newline Calle
-\newline
-
-
-\end{flushleft}
-\end{mybox}
-%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-\begin{mybox}{tieneTipoVehiculo}
-\begin{flushleft}
-\underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneTipoVehiculo}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#tipoVehiculo}
 \newline
 
 Tipo de vehiculo afectado, p.ej. Bicicleta, Bicicleta EPAC (pedaleo asistido). Se han definido los siguientes elementos:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoVehiculo/BICICLETA}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoVehiculo/BICICLETA-EPAC}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-vehiculo/BICICLETA}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-vehiculo/BICICLETA-EPAC}
 \newline
 
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
 
-\underline{\textbf{Dominio:}}
-\newline Accidente
+\underline{\textbf{Dominio:}} Accidente
 \newline
 
-\underline{\textbf{Rango:}}
-\newline concept
+\underline{\textbf{Rango:}} concept
 \newline
 
 \end{flushleft}
@@ -119,59 +61,29 @@ Tipo de vehiculo afectado, p.ej. Bicicleta, Bicicleta EPAC (pedaleo asistido). S
 
 
 
-\begin{mybox}{tieneMeteorologia}
+\begin{mybox}{meteorologia}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneMeteorologia}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#meteorologia}
 \newline
 
 Condiciones ambientales que se dan en el momento del siniestro. Se han definido varios tipos posibles:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/DEPEJADO}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/LLUVIA-DEBIL}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/LLUVIA-INTENSA}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/NUBLADO}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/GRANIZANDO}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/meteorologia/DESCONOCIDO}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/meteorologia/DEPEJADO}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/meteorologia/LLUVIA-DEBIL}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/meteorologia/LLUVIA-INTENSA}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/meteorologia/NUBLADO}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/meteorologia/GRANIZANDO}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/meteorologia/DESCONOCIDO}
 \newline
 
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
 
-\underline{\textbf{Dominio:}} 
-\newline Accidente
+\underline{\textbf{Dominio:}}  Accidente
 \newline
 
-\underline{\textbf{Rango:}}
-\newline concept
-\newline
-
-\end{flushleft}
-\end{mybox}
-%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-\begin{mybox}{tieneNumExpediente}
-\begin{flushleft}
-\underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneNumExpediente}
-\newline
-
-El identificador del siniestro que proporciona el ayuntamiento.
-\newline
-
-\underline{\textbf{Definida por:}}
-\newline \url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
-\newline
-
-\underline{\textbf{Dominio:}} 
-\newline Accidente
-\newline
-
-\underline{\textbf{Rango:}} 
-\newline numeroExpediente
+\underline{\textbf{Rango:}} concept
 \newline
 
 \end{flushleft}
@@ -179,35 +91,32 @@ El identificador del siniestro que proporciona el ayuntamiento.
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
-\begin{mybox}{tieneTipoAcc}
+\begin{mybox}{tipoAccidente}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneTipoAcc}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#tipoAccidente}
 \newline
 
 Tipo de accidente asociado. Se han definido para ello varios tipos posibles:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/COLISION}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/COLISION-DOBLE}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/COLISION-MULTIPLE}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/ALCANCE}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/CHOQUE-NO-VEHICULO}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/ATROPELLO-PEATON}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/VUELCO}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/CAIDA}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/tipoAcc/OTROS}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/COLISION}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/COLISION-DOBLE}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/COLISION-MULTIPLE}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/ALCANCE}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/CHOQUE-NO-VEHICULO}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/ATROPELLO-PEATON}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/VUELCO}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/CAIDA}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/OTROS}
 \newline
 
 \underline{\textbf{Definida por:}}
-\newline \url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\newline \url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
 
-\underline{\textbf{Dominio:}} 
-\newline Accidente
+\underline{\textbf{Dominio:}}  Accidente
 \newline
 
-\underline{\textbf{Rango:}} 
-\newline concept
+\underline{\textbf{Rango:}}  concept
 \newline
 
 \end{flushleft}
@@ -217,10 +126,10 @@ Tipo de accidente asociado. Se han definido para ello varios tipos posibles:
 
 
 
-\begin{mybox}{tieneLesividad}
+\begin{mybox}{lesividad}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneLesividad}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#lesividad}
 \newline
 
 Codigo que indica la gravedad del siniestro para la persona afectada.
@@ -228,36 +137,34 @@ Codigo que indica la gravedad del siniestro para la persona afectada.
 
 Para su uso se han definido los siguientes elementos:
 \newline 01 Atencion en urgencias sin posterior ingreso. - LEVE:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/01}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/01}
 \newline 02 Ingreso inferior o igual a 24 horas - LEVE:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/02}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/02}
 \newline 03 Ingreso superior a 24 horas. - GRAVE:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/03}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/03}
 \newline 04 Fallecido 24 horas - FALLECIDO:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/04}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/04}
 \newline 05 Asistencia sanitaria ambulatoria con posterioridad - LEVE:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/05}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/05}
 \newline 06 Asistencia sanitaria inmediata en centro de salud o mutua - LEVE:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/06}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/06}
 \newline 07 Asistencia sanitaria solo en el lugar del accidente - LEVE:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/07}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/07}
 \newline 14 Sin asistencia sanitaria:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/14}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/14}
 \newline 77 Se desconoce:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/lesividad/77}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/77}
 \newline
 
 
 \underline{\textbf{Definida por:}}
-\newline \url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\newline \url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
 
-\underline{\textbf{Dominio:}} 
-\newline Accidente
+\underline{\textbf{Dominio:}}  Accidente
 \newline
 
-\underline{\textbf{Rango:}}
-\newline concept
+\underline{\textbf{Rango:}} concept
 \newline
 
 \end{flushleft}
@@ -283,16 +190,14 @@ Se utilizarán las siguientes definidas en la clase:
 \newline \url{http://schema.org/Mixed}
 \newline
 
-\underline{\textbf{Definida por:}}
+\underline{\textbf{Definida por:}}\newline
 \url{https://schema.org/gender}
 \newline
 
-\underline{\textbf{Dominio:}}
-\newline PersonaAfectada
+\underline{\textbf{Dominio:}} PersonaAfectada
 \newline
 
-\underline{\textbf{Rango:}}
-\newline genderType \cite{schema_gender_explicacion_rango}
+\underline{\textbf{Rango:}} Gender \cite{schema_gender_explicacion_rango}
 
 \end{flushleft}
 \end{mybox}
@@ -304,29 +209,27 @@ Se utilizarán las siguientes definidas en la clase:
 
 
 
-\begin{mybox}{tieneTipoPersAfect}
+\begin{mybox}{tipoPersAfect}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneTipoPersAfect}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#tipoPersAfect}
 \newline
 
 Persona a la que afecta el accidente. Puede ser Conductor, peaton, testigo o viajero. Se han definido los siguientes elementos:
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/persAfec/CONDUCTOR}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/persAfec/PEATON}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/persAfec/TESTIGO}
-\newline \url{http://vocab.ciudadesabiertas.es/recurso/accidente/accid-bici/persAfec/VIAJERO}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-pers-afect/CONDUCTOR}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-pers-afect/PEATON}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-pers-afect/TESTIGO}
+\newline \url{http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-pers-afect/VIAJERO}
 \newline
 
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
 \newline
 
-\underline{\textbf{Dominio:}}
-\newline PersonaAfectada
+\underline{\textbf{Dominio:}} PersonaAfectada
 \newline
 
-\underline{\textbf{Rango:}}
-\newline concept
+\underline{\textbf{Rango:}} concept
 \newline
 
 \end{flushleft}
@@ -338,31 +241,90 @@ Persona a la que afecta el accidente. Puede ser Conductor, peaton, testigo o via
 
 
 
-\begin{mybox}{tipoVia}
+
+
+
+
+
+
+
+
+\begin{mybox}{portal}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#tipoVia}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal}
 \newline
 
-Se ha reutilizado la definición de tipoVia proporcionada por vocab.linkeddata.es \cite{datoabiertos_tipoVia}.
-Tipo de vía, que será representado mediante la clasificación en SKOS de URI \url{http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via}. Por ejemplo, estas serán las URIs correspondientes a calles y plazas \url{http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL} \url{http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL}
+Numero de la calle donde ha ocurrido el accidente, si procede.
 \newline
 
-\underline{\textbf{Definida por:}}
+\underline{\textbf{Definida por:}}\newline
 \url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero}
 \newline
 
-\underline{\textbf{Dominio:}}
-		Calle
+\underline{\textbf{Dominio:}} Accidente
 \newline
 
-\underline{\textbf{Rango:}}
-		concept
+\underline{\textbf{Rango:}} Portal
+\newline
 
 \end{flushleft}
 \end{mybox}
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+
+
+
+
+
+\begin{mybox}{ocurrioAccidente}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#ocurrioAccidente}
+\newline
+
+Propiedad que permite, a partir de una via, conocer los accidentes que han ocurrido en ella.
+
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
+\newline
+
+\underline{\textbf{Dominio:}} Via
+\newline
+
+\underline{\textbf{Rango:}} Accidente
+\newline
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+\begin{mybox}{ocurreEnVia}
+\begin{flushleft}
+\underline{\textbf{IRI:}}
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente#ocurreEnVia}
+\newline
+
+Propiedad que permite conocer las vias asociadas a un accidente. Puede haber varias en el caso de que haya ocurrido en un cruce.
+
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.ciudadesabiertas.es/def/transporte/accidente}
+\newline
+
+\underline{\textbf{Dominio:}} Accidente
+\newline
+
+\underline{\textbf{Rango:}} Via
+\newline
+
+\end{flushleft}
+\end{mybox}
+%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -374,19 +336,17 @@ Tipo de vía, que será representado mediante la clasificación en SKOS de URI \
 \url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio}
 \newline
 
-Municipio al que pertenece un fenómeno geográfico o una entidad administrativa.
+Municipio al que pertenece un fenómeno geográfico o una entidad administrativa  \cite{datoabiertos_municipio}.
 \newline
 
-\underline{\textbf{Definida por:}}
+\underline{\textbf{Definida por:}}\newline
 \url{http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio}
 \newline
 
-\underline{\textbf{Dominio:}}
-		Accidente
+\underline{\textbf{Dominio:}}		Via
 \newline
 
-\underline{\textbf{Rango:}}
-		Municipio
+\underline{\textbf{Rango:}}		Municipio
 
 \end{flushleft}
 \end{mybox}
@@ -399,67 +359,31 @@ Municipio al que pertenece un fenómeno geográfico o una entidad administrativa
 
 
 
-\begin{mybox}{tieneIdVia}
+
+\begin{mybox}{portal}
 \begin{flushleft}
 \underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tieneIdVia}
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#portal}
 \newline
 
-Identificador de calle asociado.
+Portal asociado a un accidente.
 \newline
 
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
+\underline{\textbf{Definida por:}}\newline
+\url{http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero}
 \newline
 
-\underline{\textbf{Dominio:}}
-		Calle
+\underline{\textbf{Dominio:}}		Accidente
 \newline
 
-\underline{\textbf{Rango:}}
-		Via
-\newline
-
+\underline{\textbf{Rango:}}		Via
 
 \end{flushleft}
 \end{mybox}
+
+
+
 %----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-\begin{mybox}{tienePortal}
-\begin{flushleft}
-\underline{\textbf{IRI:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici#tienePortal}
-\newline
-
-Numero de la calle donde ha ocurrido el accidente, si procede.
-\newline
-
-\underline{\textbf{Definida por:}}
-\url{http://vocab.ciudadesabiertas.es/def/accidente/accid-bici}
-\newline
-
-\underline{\textbf{Dominio:}} 
-	Calle
-\newline
-
-\underline{\textbf{Rango:}} 
-	Portal
-\newline
-
-\end{flushleft}
-\end{mybox}
-%----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
 
 
 
