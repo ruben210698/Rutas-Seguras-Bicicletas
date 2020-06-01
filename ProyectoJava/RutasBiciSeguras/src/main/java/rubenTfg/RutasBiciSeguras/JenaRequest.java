@@ -33,10 +33,9 @@ public class JenaRequest {
         		" PREFIX escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/> " +
         		" SELECT ?name ?longitud ?carrilExclusBici" +
                 " WHERE { " +
-                " escjr:" + idSearch + " a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>,\n" + 
-                "    cl-ciclo:Ciclocarril; " +
+                " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/" + idSearch + "> a escjr:Via;" + 
                 " <http://www.geonames.org/ontology#officialName> ?name ; " +
-           //     " escjr:longitud ?longitud ; " +
+                " escjr:longitud ?longitud ; " +
                 " }";
         
         Query query = QueryFactory.create(queryTxt);
@@ -47,13 +46,24 @@ public class JenaRequest {
         while (results.hasNext()) {
             QuerySolution binding = results.nextSolution();
             String name = binding.getLiteral("name").getString();
+            double longitud = Double.parseDouble(binding.getLiteral("longitud").getString());
             
             System.out.println("---- " + name);
+            System.out.println("---- " + longitud);
+     
             encontrado = true;
         }
         
 		return encontrado;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public static boolean esCalleTranquila(int idVia) {
 		String fileCiclo = "/Users/ruben210698/Documents/Universidad/TFG/Rutas-Seguras-Bicicletas/ProyectoJava/RutasBiciSeguras/src/main/java/rubenTfg/RutasBiciSeguras/datasets/callesTranquilas.ttl";
@@ -68,18 +78,13 @@ public class JenaRequest {
         String idSearch = idVia + "";
         
         String queryTxt = 
-        		" PREFIX cl-ciclo: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/ciclo-carril/> " + 
         		" PREFIX escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/> " +
-        		" PREFIX cl-tranquila: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/calle-tranquila/>" +
-        		" PREFIX btn100: <https://datos.ign.es/def/btn100/>" +
-        		" PREFIX geo: <http://www.geonames.org/ontology/>" +
-        		
-        		" SELECT ?name ?longitud ?calzada" +
+        		" PREFIX geo: <http://www.geonames.org/ontology/> " +
+        		" SELECT ?name ?longitud" +
                 " WHERE { " +
-                " escjr:" + idSearch + " a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;" +
+                " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/" + idSearch + "> a escjr:Via;" +
                 " geo:officialName ?name ; " +
-                " btn100:calzada ?calzada" +
-           //     " escjr:longitud ?longitud ; " +
+                " escjr:longitud ?longitud ; " +
                 " }";
         
         Query query = QueryFactory.create(queryTxt);
@@ -90,8 +95,10 @@ public class JenaRequest {
         while (results.hasNext()) {
             QuerySolution binding = results.nextSolution();
             String name = binding.getLiteral("name").getString();
+            double longitud = Double.parseDouble(binding.getLiteral("longitud").getString());
             
             System.out.println("---- " + name);
+            System.out.println("---- " + longitud);
             encontrado = true;
         }
         
@@ -104,6 +111,90 @@ public class JenaRequest {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	public static boolean haHabidoAccidente(int idVia) {
+		String fileCiclo = "/Users/ruben210698/Documents/Universidad/TFG/Rutas-Seguras-Bicicletas/ProyectoJava/RutasBiciSeguras/src/main/java/rubenTfg/RutasBiciSeguras/datasets/AccidentesBicicletas.ttl";
+        Model modelCiclo = ModelFactory.createDefaultModel();
+        InputStream inCiclo = FileManager.get().open(fileCiclo);
+		
+        if (inCiclo == null)
+        	throw new IllegalArgumentException("File: " + fileCiclo + " not found");
+		
+        modelCiclo.read("/Users/ruben210698/Documents/Universidad/TFG/Rutas-Seguras-Bicicletas/ProyectoJava/RutasBiciSeguras/src/main/java/rubenTfg/RutasBiciSeguras/datasets/AccidentesBicicletas.ttl");
+
+        String idSearch = idVia + "";
+        
+        String queryTxt = 
+        		" PREFIX accid: <http://vocab.ciudadesabiertas.es/def/transporte/accidente/> " +
+        		" PREFIX geo: <http://www.geonames.org/ontology> " +
+        		" SELECT ?Accidente ?nombreCalle" +
+                " WHERE { " +
+                " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/" + idSearch + "> a "+
+                	 "<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;"+
+                " accid:ocurrioAccidente ?Accidente ;" +
+                " <http://www.geonames.org/ontology/officialName> ?nombreCalle ; " +
+                " }";
+        
+        
+        
+        Query query = QueryFactory.create(queryTxt);
+        QueryExecution qexec = QueryExecutionFactory.create(query, modelCiclo);
+        ResultSet results = qexec.execSelect();
+        
+        ArrayList<String> listUrisAccidentes = new ArrayList<String>();
+        boolean encontrado = false;
+        while (results.hasNext()) {
+            QuerySolution binding = results.nextSolution();
+            String uriAccid = binding.getResource("Accidente").getURI();
+            if(!listUrisAccidentes.isEmpty() && listUrisAccidentes.contains(uriAccid) ) //Evitar duplicados de accidentes
+            	continue;
+        	listUrisAccidentes.add(uriAccid);
+        	
+            String name = binding.getLiteral("nombreCalle").getString();
+            System.out.println("---- " + name);
+            System.out.println("---- " + uriAccid);
+            String queryTxt2 = 
+            		" PREFIX accid: <http://vocab.ciudadesabiertas.es/def/transporte/accidente/> " +
+            		" PREFIX geo: <http://www.geonames.org/ontology> " +
+            		" PREFIX geosparql: <http://www.opengis.net/ont/geosparql#> " +
+            		" SELECT ?Accidente ?hour ?lesividad ?persona_afectada" +
+                    " WHERE { " +
+                	" <" + uriAccid + "> a accid:Accidente;" +
+                	" accid:lesividad ?lesividad ;"+
+                	" accid:hour ?hour; "+
+                	//" accid:hasPersAfectAccid ?persona_afectada; "+
+                    " }";
+            Query query2 = QueryFactory.create(queryTxt2);
+            QueryExecution qexec2 = QueryExecutionFactory.create(query2, modelCiclo);
+            ResultSet results2 = qexec2.execSelect();
+            
+            
+            while (results2.hasNext()) {
+            
+                QuerySolution binding2 = results2.nextSolution();
+                String lesividad = binding2.getResource("lesividad").getURI();
+           //     String uriPersAfect = binding2.getResource("persona_afectada").getURI();
+                String hour = binding2.getLiteral("hour").getString();
+
+                System.out.println("---- " + lesividad);
+          //      System.out.println("---- " + uriPersAfect);
+                System.out.println("---- " + hour);
+                
+            }
+            encontrado = true;
+        }
+        
+		return encontrado;
+	}
+	
+	
+	
 
 	
 	
@@ -112,9 +203,10 @@ public class JenaRequest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int idVia = 266300;
-		System.out.println(esCicloCarril(idVia));
-		System.out.println(esCalleTranquila(idVia));
+		int idVia = 153800;//266300;
+	//	System.out.println(esCicloCarril(idVia));
+	//	System.out.println(esCalleTranquila(idVia));
+		System.out.println(haHabidoAccidente(idVia));
 
 	}
 
