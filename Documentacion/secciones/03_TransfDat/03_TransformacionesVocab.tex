@@ -1,0 +1,21 @@
+\chapter{Transformaciones en los Datasets}
+
+Partiendo de los datos proporcionados por el ayuntamiento de Madrid y con el fin de plasmar las estructuras antes definidas, se han realizados ciertos cambios con respecto al dataset original. Campos añadidos, modificaciones o transformaciones en los ya existentes son algunos de los motivos para realizarlos.
+
+Cabe destacar que antes de hacer cualquier modificación o tratamiento se deben transformar a codificación ISO-8859-1. En los datasets utilizados para este proyecto, obtenidos de la web de datos abiertos del ayuntamiento de Madrid \cite{datosabiertos_ayuntmadrid}, se han observado muchos problemas en torno a su codificación.
+
+Para este proyecto, como ya se ha mencionado anteriormente, se han elegido tres conjunto de datos para evaluar la seguridad de las rutas: Ciclocarriles \cite{datosMadrid_ciclocarriles}, Calles tranquilas \cite{datosMadrid_callesTranquilas} y accidentes de bicicletas \cite{datosMadrid_accidentesDeBicicleta}. Todos ellos proporcionados por el ayuntamiento de Madrid.
+
+Algunas de las propiedades que se han definido en los vocabularios antes mencionados no formaban parte de los datasets originales. Dichos datos se han considerado necesarios para la realización del proyecto y han tenido que ser inferidos de la información ya existente.
+
+En este capítulo se detallarán los procesos que se han seguido para obtener dicha información y que podrían ser utilizados para obtener otras propiedades (como es el caso del tipo de via, necesario para obtener el identificador de via aunque finalmente no ha sido requerido en la aplicación final de este proyecto).
+
+Gran parte de este proceso ha sido la transformación de un lenguaje natural o abreviado utilizado para el nombreado de calles (con elementos como C/, Plza, Glta) , en uno estándar que permita poder relacionarlos con otros datasets y otros registros escritos por otras personas.
+
+Para el caso del dataset de Accidentes el proceso ha sido más complejo ya que hay un mayor uso de abreviaturas y más cantidad de erratas (posiblemente no siga un proceso automático, sino que haya sido obtenido de informes policiales escritos manualmente). Además, muchos de los registros presentes indicaban la existencia de accidentes en cruces de vias, propiedad definida en el vocabulario pero no contemplada en el conjunto de datos original. Por lo tanto, se ha inferido esta propiedad a partir del nombre de la calle y se ha separado en las distintas calles que lo componen.
+
+Cabe destacar que todos los datasets han seguido el mismo tratamiento (excepto en la obtención de los cruces, exclusiva de los accidentes). De esta forma hay una probabilidad mucho más alta de que los distintos elementos de los datasets coincidan entre si y se pueda obtener conocimiento de estos datos inicialmente separados.
+
+En primer lugar, para evitar errores en el tratamiento, se creará una nueva columna para los nombres de las calles. De esta forma se copiarán los nombres originales en esta y se modificarán. Para el cruce entre datasets es preferible utilizar estas nuevos nuevos nombres creados, ya que se han realizado los mismos cambios en todos los conjuntos. En cambio, para su representación de cara al público es preferible el original, ya que al segundo se le habrán eliminado los conectores, estará en mayúsculas y puede que contenga errores. El segundo es más útil para su uso en sistemas informáticos y el primero para su visualización de cara a usuarios.
+
+En esta sección se ha utilizado el dataset del callejero de Madrid \cite{datosmadrid_callejero} debido a que es necesario para obtener el identificador de las vias a partir del nombre de las mismas. Es por ello que aunque no forme parte de la definición de los vocabularios ni se vaya a usar de forma directa en la aplicación final, se realicen transformaciones sobre él. Ha sido necesario corregir varios errores y realizar las mismas transformaciones que a los demás conjuntos de datos, como ya se ha explicado anteriormente, para que haya una mayor coincidencia entre ellos.

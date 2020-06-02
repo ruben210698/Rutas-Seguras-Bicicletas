@@ -1,10 +1,12 @@
-import csv
-import os
-from re import findall
 
 def palablasMalEscritas(nombreCalle = ""):  #Arreglar errores de codificación y abreviaturas
     if(nombreCalle == ""):
         return ""
+    if (nombreCalle.__contains__(")")):
+        nombreCalle = nombreCalle.replace(")", " ) ")
+    if (nombreCalle.__contains__("(")):
+        nombreCalle = nombreCalle.replace("(", " ( ")
+
     nuevaPalabra = ""
     for palabra in nombreCalle.split():
         palabra = palabra.replace(" ", "").upper()
@@ -14,11 +16,13 @@ def palablasMalEscritas(nombreCalle = ""):  #Arreglar errores de codificación y
             palabra = "CAÑADA"
         elif (palabra == "AVDA." or palabra == "AVDA" or palabra == "AV." or palabra == "AV"):
             palabra = "AVENIDA"
+        elif (palabra.__contains__("AV.")):
+            palabra = palabra.replace("AV.", "AVENIDA")
         elif (palabra == "JARDÍN" or palabra == "JARDINES"):
             palabra = "JARDIN"
         elif (palabra == "CUSTA." or palabra == "CUSTA"):
             palabra = "CUESTA"
-        elif (palabra == "POLÍGONO"):
+        elif (palabra == "POLÍGONO" or palabra == "POLIG."):
             palabra = "POLIGONO"
         elif (palabra == "GALERÍA"):
             palabra = "GALERIA"
@@ -28,6 +32,8 @@ def palablasMalEscritas(nombreCalle = ""):  #Arreglar errores de codificación y
             palabra = "PISTA"
         elif (palabra == "CMNO." or palabra == "CMNO"):
             palabra = "CAMINO"
+        elif (palabra == "BULEV."):
+            palabra = "BULEVAR"
         elif (palabra == "RONDA."):
             palabra = "RONDA"
         elif (palabra == "GTA." or palabra == "GTA"):
@@ -36,8 +42,10 @@ def palablasMalEscritas(nombreCalle = ""):  #Arreglar errores de codificación y
             palabra = "CUESTA"
         elif (palabra == "PQUE." or palabra == "PQUE"):
             palabra = "PARQUE"
-        elif (palabra == "CTRA." or palabra == "CTRA"):
+        elif (palabra == "CTRA." or palabra == "CTRA" or palabra == "CRA." or palabra == "CARRET."):
             palabra = "CARRETERA"
+        elif (palabra.__contains__("CARRET.")):
+            palabra.replace("CARRET.", "CARRETERA")
         elif (palabra == "AUTOV." or palabra == "AUTOV"):
             palabra = "AUTOVIA"
         elif (palabra == "CRUCE."):
@@ -60,8 +68,13 @@ def palablasMalEscritas(nombreCalle = ""):  #Arreglar errores de codificación y
             palabra = "GENERAL"
         elif (palabra == "STA." or palabra == "STA"):
             palabra = "SANTA"
-            
-        # Mayoritariamente errores de codificación:
+        elif (palabra == "PTA."):
+            palabra = "PUERTA"
+        elif (palabra == "PALAC."):
+            palabra = "PALACIO"
+        elif (palabra == "METRO."):
+            palabra = "METRO"
+
         elif(palabra.__contains__("Ý")):
             palabra = palabra.replace("Ý", "Í")
         elif (palabra.__contains__("±")):
@@ -81,8 +94,14 @@ def palablasMalEscritas(nombreCalle = ""):  #Arreglar errores de codificación y
             palabra = palabra.replace("QUÚ", "QUÉ")
         elif (palabra == "JES·S"):
             palabra = "JESÚS"
-        elif (findall('KM-(\d)', palabra) != []):  # Palabras con numero como KM0
-            palabra = ""
 
+        #Quitar numeros (posiblemente de portales, los nombres propios son en numeros romanos)
+        elif (findall('[0-9]{1}', palabra) != []):
+            for a in findall('[0-9]{1}', palabra):
+                palabra = palabra.replace(a, '')
+            if(findall('[A-Z, À-ÿ]{3}', palabra) == []):
+                # En el caso de que le acompañen 1 o 2 letras (letras de portal)
+                palabra = ""
         nuevaPalabra = nuevaPalabra + " " + palabra
     return nuevaPalabra
+

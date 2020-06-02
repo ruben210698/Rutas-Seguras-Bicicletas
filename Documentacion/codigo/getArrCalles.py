@@ -1,10 +1,4 @@
-import csv
-import os
-import difflib
-import unicodedata
-
 def getArrCallesRec(nombreDataset = ""):
-
     listaNombres = []
     if (nombreDataset.__contains__('/')):
         n1 = nombreDataset.split().index('/')
@@ -37,3 +31,5 @@ def getArrCalles(nombreDataset = ""):
         else:
             nombre = nombre + " " + elem
     return list3
+
+

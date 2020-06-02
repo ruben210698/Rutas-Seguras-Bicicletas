@@ -1,0 +1,68 @@
+\section{Obtención de valores para propiedades}
+
+En esta segunda sección ya se tienen los nombres de las calles con las palabras sin abreviaturas, erratas, errores de codificación y con los cruces escritos de forma estándar. A partir de este punto se comenzará a refinar esta información para obtener de ella las propiedades necesarias.
+
+Para esta sección se van a detallar las transformaciones y comprobaciones que se han realizado para los cruces, la obtención del tipo de via y obtención de palabras clave (necesarias para la obtención del identificador).
+
+
+
+%-------------------------------------------------------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------------------------------------------------------------
+\subsection{Propiedad esCruce}
+
+Esta propiedad es exclusiva para los accidentes. Como su nombre indica determina si ha ocurrido en una intersección de vias, detallando el número de ellas que lo componen.
+
+Se ha realizado en dos pasos. En el primero se determina si contiene 2 o más vias. Esto se puede saber gracias a las transformaciones anteriores donde se han modificado los nombres para que sigan el formato deseado. Se le asignará el valor 1 en caso de ser así y 0 en caso contrario. Se ha utilizado el código dispuesto en \ref{cod:annadirEsCruceAccidentes}.
+
+\lstinputlisting[style=Python1, label = {cod:annadirEsCruceAccidentes}, caption=Función annadirEsCruceAccidentes]{codigo/annadirEsCruceAccidentes.py}
+
+
+En el segundo paso se analiza el nombre del lugar donde ha ocurrido el accidente y se crea una lista con las distintas calles que lo componen. Posteriormente se crean tantas entradas como vias lo compongan y se les asignan las mismas propiedades (es el mismo accidente con el mismo nñumero de expediente), únicamente se diferenciarán por la via en la que ocurrió (aunque también se conservará el nombre inicial con el cruce). Posteriormente se modificará la propiedad esCruce asignandole el número de calles que componen esa intersección. De esta forma, en caso de necesitar conocer todos los registros que componen ese accidente, se podrá saber el número que buscar. Se ha utilizado el código dispuesto en \ref{cod:separarCucesAccidentes} y \ref{cod:getArrCalles}.
+
+\lstinputlisting[style=Python1, label = {cod:separarCucesAccidentes}, caption=Función separarCucesAccidentes]{codigo/separarCucesAccidentes.py}
+
+\lstinputlisting[style=Python1, label = {cod:getArrCalles}, caption=Función getArrCalles]{codigo/getArrCalles.py}
+
+Para el dataset de accidentes siempre han de ejecutarse estas funciones antes ya que las siguientes parten de una calle única. Por ejemplo en el caso del tipo de via, no se puede obtener el tipo de un cruce, ha de hacerse a partir de la calle única.
+
+
+
+\clearpage
+\subsection{Propiedad tipoVia}
+
+El tipo de via es obtenido de nuevo a partir del nombre de la calle. Como se ha mencionado anteriormente, para el caso de accidentes, se tendrá que utilizar el nombre de la via y no del cruce.
+
+\lstinputlisting[style=Python1, label = {cod:annadirTipoVia}, caption=Función annadirTipoVia]{codigo/annadirTipoVia.py}
+
+En primer lugar se ejecuta la función \ref{cod:annadirTipoVia}. En ella es llamada getTipoVia. Esta segunda únicamente realiza una comprobación sobre el nombre para conocer si contiene las palabras clave: " CALLE", "PASEO", "PLAZA", "GLORIETA", "RONDA", "CAMINO", "PISTA", "ANILLO", "CRUCE", "AUTOVIA", "CARRETERA", "PARQUE", "CUESTA", "CAÑADA", "AVENIDA", "BULEVAR", "JARDIN", "PARTICULAR", "POLIGONO", "GALERIA", "ESCALINATA", "VIA", "PASARELA", "PASAJE", "PUENTE", "COSTANILLA", "COLONIA", "CARRERA", "PLAZUELA", "ACCESO", "POBLADO", "PASADIZO", "TRASERA", "SENDA", "ARROYO", "VALLE", "AEROPUERTO", "PASO$\_$ELEVADO", "SENDA$\_$CICLABLE", "PASAJE",  En el caso de que contenga algunas de ellas, serán asignadas a esta columna. En caso contrario se añadirá un valor vacio.
+
+\clearpage
+\subsection{Propiedad typicalAgeRange}
+
+Esta propiedad ha de seguir un formato definido por schema.org. Dicha representación deberia ser por ejemplo 30-34, en cambio en el dataset original de accidentes viene representado como "DE 30 A 34 AÑOS". Para dicha transformación se ha definido el siguiente código.
+
+\lstinputlisting[style=Python1, label = {cod:getTypicalAgeRangeOk}, caption=Función getTypicalAgeRangeOk]{codigo/getTypicalAgeRangeOk.py}
+
+
+
+
+\clearpage
+\subsection{Palabras Clave}
+
+El paso previo a cruzar los nombres de vias entre datasets será reducirlos a las palabras imprescindibles. Para ello se eliminan espacios, conectores y palabras conflicto. Esto último se compone sobre todo por elementos ya tratados anteriormente como son los tipos de via. Una calle puede tener esa nomenclatura en un conjunto de datos y en otro contener su nombre sin su tipo, es por ello que se elimina para evitar posibles errores.
+
+El código utilizado se detalla a continuación.
+
+\lstinputlisting[style=Python1, label = {cod:annadirPalabrasClave}, caption=Función annadirPalabrasClave]{codigo/annadirPalabrasClave.py}
+
+\lstinputlisting[style=Python1, label = {cod:quitarConectores}, caption=Función quitarConectores]{codigo/quitarConectores.py}
+
+\lstinputlisting[style=Python1, label = {cod:quitarPalabrasConflicto}, caption=Función quitarPalabrasConflicto]{codigo/quitarPalabrasConflicto.py}
+
+\lstinputlisting[style=Python1, label = {cod:quitarTextoEntreParentesis}, caption=Función quitarTextoEntreParentesis]{codigo/quitarTextoEntreParentesis.py}
+
+Como se puede observar no se detectan las palabras comprobando si el nombre las contiene, sino que se busca que estén separadas por espacios para evitar errores, por ejemplo eliminar VIA en "SegoVIA".
+Se elimina el texto entre paréntesis ya que se considera que no forma parte de las palabras esenciales del nombre de la via.
+Parte de las transformaciones necesarias para esto ya fueron realizadas en el capítulo relativo a cambios básicos.
+
+
