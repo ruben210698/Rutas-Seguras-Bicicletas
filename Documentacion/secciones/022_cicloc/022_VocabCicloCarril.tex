@@ -6,10 +6,10 @@ Para el vocabulario asociado con los ciclocarriles para ciclistas se han obtenid
 La organización del conjunto de datos se hará siguiendo el diagrama \ref{fig:diagramaOntologCicloCarr}
 
 \begin{figure}[h]
-	\centering
-		\includegraphics[angle=0, width=0.8\textwidth]{images/diagramaCicloCarril.png}  
-	\caption{Diagrama de Ontología de Ciclocarriles.}
-	\label{fig:diagramaOntologCicloCarr}
+    \centering
+        \includegraphics[angle=0, width=1\textwidth]{images/diagramaCicloCarril.png}
+    \caption{Diagrama de Ontología de Ciclocarriles.}
+    \label{fig:diagramaOntologCicloCarr}
 \end{figure}
 
 
@@ -18,10 +18,10 @@ La organización del conjunto de datos se hará siguiendo el diagrama \ref{fig:d
 
 Para la representación de los datos de ciclocarriles para ciclistas se han definido varias clases y propiedades. Se han reutilizado elementos ya definidos en el vocabulario de Callejero de ciudadesabiertas \cite{ciudadesbiertas_callejero} y de Territorio \cite{datoabiertos_municipio}.\newline
 Se han añadido elementos como el identificador de via y el municipio (que siempre será Madrid).
-El identificador de via se añadirá para cada caso a partir del nombre. Para ello se hará una reducción del nombre de la via a palabras clave, proceso detallado en la sección de Transformaciones de Vocabularios, y se cruzará con el dataset del callejero de Madrid \cite{datosmadrid_callejero}.\newline
-Se ha optado por omitir la propiedad "MinSimpTol" debido a que no aporta valor al conjunto al tener solo 2 valores, 0 para calles sin carril bici y 0.20 para calles que si disponen de él, información que puede inferirse del campo "MaxSimpTol" (renombrada "distMaxExclusBici"), con valor 0 para el primer caso y valor distinto de 0 para el segundo. Para representar esto se ha añadido la propiedad “carrilExclusBici” con valor booleano indicando si dispone de ese carril exclusivo o no.\newline
+El identificador de vía se añadirá para cada caso a partir del nombre. Para ello se hará una reducción del nombre de la via a palabras clave, proceso detallado en la sección de Transformaciones de Vocabularios, y se cruzará con el dataset del callejero de Madrid \cite{datosmadrid_callejero}.\newline
+Se ha optado por omitir la propiedad ``MinSimpTol`` debido a que no aporta valor al conjunto al tener solo 2 valores, 0 para calles sin carril bici y 0.20 para calles que si disponen de él, información que puede inferirse del campo ``MaxSimpTol`` (renombrada ``distMaxExclusBici``), con valor 0 para el primer caso y valor distinto de 0 para el segundo. Para representar esto se ha añadido la propiedad “carrilExclusBici” con valor booleano indicando si dispone de ese carril exclusivo o no.\newline
 La fecha proporcionada por el ayuntamiento se ha omitido debido a que no se sabe con exactitud su significado. En caso de que fuese fecha de creación del ciclocarril se debería añadir en futuras actualizaciones del vocabulario, sin embargo al ser en todos los registros la misma cabe la posibilidad de que sea la fecha de inserción en el dataset, lo cual no aporta información relevante y podría inducir a errores.\newline
-Para este caso el valor de "tipoUso" será siempre CICLOCARRIL.\newline
+Para este caso el valor de ``tipoUso`` será siempre CICLOCARRIL.\newline
 Se han transformado los valores del campo longitud a metros (expresados en kilómetros en los datos de origen) para poder reutilizarlos con más facilidad.
 
 
@@ -29,9 +29,9 @@ Se han transformado los valores del campo longitud a metros (expresados en kiló
 En la siguiente tabla se muestran los Namespaces usados.
 
 \begin{figure}[h]
-	\centering
-		\includegraphics[angle=0, width=0.8\textwidth]{images/tablaIRIsCiclocarril.png}  
-	\caption{Namespaces usados para Ciclocarriles}
+    \centering
+        \includegraphics[angle=0, width=0.8\textwidth]{images/tablaIRIsCiclocarril.png}
+    \caption{Namespaces usados para Ciclocarriles}
 \end{figure}
 
 
@@ -40,10 +40,11 @@ En la siguiente tabla se muestran los Namespaces usados.
 Cabe destacar en este conjunto de datos la ausencia de la propiedad TipoVia. En este caso los nombres de las calles contenían únicamente palabras clave y privaban de la capacidad de obtener este atributo. En cambio si dispone de tipoUso, propiedad que indica si es una calle peatonal o ciclocarril.
 
 
-Debido a la falta de disponibilidad de una leyenda o información proporcionada por el ayuntameinto de Madrid, para este conjunto de datos no se han podido conocer con exactitud el significado de todos sus datos y por tanto algunos como la dirección no han podido añadirse al modelo. En un futuro si se tratase información de otras fuentes o se añadiese una documentación detallada para este dataset, si se podría añadir esa propiedad.
+Debido a la falta de disponibilidad de una leyenda o información proporcionada por el ayuntamiento de Madrid, para este conjunto de datos no se han podido conocer con exactitud el significado de todos sus datos y por tanto algunos como la dirección no han podido añadirse al modelo. En un futuro si se tratase información de otras fuentes o se añadiese una documentación detallada para este dataset, si se podría añadir esa propiedad.
 
 
 % En este caso la fecha no aporta nada por tanto no se pone...
+
 
 
 

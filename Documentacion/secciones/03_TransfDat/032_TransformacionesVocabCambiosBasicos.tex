@@ -2,11 +2,11 @@
 \section{Revisiones de abreviaturas y erratas}
 
 
-En primer lugar, es necesario que todas las palabras que signifiquen lo mismo tengan la misma nomenclatura. Para ello se ha observado el contenido de los datasets y se realizado un listado de las distintas abreviaturas que pueden ser utilizadas, las distintas formas de nombrado y las ciertos elementos con significados similares que puedan ser nombrados de igual forma para un enlazado más eficaz.
+En primer lugar, es necesario que todas las palabras que signifiquen lo mismo tengan la misma nomenclatura. Para ello se ha observado el contenido de los datasets y se realizado un listado de las distintas abreviaturas que pueden ser utilizadas, las distintas formas de nombrado y ciertos elementos con significados similares que puedan ser nombrados de igual forma para un enlazado más eficaz.
 
-Se han eliminado elementos considerados innecesarios y que podrían causar problemas a la hora de hacer cruces entre elementos. Por ejemplo se dan casos de detallar el kilómetro de la via donde ocurrió el accidente o el número de la farola más cercana. En calles con gran longitud puede que sea interesante esta información, pero se ha decidido omitirla del nombrado debido a que, al ser un proceso semi-automático, era considerado como una via y generaba muchos problemas. Además son elementos que pertenecen al conjunto de datos de accidentes, el cual ya contenia una propiedad "Portal" y podria considerarse que representa lo mismo que el número de farola donde ocurrió. Al no haber muchos registros que contenían esta nomenclatura se ha optado por eliminarlo y no crear una nueva propiedad que represente dicho valor, ya que se puede observar que es algo atípico y que en la gran mayoria de registros no se podría obtener.
+Se han eliminado elementos considerados innecesarios y que podrían causar problemas a la hora de hacer cruces entre elementos. Por ejemplo, se dan casos de detallar el kilómetro de la vía donde ocurrió el accidente o el número de la farola más cercana. En calles con gran longitud puede que sea interesante esta información, pero se ha decidido omitirla del nombrado debido a que, al ser un proceso semi-automático, era considerado como una vía y generaba muchos problemas. Además, son elementos que pertenecen al conjunto de datos de accidentes, el cual ya contenía una propiedad ``Portal`` y podría considerarse que representa lo mismo que el número de farola donde ocurrió. Al no haber muchos registros que contenían esta nomenclatura se ha optado por eliminarlo y no crear una nueva propiedad que represente dicho valor, ya que se puede observar que es algo atípico y que en la gran mayoría de registros no se podría obtener.
 
-En esta sección también se detalla parte de las transformaciones para la propiedad "esCruce". Debido a la distinta nomenclatura utilizada en el nombrado de los accidentes, en muchos casos los cruces se representan con un guión " - ", la expresion "calle1 CRUCE calle2", una barra "/"... Esto dificulta su tratamiento y obtención de las distintas vias implicadas, por lo tanto para estos casos se ha optado por expresarlos de la forma: "calle1 / calle2". Parte de estas transformaciones se encuentran en este apartado debido a que son cambios muy básicos y deben ejecutarse antes de algunos otros, sin embargo más adelante se detallará su tratamiento.
+En esta sección también se detalla parte de las transformaciones para la propiedad ``esCruce``. Debido a la distinta nomenclatura utilizada en el nombrado de los accidentes, en muchos casos los cruces se representan con un guion `` - ``, la expresión ``calle1 CRUCE calle2``, una barra ``/``, etc. Esto dificulta su tratamiento y obtención de las distintas vías implicadas, por lo tanto para estos casos se ha optado por expresarlos de la forma: ``calle1 / calle2``. Parte de estas transformaciones se encuentran en este apartado debido a que son cambios muy básicos y deben ejecutarse antes de algunos otros, sin embargo más adelante se detallará su tratamiento.
 
 
 
@@ -25,25 +25,26 @@ Para dichos cambios se ha definido el siguiente código:
 
 La finalidad de la función definida en \ref{cod:cambiosBasicos} es modificar ciertas palabras para que posteriormente se puedan entender mejor e inferir información a partir de ellas sin llegar a errores.
 \newline
-Es el caso por ejemplo de los cruces. Se pueden escribir de múltiples formas, pero en el tratamiento que vamos a realizar será del modo "calle1 / calle2". Para conseguir ese formato han de modificarse otros nombres como por ejemplo "CRUCE calle1 CON calle1" para que posteriormente las funciones sean aplicables a estos casos.
+Es el caso por ejemplo de los cruces. Se pueden escribir de múltiples formas, pero en el tratamiento que vamos a realizar será del modo ``calle1 / calle2``. Para conseguir ese formato han de modificarse otros nombres como por ejemplo ``CRUCE calle1 CON calle1`` para que posteriormente las funciones sean aplicables a estos casos.
 \newline
-También se eliminan elementos como "S/N" (Sur/Norte) que no tienen excesiva relevancia, no forman parte del nombre, pero en cambio si pueden llegar a producir errores graves al contener una barra y poder considerarse un cruce o información relevante en el nombrado de una calle.
+También se eliminan elementos como ``S/N`` (Sur/Norte) que no tienen excesiva relevancia, no forman parte del nombre, pero en cambio si pueden llegar a producir errores graves al contener una barra y poder considerarse un cruce o información relevante en el nombrado de una calle.
 \newline
-Otras transformaciones serian en palabras que consideramos clave, por ejemplo Paso elevado o Senda Ciclable, a las cuales se les considerará tipo de via, que sean formadas como una única palabra, facilitando asi su posterior búsqueda y que no se cometa el error de incluirlas en las palabras clave del nombre de la via.
+Otras transformaciones serian en palabras que consideramos clave, por ejemplo Paso elevado o Senda Ciclable, a las cuales se les considerará tipo de vía, que sean formadas como una única palabra, facilitando así su posterior búsqueda y que no se cometa el error de incluirlas en las palabras clave del nombre de la vía.
 \newline
-También, de nuevo debido a la importancia que tienen guiones o barras en la detección de elementos inusuales o cruces, para carreteras como M-30, M-40 o elementos como KM-0 se les eliminará el guión, considerandolos de esa forma una única palabra. Del mismo modo también se han eliminado los indicadores de la farola donde ocurre el acontecimiento. 
+También, de nuevo debido a la importancia que tienen guiones o barras en la detección de elementos inusuales o cruces, para carreteras como M-30, M-40 o elementos como KM-0 se les eliminará el guion, considerándolos de esa forma una única palabra. Del mismo modo también se han eliminado los indicadores de la farola donde ocurre el acontecimiento.
 \newline
-Por último, se llama a la función palabrasMalEscritas, definida en \ref{cod:palabrasMalEscritas} la cual es en parte una continuación de esta aunque para casos más concretos.
+Por último, se llama a la función palabrasMalEscritas, definida en \ref{cod:palabrasMalEscritas} la cual es en parte una continuación de esta, aunque para casos más concretos.
 
 \clearpage
 \lstinputlisting[style=Python1, label = {cod:palabrasMalEscritas}, caption=Función palabrasMalEscritas]{codigo/palabrasMalEscritas.py}
 
 En este caso se vuelven a transformar palabras de forma que sea más clara y fácil su utilización.
-En primer lugar se eliminan abreviaturas que han sido detectadas y se sustituyen por las palabras completas.
+En primer lugar, se eliminan abreviaturas que han sido detectadas y se sustituyen por las palabras completas.
 \newline
-En segundo lugar se corrigen errores de codificación. Aunque esto a priori no debería ocurrir, el dataset de ciclocarriles no fue posible descargarlo y tratarlo de forma correcta, por tanto muchos de sus elementos estaban corruptos. Aunque se tuvo que hacer algún cambio manual si fue posible determinar los elementos más comunes que habían sido modificados y de esta forma es posible hacer la gran mayoría de forma automática, y por si volviera a ocurrir con otro dataset.
+En segundo lugar, se corrigen errores de codificación. Aunque esto a priori no debería ocurrir, el dataset de ciclocarriles no fue posible descargarlo y tratarlo de forma correcta, por tanto muchos de sus elementos estaban corruptos. Aunque se tuvo que hacer algún cambio manual si fue posible determinar los elementos más comunes que habían sido modificados y de esta forma es posible hacer la gran mayoría de forma automática, y por si volviera a ocurrir con otro dataset.
 \newline
-Por último, se eliminan números y los portales de las calles. Además se separan los paréntesis para que posteriormente se pueda eliminar la información contenida en ellos.
+Por último, se eliminan números y los portales de las calles. Además, se separan los paréntesis para que posteriormente se pueda eliminar la información contenida en ellos.
+
 
 
 
