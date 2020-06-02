@@ -168,7 +168,7 @@ public class JenaRequest {
                 	" <" + uriAccid + "> a accid:Accidente;" +
                 	" accid:lesividad ?lesividad ;"+
                 	" accid:hour ?hour; "+
-                	//" accid:hasPersAfectAccid ?persona_afectada; "+
+                	" accid:hasPersAfectAccid ?persona_afectada; "+
                     " }";
             Query query2 = QueryFactory.create(queryTxt2);
             QueryExecution qexec2 = QueryExecutionFactory.create(query2, modelCiclo);
@@ -179,12 +179,30 @@ public class JenaRequest {
             
                 QuerySolution binding2 = results2.nextSolution();
                 String lesividad = binding2.getResource("lesividad").getURI();
-           //     String uriPersAfect = binding2.getResource("persona_afectada").getURI();
+                String uriPersAfect = binding2.getResource("persona_afectada").getURI();
                 String hour = binding2.getLiteral("hour").getString();
 
                 System.out.println("---- " + lesividad);
-          //      System.out.println("---- " + uriPersAfect);
+                System.out.println("---- " + uriPersAfect);
                 System.out.println("---- " + hour);
+                
+                String queryTxt3 = 
+                		" PREFIX accid: <http://vocab.ciudadesabiertas.es/def/transporte/accidente/> " +
+     
+                		" PREFIX geosparql: <http://www.opengis.net/ont/geosparql#> " +
+                		" SELECT ?PersonaAfectada ?tipoPersAfect " +
+                        " WHERE { " +
+                    	" <" + uriPersAfect + "> a accid:PersonaAfectada;" +
+                    	" accid:tipoPersAfect ?tipoPersAfect ;"+
+                        " }";
+                Query query3 = QueryFactory.create(queryTxt3);
+                QueryExecution qexec3 = QueryExecutionFactory.create(query3, modelCiclo);
+                ResultSet results3 = qexec3.execSelect();
+                if(results3.hasNext()) {
+                	QuerySolution binding3 = results3.nextSolution();
+                	 String tipoPersAfect = binding3.getResource("tipoPersAfect").getURI();
+                	 System.out.println("---- " + tipoPersAfect);
+                }
                 
             }
             encontrado = true;
@@ -203,7 +221,7 @@ public class JenaRequest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int idVia = 153800;//266300;
+		int idVia = 263300;//266300;
 	//	System.out.println(esCicloCarril(idVia));
 	//	System.out.println(esCalleTranquila(idVia));
 		System.out.println(haHabidoAccidente(idVia));

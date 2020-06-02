@@ -1,0 +1,17 @@
+<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/560600> a escjr:Via;
+    <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+        <https://datos.ign.es/recurso/municipio/28079>;
+    escjr:longitud "299.0"^^<xsd:double>;
+    escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+    <http://www.geonames.org/ontology#officialName> " PALOS DE LA FRONTERA" .
+
+<https://datos.ign.es/recurso/municipio/28079> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio>;
+    <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
+        "28079"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://www.geonames.org/ontology#officialName> "Madrid" .
+
+<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/560600> a
+        cl-ciclo:Ciclocarril;
+    cl-ciclo:carrilExclusBici true;
+    cl-ciclo:distMaxExclusBici "298.76"^^<xsd:double>;
+    geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/560600> .

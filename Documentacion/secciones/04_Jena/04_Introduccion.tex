@@ -1,0 +1,35 @@
+\chapter{Generación y búsqueda en ficheros}
+
+Una vez definidos los vocabularios y transformados los datasets acorde con las necesidades que detallaron, se deben generar sus correspondientes ficheros OWL.
+Para este proyecto, como viene siendo habitual en la web semántica, se utiliza SPARQL para hacer la búsqueda a través de los conjuntos de datos y utilizar así los recursos. Para ello, en primer lugar, se deben generar los ficheros en formato TTL o RDF, con sus correpondientes separaciones por clases y propiedades de cada uno de sus componentes. Una vez se consiga esta organización de los elementos, se podrán hacer consultas utilizando las queries antes mencionadas y se podrán obtener los elementos requeridos para cada recurso.
+
+Este proceso, como se ha podido observar, se divide en dos secciones bien definidas: la generación de los ficheros en el formato deseado y las búsquedas sobre estos.
+
+
+\section{Generación de ficheros OWL}
+
+Para esta primera sección se ha utilizado el programa OpenRefine \ref{pagPrinc_OpenRefine}. En él se han cargado los datasets en formato CSV antes transformados y se han generado estos ficheros OWL necesarios para las siguientes consultas.
+
+En este proceso se ha partido de la estructura de los vocabularios definidos anteriormente y se ha replicado con los datos disponibles. 
+Para el caso de CallesTranquilas se ha generado un fichero diferente al definido. Dado que no se ha creado un vocabulario específico para ello sino que se han añadido propiedades relativas a ello en el Callejero, no se podía generar del modo en que estaba en el dataset original. Para el vocabulario definido debería existir una propiedad en el dataset de callejero que indicase si una calle es tranquila o no. Dado que dicha propiedad aun no esta creada y que es proporcionada por un conjunto de datos paralelo, se deben obtener esos valores de este último. Para la aplciación que se quiere desarrollar solo es necesario conocer las propiedades de las calles tranquilas y no de todas las vias de Madrid, siguiendo las especificaciones estrictas del vocabulario se tendría que haber obtenido esta propiedad del callejero, sin embargo, se ha tomado la decisión de revisar únicamente el dataset de calles tranquilas, reduciendo asi a un 10$\%$ aproximadamente el total de calles, haciendolo más eficiente y partiendo de la clase via con sus propiedades (como se especifica en la definición de la ontología). En caso de que años posteriores los datasets siguiesen las recomendaciones expuestas en este proyecto sobre la exposición de los datos, se tendrían que hacer ciertas modificaciones en las queries relativas a este datasets, aunque como se ha mencionado, se ha partido del nodo raiz Via y se han consultaso sus propiedades, por lo tanto los cambios serían mínimos.
+
+Para la generación de los ficheros de calles tranquilas se ha tomado como nombre de la via el título original, es decir, la columna relativa al nombre sin corrección de erratas ni eliminación de palabras que provenía de la fuente origen. En el caso de CicloCarriles y Accidentes se ha elegido el nombre de la via. En el primer caso ya que contenía multitud de erratas y se considera más legible el nombre modificado. En el segundo caso debido a que el nombre original contiene el título del cruce en muchos casos, y el nombrado de la vía debe ser único de la misma.
+
+En \ref{cod:ciclocarriles} se ve un ejemplo de la distribución de los elementosdel dataset de Ciclocarriles en el fichero OWL.
+
+\lstinputlisting[style=Python1, label = {cod:ciclocarriles}, caption=ciclocarriles.ttl]{codigo/OWL/ciclocarriles.ttl}
+
+
+En \ref{cod:callesTranquilas} se ve un ejemplo de la distribución de los elementosdel dataset de Calles Tranquilas en el fichero OWL.
+
+\lstinputlisting[style=Python1, label = {cod:callesTranquilas}, caption=callesTranquilas.ttl]{codigo/OWL/callesTranquilas.ttl}
+
+
+En \ref{cod:accidentes} se ve un ejemplo de la distribución de los elementos del dataset de Accidentes de bicicletas en el fichero OWL.
+
+\lstinputlisting[style=Python1, label = {cod:accidentes}, caption=accidentes.ttl]{codigo/OWL/accidentes.ttl}
+
+
+\section{Consultas SPARQL}
+
+

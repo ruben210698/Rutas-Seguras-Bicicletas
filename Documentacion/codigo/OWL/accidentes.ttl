@@ -1,0 +1,34 @@
+<http://vocab.ciudadesabiertas.es/recurso/transporte/accidente/2019S000659> a accid:Accidente;
+    dcterms:identifier "2019S000659";
+    accid:enCruce "2"^^<http://www.w3.org/2001/XMLSchema#int>;
+    accid:fecha "01/01/2019"^^<xsd:date>;
+    accid:hasPersAfectAccid <http://vocab.ciudadesabiertas.es/recurso/transporte/accidente/persona-afectada/2019S000659>;
+    accid:hour "14:00"^^<xsd:hour>;
+    accid:lesividad <http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/01>;
+    accid:meteorologia <http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/meteorologia/Despejado>;
+    accid:ocurreEnVia <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153800>,
+        <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/248700>;
+    accid:tipoAccidente <http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/Alcance>;
+    accid:tipoVehiculo <http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-vehiculo/Bicicleta>;
+    <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#contienePortal>
+        <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/madrid/153800/->,
+        <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/madrid/248700/-> .
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/accidente/persona-afectada/2019S000659>
+        a accid:PersonaAfectada;
+    schema:gender schema:Male;
+    schema:typicalAgeRange "25-29";
+    accid:tipoPersAfect <http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-pers-afect/Conductor> .
+
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/madrid/153800/->
+    a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> .
+
+<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153800> a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+    accid:ocurrioAccidente <http://vocab.ciudadesabiertas.es/recurso/transporte/accidente/2019S000659>;
+    <http://www.geonames.org/ontology/officialName> "CALLE CASTELLO";
+    geosparql:sfWithin <https://datos.ign.es/recurso/municipio/28079> .
+
+<https://datos.ign.es/recurso/municipio/28079> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/Municipio>;
+    <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
+        "28079"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://www.geonames.org/ontology#officialName> "Madrid" .

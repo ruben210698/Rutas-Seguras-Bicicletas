@@ -1,0 +1,10 @@
+<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/75300> a escjr:Via;
+    escjr:dobleSentido <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/doble-sentido/SENTIDO-UNICO>;
+    escjr:longitud "846"^^<xsd:double>;
+    escjr:municipio <https://datos.ign.es/recurso/municipio/28079>;
+    escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
+    geo:officialName "Calle del Arroyo de la Media Legua" .
+
+<https://datos.ign.es/recurso/municipio/28079> a escjr:Municipio;
+    esadm:codigoINE "28079"^^<http://www.w3.org/2001/XMLSchema#int>;
+    geo:officialName "Madrid" .

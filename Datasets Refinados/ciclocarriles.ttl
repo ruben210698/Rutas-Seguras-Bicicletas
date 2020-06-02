@@ -17,13 +17,9 @@
   <http://www.geonames.org/ontology#officialName> " PALOS DE LA FRONTERA" .
 
 <https://datos.ign.es/recurso/municipio/28079> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio>;
-  <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
-    "28079";
-  <http://www.geonames.org/ontology#officialName> "Madrid";
-  a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio>;
-  <http://www.geonames.org/ontology#officialName> "Madrid";
-  <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
-    "28079" .
+    <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
+      "28079"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://www.geonames.org/ontology#officialName> "Madrid" .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/560600> a
     cl-ciclo:Ciclocarril;
