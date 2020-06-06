@@ -241,10 +241,10 @@ public class JenaRequest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int idVia = 631900;//266300;
-	//	System.out.println(esCicloCarril(idVia));
+		int idVia = 91900;//266300;
+		System.out.println(esCicloCarril(idVia));
 	//	System.out.println(esCalleTranquila(idVia));
-		System.out.println(haHabidoAccidente(idVia));
+	//	System.out.println(haHabidoAccidente(idVia));
 
 	}
 
