@@ -141,6 +141,9 @@ rdfs:label rdf:type owl:AnnotationProperty .
 :dobleSentido rdf:type owl:ObjectProperty ;
               rdfs:domain :Via ;
               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+              rdfs:comment """Propiedad que determina si una vía es de sentido único o doble.
+- http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/doble-sentido/SENTIDO-UNICO
+- http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/doble-sentido/DOBLE-SENTIDO"""@es ;
               rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
 
 
@@ -148,6 +151,9 @@ rdfs:label rdf:type owl:AnnotationProperty .
 :tipoUso rdf:type owl:ObjectProperty ;
          rdfs:domain :Via ;
          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+         rdfs:comment """Identificador del tipo de uso que puede tener la calle. Se han definido 2 clases para ello: 
+- http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLE
+- http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/PEATONAL"""@es ;
          rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
 
 
@@ -216,6 +222,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 :esCalleTranquila rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Via ;
                   rdfs:range xsd:boolean ;
+                  rdfs:comment "Propiedad que indica si una vía es calle tranquila o no para bicicletas. Vías con poco tráfico, mucha visibilidad o con mucho porcentaje de accidentes pueden ser algunos de los criterios seguidos para esta valoración."@es ;
                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
 
 
@@ -223,6 +230,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 :longitud rdf:type owl:DatatypeProperty ;
           rdfs:domain :Via ;
           rdfs:range xsd:double ;
+          rdfs:comment "Longitud de la calle o tramo de la calle descrito. Su unidad de medida es el metro aunque en muchos casos puede venir representado como Shape_leng."@es ;
           rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
 
 

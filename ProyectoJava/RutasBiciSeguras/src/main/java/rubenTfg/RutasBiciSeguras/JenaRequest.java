@@ -29,21 +29,32 @@ public class JenaRequest {
         String idSearch = idVia + "";
         
         String queryTxt = 
-        		" PREFIX cl-ciclo: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/ciclo-carril/> " + 
         		" PREFIX escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/> " +
-        		" SELECT ?name ?longitud ?carrilExclusBici" +
+        		" SELECT ?name ?longitud" +
                 " WHERE { " +
                 " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/" + idSearch + "> a escjr:Via;" + 
                 " <http://www.geonames.org/ontology#officialName> ?name ; " +
                 " escjr:longitud ?longitud ; " +
                 " }";
         
+        String queryTxt2 = 
+        		" PREFIX cl-ciclo: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/ciclo-carril/> " + 
+        		" SELECT ?carrilExclusBici" +
+                " WHERE { " +
+                " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/" + idSearch + "> a cl-ciclo:Ciclocarril;" + 
+                " cl-ciclo:carrilExclusBici ?carrilExclusBici ; " +
+                " }";
+        
         Query query = QueryFactory.create(queryTxt);
         QueryExecution qexec = QueryExecutionFactory.create(query, modelCiclo);
         ResultSet results = qexec.execSelect();
         
+        Query query2 = QueryFactory.create(queryTxt2);
+        QueryExecution qexec2 = QueryExecutionFactory.create(query2, modelCiclo);
+        ResultSet results2 = qexec2.execSelect();
+        
         boolean encontrado = false;
-        while (results.hasNext()) {
+        if (results.hasNext()) {
             QuerySolution binding = results.nextSolution();
             String name = binding.getLiteral("name").getString();
             double longitud = Double.parseDouble(binding.getLiteral("longitud").getString());
@@ -51,6 +62,14 @@ public class JenaRequest {
             System.out.println("---- " + name);
             System.out.println("---- " + longitud);
      
+            encontrado = true;
+        }
+        if (results2.hasNext()) {
+            QuerySolution binding2 = results2.nextSolution();
+            boolean carrilExclusBici = binding2.getLiteral("carrilExclusBici").getBoolean();
+            
+            System.out.println("---- " + carrilExclusBici);
+            
             encontrado = true;
         }
         
@@ -130,42 +149,37 @@ public class JenaRequest {
 
         String idSearch = idVia + "";
         
-        String queryTxt = 
+       String queryTxt = 
         		" PREFIX accid: <http://vocab.ciudadesabiertas.es/def/transporte/accidente/> " +
         		" PREFIX geo: <http://www.geonames.org/ontology> " +
-        		" SELECT ?Accidente ?nombreCalle" +
+        		" SELECT ?nombreCalle" +
                 " WHERE { " +
                 " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/" + idSearch + "> a "+
                 	 "<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;"+
-                " accid:ocurrioAccidente ?Accidente ;" +
                 " <http://www.geonames.org/ontology/officialName> ?nombreCalle ; " +
                 " }";
         
-        
-        
+  
         Query query = QueryFactory.create(queryTxt);
         QueryExecution qexec = QueryExecutionFactory.create(query, modelCiclo);
         ResultSet results = qexec.execSelect();
         
         ArrayList<String> listUrisAccidentes = new ArrayList<String>();
+        
         boolean encontrado = false;
         while (results.hasNext()) {
             QuerySolution binding = results.nextSolution();
-            String uriAccid = binding.getResource("Accidente").getURI();
-            if(!listUrisAccidentes.isEmpty() && listUrisAccidentes.contains(uriAccid) ) //Evitar duplicados de accidentes
-            	continue;
-        	listUrisAccidentes.add(uriAccid);
-        	
+            
             String name = binding.getLiteral("nombreCalle").getString();
             System.out.println("---- " + name);
-            System.out.println("---- " + uriAccid);
             String queryTxt2 = 
             		" PREFIX accid: <http://vocab.ciudadesabiertas.es/def/transporte/accidente/> " +
             		" PREFIX geo: <http://www.geonames.org/ontology> " +
             		" PREFIX geosparql: <http://www.opengis.net/ont/geosparql#> " +
             		" SELECT ?Accidente ?hour ?lesividad ?persona_afectada" +
                     " WHERE { " +
-                	" <" + uriAccid + "> a accid:Accidente;" +
+                    " ?Accidente a accid:Accidente;" +
+                    " accid:ocurreEnVia <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/"+ idSearch +">;" +
                 	" accid:lesividad ?lesividad ;"+
                 	" accid:hour ?hour; "+
                 	" accid:hasPersAfectAccid ?persona_afectada; "+
@@ -178,6 +192,13 @@ public class JenaRequest {
             while (results2.hasNext()) {
             
                 QuerySolution binding2 = results2.nextSolution();
+                
+                String uriAccid = binding2.getResource("Accidente").getURI();
+                if(!listUrisAccidentes.isEmpty() && listUrisAccidentes.contains(uriAccid) ) //Evitar duplicados de accidentes
+                	continue;
+            	listUrisAccidentes.add(uriAccid);
+                
+                
                 String lesividad = binding2.getResource("lesividad").getURI();
                 String uriPersAfect = binding2.getResource("persona_afectada").getURI();
                 String hour = binding2.getLiteral("hour").getString();
@@ -188,7 +209,6 @@ public class JenaRequest {
                 
                 String queryTxt3 = 
                 		" PREFIX accid: <http://vocab.ciudadesabiertas.es/def/transporte/accidente/> " +
-     
                 		" PREFIX geosparql: <http://www.opengis.net/ont/geosparql#> " +
                 		" SELECT ?PersonaAfectada ?tipoPersAfect " +
                         " WHERE { " +
@@ -221,7 +241,7 @@ public class JenaRequest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int idVia = 263300;//266300;
+		int idVia = 631900;//266300;
 	//	System.out.println(esCicloCarril(idVia));
 	//	System.out.println(esCalleTranquila(idVia));
 		System.out.println(haHabidoAccidente(idVia));
