@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="372dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actv_destino" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actv_destino"
+        android:layout_width="298dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="108dp"
+        android:hint="Destino"
+        app:layout_constraintBottom_toTopOf="@+id/btnBuscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/actv_origen" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actv_origen"
+        android:layout_width="298dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="125dp"
+        android:hint="Origen"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/actv_destino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tiempoAprox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Tiempo aprox computo por ruta: 30 segundos/5km\nSe parte de 8 puntos y aumenta o disminuye por las incidencias que existan en ella."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

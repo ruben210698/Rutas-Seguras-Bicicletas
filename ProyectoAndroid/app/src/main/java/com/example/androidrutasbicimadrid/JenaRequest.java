@@ -40,7 +40,7 @@ public class JenaRequest {
             return null;
         }
         if (inCiclo == null)
-        	throw new IllegalArgumentException("File: " + fileCiclo + " not found");
+        	throw new IllegalArgumentException("+-+-+-+-+-+-+-+File: " + fileCiclo + " not found");
         modelCiclo.read(inCiclo, "", "TURTLE");
         String idSearch = idVia + "";
 
@@ -61,6 +61,7 @@ public class JenaRequest {
                         " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/" + idSearch + "> a cl-ciclo:Ciclocarril;" +
                         " cl-ciclo:carrilExclusBici ?carrilExclusBici ; " +
                         " }";
+
 
         Query query = QueryFactory.create(queryTxt);
         QueryExecution qexec = QueryExecutionFactory.create(query, modelCiclo);
