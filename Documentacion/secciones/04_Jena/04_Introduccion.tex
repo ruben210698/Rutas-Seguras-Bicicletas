@@ -30,6 +30,32 @@ En \ref{cod:accidentes} se ve un ejemplo de la distribución de los elementos de
 \lstinputlisting[style=Python1, label = {cod:accidentes}, caption=accidentes.ttl]{codigo/OWL/accidentes.ttl}
 
 
+
+
+
+
+
+\clearpage
 \section{Consultas SPARQL}
 
+Para realizar las búqueda a través de los distintos ficheros Turtle se ha utilizado el lenguaje SPARQL y el framework Apache Jena. En todos los datasets incluidos en este trabajo se han realizado filtros por la via a la que pertenecen para asi determinar otras propiedades relacionadas con esa clase o el propio recurso, del cual posteriormente se pueden obtener sus elementos.
+
+
+Las siguientes búsquedas son relativas a los ciclocarriles.
+\lstinputlisting[style=Python1, label = {cod:ciclocarriles}, caption=Ciclocarriles]{codigo/sparql/ciclocarriles.py}
+
+Como se puede observar se realizan dos consultas. La primera es para conocer las características de la via donde se encuentra, en este caso su nombre y longitud. La segunda es relativa al ciclocarril, del cual en este caso solo se va a consultar si es de uso exclusivo o no.
+\newline
+
+Las siguientes búsquedas son relativas a las Calles Tranquilas.
+\lstinputlisting[style=Python1, label = {cod:callesTranquilas}, caption=Calles Tranquilas]{codigo/sparql/callesTranquilas.py}
+
+Como se puede observar en esta ocasión solo se realiza una consulta y se hace utilizando la uri de via. Esto es debido a que calle tranquila no es una clase sino una propiedad del Callejero. En este caso no se esta utilizando el callejero de Madrid al completo, solo las calles que sean "tranquilas", sin embargo se sigue el mismo esquema que el definido en la consulta y se debe filtrar por la vía deseada.
+En este caso se están obteniendo las propiedades longitud y nombre. En caso de que el Ayuntamiento proporcionase el dataset añadiendo esa propiedad que se ha definido de "calle tranquilas para ciclistas", sería necesario obtenerla. En este caso se filtra por la URI de vía y en caso de que exista es de ese tipo, en caso contrario no.
+
+
+Las siguientes búsquedas son relativas a los Accidentes.
+\lstinputlisting[style=Python1, label = {cod:accidentes}, caption=Accidentes]{codigo/sparql/accidentes.py}
+
+Para el caso de los accidentes se han tenido que realizar 3 búsquedas por cada uno de ellos. En la primera se obtiene la propiedad "nombre" de la vía (para poder mostrar el lugar donde ocurrió). En la segunda se hace una búsqueda del propio accidente. Para ello se filtra por el lugar del hecho, es decir la propiedad "accid:ocurreEnVia". A partir de esta clase se leen las porpiedades hora, lesividad y persona afectada. Esta última se trata de otra clase, como bien se puede ver en los vocabularios antes definidos, por tanto es necesaria una tercera consulta para este recurso. En esta última query se filtra por la URI anterior y se obtiene el tipo de persona afectada, es decir, si es Conductor, Peaton, Acompañante... La división por clases en este dataset permite diferenciar claramente los recursos y sus propiedades y ello obliga a realizar múltiples consultas al fichero de datos.
 

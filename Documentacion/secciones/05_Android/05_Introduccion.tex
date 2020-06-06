@@ -1,10 +1,28 @@
 \chapter{Aplicación Android}
 
+Para este proyecto se ha elegido la plataforma Android como interfaz gráfica ya que es la más utilizada en dispositivos móviles y es en éstos donde el desarrollo podría tener un mayor uso.
+Al igual que se consulta en el móvil el tiempo que se tardará en ir de un punto a otro, se podría consultar la seguridad de la ruta que vamos a realizar en bicicleta para evaluar el riesgo y replantearse el medio de transporte que se utilizará.
+Siendo la aplicación Google Maps la más utilizada como GPS, en este proyecto se ha consultado la ruta a través de la API Directions de Google\cite{apiDirections}, la cual  proporcionará previsiblemente la misma ruta que posteriormente el usuario seguirá por GPS hasta su destino.
 
+Para el desarrollo se ha priorizado mostrar las características de la ruta y no tanto el aspecto visual ni la eficiencia. En una aplicación desarrollada para un uso cotidiano lo ideal sería mostrar pocos datos sobre los datos sobre la ruta, marcar el valor numérico asociado a ella y mencionar las vias con más peligro para que se mantenga más atención. Sin embargo para este proyecto se ha preferido mostrar el máximo número de datos obtenidos (como el número de accidentes de cada tipo) y se ha priorizado la visualización por parte del usuario de los mismos. Dado que el cálculo de la peligrosidad no ha seguido ningún patrón ni regla, únicamente una aproximación de la importancia que se le podría dar a cada elemento, se ha optado por esto para que quien desee valore subjetivamente los datos dispuestos.
 
+Durante la ejecución de la aplicación se pueden ditinguir dos fases bien diferenciadas: la obtención de la ruta y el cálculo de ella.
+
+\clearpage
 \section{Obtención de la ruta}
+La ruta como ya se ha mencionado anteriormente es obtenida a partir de API Directions de Google. En dicha ruta no es posible conocer el nombre de las calles ni su identificador ya que se obtienen una serie de coordenadas por las que el navegador guía al usuario.
+El fin de este proyecto es conocer la seguridad de cada una de las calles, por lo tanto se deben obtener las vias en las que se encuentran esos puntos. Para ello se ha creado una base de datos en SQLite dentro de la propia aplicación para hacer la búsqueda de esas coordenadas y asi poder realizar las demás consultas.
+
 
 \subsection{Creación BBDD coordenadas}
+Como se ha mencionado anteriormente, el primer paso para obtener las calles transitadas es crear la base de datos con las coordenadas para posteriormente consultar en ella la ruta.
+Las coordenadas son proporcionadas por el Ayuntamiento de Madrid y se encuentran, como los anteriores datasets, en el portal de datos.madrid y en formato CSV \cite{coordenadas_DatosMadrid}.
+Dicho dataset contiene numerosos errores en sus coordenadas representadas en grados. Se puede comprobar como una misma calle está representada con puntos opuestos de la ciudad. Ésto implicaría que la ruta que se obtuviese con esos datos representase valores irreales y mostrase un gran número de calles que nada tendrían que ver con el recorrido. Dado que los puntos proporcionados por Google están separados por pocos metros y que la gran mayoría de calles están representadas por más de 5 coordenadas, este error produciría que el resultado final fuese completamente diferente al esperado.
+Tras varias pruebas se ha detectado que las coordenadas representadas en UTM si son correctas, por lo tanto se han utilizado estas últimas. Para su uso, dado que los puntos proporcionados por la API de Google son en formato decimal, se han transformado a este formato. Para ello se ha hecho uso de un código obtenido de la siguiente url: \url{https://stackoverflow.com/questions/343865/how-to-convert-from-utm-to-latlng-in-python-or-javascript/344083#344083} con ligeras modificaciones. El cuadrante para España necesario para esta transformación es 30 y ha sido obtenido de la web de la Junta de Andalucia \cite{UTM_cuadrante_andalucia}.
+
+En un primer momento se tomó la decisión de dividir en cuadrantes el territorio para poder realizar una búsqueda más rápida. Al utilizarse SQL el proceso de búsqueda ya está optimizado y en este caso se ha comprobado que es menos eficiente este método, por lo tanto se ha descartado. Es posible que para ciudades más grandes si sea interesante dicho filtro y es por ello que se ha conservado el código para realizarlo. Sin embargo para el proyecto actual se ha omitido esta transformación.
+
+El código al que se hace referencia en esta
 
 \subsection{Conexión API Google Directions y lista de calles transitadas}
 
