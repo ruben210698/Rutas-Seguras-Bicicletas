@@ -1,7 +1,7 @@
 \section{Obtención de Identificadores de Vias}
 
-Los identificadores de las vías serán los que permitan la cohesión entre los distintos conjuntos de datos que aquí se están tratando. Todos ellos tienen en común propiedades relativas a vías, aunque no es posible enlazarlos por el nombre de un modo simple.
-La obtención de las palabras clave de estos títulos permitiría un enlazado bastante eficaz entre ellos, aunque con un coste computacional muy elevado y sería muy ineficaz para luna aplicación móvil como es el caso de este proyecto.
+Los identificadores de las vías serán los que permitan la cohesión entre los distintos conjuntos de datos que aquí se están tratando. Todos ellos tienen en común propiedades relativas a calles, aunque no es posible enlazarlos por el nombre de un modo simple.
+La obtención de las palabras clave de estos títulos permitiría un enlazado bastante eficaz entre ellos, aunque con un coste computacional muy elevado y sería muy ineficaz para una aplicación móvil como es el caso de este proyecto.
 
 El identificador de las vías es necesario para el enlazado de las mismas (es parte de la URI de estos recursos) y sería conveniente que datasets posteriores tuviesen dicha información, ya que seguirían las pautas de los vocabularios definidos para ellos.
 
@@ -27,8 +27,7 @@ En la primera se comprueba que sea exactamente igual. La gran mayoría de elemen
 
 En caso contrario, para la segunda vuelta aplicada se le permitirá un carácter añadido o eliminado. Este es el caso por ejemplo de palabras acabas en ``s`` u otras erratas. Para la tercera vuelta se le permitirá la sustitución de un carácter por otro, es decir, añadir y eliminar un carácter. Esto permite errores como cambios de vocales o erratas de sustitución de letras. Para la cuarta y última vuelta se tiene en cuenta la longitud de la cadena. Para nombres compuestos y extensos es más probable que ocurran erratas, por lo tanto, a mayor nombre mayor margen de error permitido.
 
-Como se puede observar en el código \ref{cod:checkearPalabras}, tras los pasos 2, 3 y 4 se imprime por terminal la transformación realizada. Esto permite al desarrollador comprobar el buen funcionamiento del programa y, en caso de revisarlo y encontrar elementos mal emparejados, poder modificarlos manualmente antes de que se añadan a la aplicación final. Para el paso 1 no es necesario ya que el nombre es exacto, pero las siguientes, al permitir margen de error, pueden ocurrir fallos fácilmente detectables de forma manual.
-También se observan multitud de restricciones. Esto es debido a lo mencionado anteriormente, errores detectados de forma manual han sido añadidos a las distintas fases de las comprobaciones para que no los considere en posteriores ejecuciones y así poder refinar el emparejamiento de los dataset.
+Como se puede observar en el código \ref{cod:checkearPalabras}, tras los pasos 2, 3 y 4 se imprime por terminal la transformación realizada. Esto permite al desarrollador comprobar el buen funcionamiento del programa y, en caso de revisarlo y encontrar elementos mal emparejados, poder modificarlos manualmente antes de que se añadan a la aplicación final. Para el paso 1 no es necesario, ya que el nombre es exacto, pero las siguientes al permitir margen de error, pueden ocurrir fallos fácilmente detectables de forma manual. Del mismo modo se observan multitud de restricciones y esto es debido a lo mencionado anteriormente, errores detectados de forma manual han sido añadidos a las distintas fases de las comprobaciones para que no los considere en posteriores ejecuciones y así poder refinar el emparejamiento de los dataset.
 
 
 

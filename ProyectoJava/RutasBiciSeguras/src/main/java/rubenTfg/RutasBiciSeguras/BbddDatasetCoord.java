@@ -162,13 +162,9 @@ public class BbddDatasetCoord {
 				 */
 				
 				String consulta = "SELECT COD_VIA, LATITUD, LONGITUD "
-					//			+ " FROM ( SELECT COD_VIA, LATITUD, LONGITUD "
-										+ " FROM callCoordMadrid WHERE "
-					//					+ " codCuadrante IN ("+ cuadrantesSQL + "))A WHERE"
-							//	+ " codCuadrante IN (" + cuadrantesSQL + ") AND "
+								+ " FROM callCoordMadrid WHERE "
 								+ " LATITUD < ? AND LATITUD > ? AND"
 								+ " LONGITUD < ? AND LONGITUD > ?" ;
-				//1017
 				
 				
 				PreparedStatement sentencia= con.prepareStatement(consulta);
@@ -184,7 +180,6 @@ public class BbddDatasetCoord {
 					double latDB = rs.getFloat("LATITUD");
 					double lonDB = rs.getFloat("LONGITUD");
 					double dif = Math.abs(latitud - latDB) + Math.abs(longitud - lonDB);
-				//	System.out.println("Result = " + rs.getString("COD_VIA") + " Dif: "+ dif);
 					listaDifs.add(dif);
 					listaCalles.add(rs.getInt("COD_VIA"));
 					

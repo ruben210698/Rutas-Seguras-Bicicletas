@@ -1,0 +1,156 @@
+@prefix : <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#> .
+@prefix schema: <http://schema.org#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix www-geonames-org: <http://www.geonames.org/> .
+@base <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> .
+
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> rdf:type owl:Ontology ;
+                                                                                        owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril/1.0.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.geonames.org/ontology#officialName
+<http://www.geonames.org/ontology#officialName> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
+esadm:municipio rdf:type owl:ObjectProperty ;
+                rdfs:domain escjr:Via ;
+                rdfs:range esadm:Municipio ;
+                rdfs:comment "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#﻿tipoUso
+escjr:﻿tipoUso rdf:type owl:ObjectProperty ;
+               rdfs:domain escjr:Via ;
+               rdfs:range skos:Concept ;
+               rdfs:comment """﻿Identificador del tipo de uso que puede tener la calle. Se han definido 2 clases para ello:
+            ﻿http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLE
+            ﻿http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/PEATONAL"""@es ;
+               rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+               rdfs:label "Tipo de uso dado a la via."@es .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+geosparql:sfWithin rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE
+esadm:codigoINE rdf:type owl:DatatypeProperty ;
+                rdfs:domain esadm:Municipio ;
+                rdfs:range xsd:integer .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#longitud
+escjr:longitud rdf:type owl:DatatypeProperty ;
+               rdfs:domain escjr:Via ;
+               rdfs:range xsd:double ;
+               rdfs:comment <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> ,
+                            "﻿Longitud de la calle descrita. Esta propiedad está referida a la calle que contiene un ciclocarril (calle completa)."@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#carrilExclusBici
+:carrilExclusBici rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :CicloCarril ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:comment "﻿Indicador de si las bicicletas disponen o no de un carril propio para su circulación."@es ;
+                  rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#distMaxExclusBici
+:distMaxExclusBici rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :CicloCarril ;
+                   rdfs:range xsd:double ;
+                   rdfs:comment """﻿Longitud del carril exclusivo de bicicletas dentro de la calle.
+En caso de que no haya ciclocarril, el valor será 0."""@es ;
+                   rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> .
+
+
+###  http://www.geonames.org/ontology#officialName
+<http://www.geonames.org/ontology#officialName> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain esadm:Municipio ,
+                                                            escjr:Via ;
+                                                rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+esadm:Municipio rdf:type owl:Class ;
+                rdfs:comment "Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do"@es ;
+                rdfs:isDefinedBy """http://purl.org/derecho/vocabulario
+http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio
+http://www.ign.es/ign/resources/acercaDe/tablon/ModeloDireccionesAGE.pdf‎""" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via
+escjr:Via rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty geosparql:sfWithin ;
+                            owl:someValuesFrom esadm:Municipio
+                          ] ;
+          rdfs:isDefinedBy <﻿http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril#CicloCarril
+:CicloCarril rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty geosparql:sfWithin ;
+                               owl:someValuesFrom escjr:Via
+                             ] ;
+             rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/ciclo-carril> .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class ;
+             rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+             rdfs:label "Concept"@en ;
+             skos:definition "An idea or notion; a unit of thought."@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.geonames.org/ontology#officialName> rdfs:isDefinedBy <﻿http://www.geonames.org/ontology> ;
+                                                rdfs:label "Nombre de la via en el idioma oficial local."@es .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
