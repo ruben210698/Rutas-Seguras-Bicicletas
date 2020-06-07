@@ -6,13 +6,13 @@
     accid:hour "14:00"^^<xsd:hour>;
     accid:lesividad <http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/lesividad/01>;
     accid:meteorologia <http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/meteorologia/Despejado>;
-    accid:ocurreEnVia <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153800>,
-        <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/248700>;
+    accid:ocurreEnVia <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153800>,
+        <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/248700>;
     accid:tipoAccidente <http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-accidente/Alcance>;
     accid:tipoVehiculo <http://vocab.linkeddata.es/datosabiertos/kos/transporte/accidente/tipo-vehiculo/Bicicleta>;
     <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#contienePortal>
-        <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/madrid/153800/->,
-        <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/madrid/248700/-> .
+        <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153800->,
+        <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/248700-> .
 
 <http://vocab.ciudadesabiertas.es/recurso/transporte/accidente/persona-afectada/2019S000659>
         a accid:PersonaAfectada;
@@ -23,7 +23,7 @@
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/madrid/153800/->
     a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153800> a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153800> a <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;
     accid:ocurrioAccidente <http://vocab.ciudadesabiertas.es/recurso/transporte/accidente/2019S000659>;
     <http://www.geonames.org/ontology/officialName> "CALLE CASTELLO";
     geosparql:sfWithin <https://datos.ign.es/recurso/municipio/28079> .

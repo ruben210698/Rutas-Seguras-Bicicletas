@@ -9,7 +9,7 @@
 @prefix cl-ciclo: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/ciclo-carril/> .
 
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/560600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/560600> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "299.0"^^<xsd:double>;
@@ -25,9 +25,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "298.76"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/560600> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/560600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/158600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/158600> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "194.0"^^<xsd:double>;
@@ -38,9 +38,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "193.86"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/158600> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/158600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/596300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/596300> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "504.0"^^<xsd:double>;
@@ -51,9 +51,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "503.99"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/596300> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/596300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/523800> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/523800> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "425.0"^^<xsd:double>, "554.0"^^<xsd:double>;
@@ -64,9 +64,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "425.3"^^<xsd:double>, "554.44"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/523800> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/523800> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/449000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/449000> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "314.0"^^<xsd:double>;
@@ -77,9 +77,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "314.36"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/449000> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/449000> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/290400> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/290400> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "369.0"^^<xsd:double>;
@@ -90,9 +90,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "369.01"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/290400> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/290400> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/489700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/489700> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "1190.0"^^<xsd:double>;
@@ -103,9 +103,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "1189.54"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/489700> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/489700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/273600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/273600> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "244.0"^^<xsd:double>;
@@ -116,9 +116,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "244.32"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/273600> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/273600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610000> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "1338.0"^^<xsd:double>, "1444.0"^^<xsd:double>;
@@ -134,9 +134,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "1338.33"^^<xsd:double>, "1444.16"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610000> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610000> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/623700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/623700> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "447.0"^^<xsd:double>;
@@ -147,9 +147,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "446.56"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/623700> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/623700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/710500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/710500> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "164.0"^^<xsd:double>;
@@ -160,9 +160,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "164.24"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/710500> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/710500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/661700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/661700> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "987.0"^^<xsd:double>, "988.0"^^<xsd:double>;
@@ -173,9 +173,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "987.32"^^<xsd:double>, "988.43"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/661700> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/661700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/467700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/467700> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "319.0"^^<xsd:double>;
@@ -191,9 +191,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "319.47"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/467700> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/467700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/694000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/694000> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "711.0"^^<xsd:double>;
@@ -204,9 +204,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "711.05"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/694000> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/694000> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/308800> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/308800> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
   escjr:longitud "222.0"^^<xsd:double>, "230.0"^^<xsd:double>;
@@ -217,14 +217,14 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "222.02"^^<xsd:double>, "230.18"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/308800> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/308800> .
 
 <https://datos.ign.es/recurso/municipio/28079> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079";
   <http://www.geonames.org/ontology#officialName> "Madrid" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/500000> a escjr:Via,
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/500000> a escjr:Via,
     escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -239,18 +239,18 @@
   cl-ciclo:carrilExclusBici true;
   a cl-ciclo:Ciclocarril;
   cl-ciclo:distMaxExclusBici "327.45"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/500000> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/500000> .
 
 <https://datos.ign.es/recurso/municipio/28079> a <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079";
   <http://www.geonames.org/ontology#officialName> "Madrid" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/500000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/500000> a escjr:Via;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/295400> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/295400> a escjr:Via;
   escjr:longitud "291.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -266,11 +266,11 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "290.83"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/295400> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/295400> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/295400> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/295400> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/91900> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/91900> a escjr:Via;
   escjr:longitud "277.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -285,11 +285,11 @@
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/91900> a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "277.19"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/91900> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/91900> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/91900> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/91900> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/295400> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/295400> a escjr:Via;
   escjr:longitud "70.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -305,11 +305,11 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "69.55"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/295400> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/295400> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/295400> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/295400> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/91900> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/91900> a escjr:Via;
   escjr:longitud "272.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -324,11 +324,11 @@
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/91900> a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "271.56"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/91900> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/91900> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/91900> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/91900> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/609000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/609000> a escjr:Via;
   escjr:longitud "270.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -344,11 +344,11 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "269.98"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/609000> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/609000> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/609000> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/609000> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81800> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81800> a escjr:Via;
   escjr:longitud "326.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -363,11 +363,11 @@
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/81800> a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "326.16"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81800> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81800> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81800> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81800> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/656500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/656500> a escjr:Via;
   escjr:longitud "217.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -383,11 +383,11 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "217.03"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/656500> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/656500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/656500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/656500> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/678100> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/678100> a escjr:Via;
   escjr:longitud "135.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -403,11 +403,11 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "134.87"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/678100> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/678100> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/678100> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/678100> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/112100> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/112100> a escjr:Via;
   escjr:longitud "142.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -423,11 +423,11 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "142.36"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/112100> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/112100> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/112100> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/112100> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/274000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/274000> a escjr:Via;
   escjr:longitud "185.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -443,11 +443,11 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "185.2"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/274000> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/274000> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/274000> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/274000> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/342500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/342500> a escjr:Via;
   escjr:longitud "128.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -463,11 +463,11 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "128.14"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/342500> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/342500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/342500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/342500> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/743600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/743600> a escjr:Via;
   escjr:longitud "688.0"^^<xsd:double>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079>;
@@ -483,9 +483,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "688.23"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/743600> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/743600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/743600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/743600> a escjr:Via;
   escjr:longitud "693.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
@@ -501,11 +501,11 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "692.82"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/743600> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/743600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/743600> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/743600> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/262000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/262000> a escjr:Via;
   escjr:longitud "441.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
@@ -521,9 +521,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "440.93"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/262000> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/262000> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/262000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/262000> a escjr:Via;
   escjr:longitud "452.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://www.geonames.org/ontology#officialName> " EMBAJADORES";
@@ -539,9 +539,9 @@
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "451.58"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/262000> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/262000> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/262000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/262000> a escjr:Via;
   escjr:longitud "722.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://www.geonames.org/ontology#officialName> " EMBAJADORES" .
@@ -551,18 +551,18 @@
     "28079";
   <http://www.geonames.org/ontology#officialName> "Madrid" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/262000> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/262000> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/262000> a
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "722.48"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/262000> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/262000> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/262000> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/262000> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/486400> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/486400> a escjr:Via;
   escjr:longitud "268.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://www.geonames.org/ontology#officialName> " MARQUÉS DE RISCAL" .
@@ -572,18 +572,18 @@
     "28079";
   <http://www.geonames.org/ontology#officialName> "Madrid" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/486400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/486400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/486400> a
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "267.81"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/486400> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/486400> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/486400> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/486400> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/139000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/139000> a escjr:Via;
   escjr:longitud "346.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://www.geonames.org/ontology#officialName> " CARACAS" .
@@ -593,18 +593,18 @@
     "28079";
   <http://www.geonames.org/ontology#officialName> "Madrid" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/139000> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/139000> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/139000> a
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "346.41"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/139000> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/139000> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/139000> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/139000> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/461900> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/461900> a escjr:Via;
   escjr:longitud "229.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://www.geonames.org/ontology#officialName> " MANUEL CORTINA" .
@@ -614,18 +614,18 @@
     "28079";
   <http://www.geonames.org/ontology#officialName> "Madrid" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/461900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/461900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/461900> a
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "228.73"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/461900> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/461900> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/461900> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/461900> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/31400> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/31400> a escjr:Via;
   escjr:longitud "654.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://www.geonames.org/ontology#officialName> " ALMAGRO" .
@@ -635,15 +635,15 @@
     "28079";
   <http://www.geonames.org/ontology#officialName> "Madrid" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/31400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/31400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/31400> a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "654.37"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/31400> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/31400> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/31400> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/31400> a escjr:Via;
   escjr:longitud "644.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://www.geonames.org/ontology#officialName> " ALMAGRO" .
@@ -653,17 +653,17 @@
     "28079";
   <http://www.geonames.org/ontology#officialName> "Madrid" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/31400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/31400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/31400> a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "644.07"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/31400> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/31400> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/31400> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/31400> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/365400> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/365400> a escjr:Via;
   escjr:longitud "941.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://www.geonames.org/ontology#officialName> " HORTALEZA" .
@@ -673,18 +673,18 @@
     "28079";
   <http://www.geonames.org/ontology#officialName> "Madrid" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/365400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/365400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/365400> a
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "940.97"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/365400> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/365400> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/365400> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/365400> a escjr:Via .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/444200> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/444200> a escjr:Via;
   escjr:longitud "481.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   <http://www.geonames.org/ontology#officialName> " LUCHANA" .
@@ -694,16 +694,16 @@
     "28079";
   <http://www.geonames.org/ontology#officialName> "Madrid" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/444200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/444200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/444200> a
     cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "480.92"^^<xsd:double>;
-  geosparql:sfWithin <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/444200> .
+  geosparql:sfWithin <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/444200> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/444200> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/444200> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " LUCHANA";
   escjr:longitud "489.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -713,7 +713,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/444200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/444200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/444200> a
@@ -721,12 +721,12 @@
   cl-ciclo:distMaxExclusBici "488.9"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/444200> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/444200> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/444200> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/444200> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/444200> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/256500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/256500> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " EDUARDO DATO";
   escjr:longitud "746.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -736,7 +736,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/256500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/256500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/256500> a
@@ -744,12 +744,12 @@
   cl-ciclo:distMaxExclusBici "746.23"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/256500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/256500> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/256500> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/256500> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/256500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/256500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/256500> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " EDUARDO DATO";
   escjr:longitud "747.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -759,7 +759,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/256500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/256500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/256500> a
@@ -767,12 +767,12 @@
   cl-ciclo:distMaxExclusBici "747.27"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/256500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/256500> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/256500> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/256500> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/256500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/697175> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/697175> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " SANTA MARÍA DE LA CABEZA";
   escjr:longitud "850.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -782,7 +782,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/697175> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/697175> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/697175> a
@@ -790,12 +790,12 @@
   cl-ciclo:distMaxExclusBici "850.14"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/697175> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/697175> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/697175> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/697175> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/697175> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/234600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/234600> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " PASEO DE LAS DELICIAS";
   escjr:longitud "694.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -805,7 +805,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/234600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/234600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/234600> a
@@ -813,12 +813,12 @@
   cl-ciclo:distMaxExclusBici "693.99"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/234600> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/234600> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/234600> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/234600> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/234600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/45400> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/45400> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " ANCORA";
   escjr:longitud "480.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -828,19 +828,19 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/45400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/45400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/45400> a cl-ciclo:Ciclocarril;
   cl-ciclo:distMaxExclusBici "479.55"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/45400> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/45400> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/45400> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/45400> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/45400> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/501700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/501700> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " MÉNDEZ ÁLVARO";
   escjr:longitud "978.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -850,7 +850,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/501700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/501700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/501700> a
@@ -858,12 +858,12 @@
   cl-ciclo:distMaxExclusBici "978.39"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/501700> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/501700> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/501700> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/501700> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/501700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/673100> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/673100> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " CALLE DE SAN JERÓNIMO";
   escjr:longitud "358.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -873,7 +873,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/673100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/673100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/673100> a
@@ -881,12 +881,12 @@
   cl-ciclo:distMaxExclusBici "357.86"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/673100> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/673100> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/673100> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/673100> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/673100> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " PLAZA CASTELLANA";
   escjr:longitud "1080.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -896,7 +896,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/153500> a
@@ -904,12 +904,12 @@
   cl-ciclo:distMaxExclusBici "1079.95"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/153500> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " PLAZA CASTELLANA";
   escjr:longitud "830.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -919,7 +919,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/153500> a
@@ -927,12 +927,12 @@
   cl-ciclo:distMaxExclusBici "829.9"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/153500> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/27500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/27500> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " ALFONSO XII";
   escjr:longitud "1338.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -942,19 +942,19 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/27500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/27500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/27500> a cl-ciclo:Ciclocarril;
   cl-ciclo:distMaxExclusBici "1337.97"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/27500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/27500> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/27500> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/27500> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/27500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/27500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/27500> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " ALFONSO XII";
   escjr:longitud "1353.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -964,19 +964,19 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/27500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/27500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/27500> a cl-ciclo:Ciclocarril;
   cl-ciclo:distMaxExclusBici "1352.62"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/27500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/27500> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/27500> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/27500> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/27500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/171800> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/171800> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " CIUDAD DE BARCELONA";
   escjr:longitud "1181.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -986,7 +986,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/171800> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/171800> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/171800> a
@@ -994,12 +994,12 @@
   cl-ciclo:distMaxExclusBici "1181.36"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/171800> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/171800> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/171800> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/171800> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/171800> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/171800> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/171800> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " CIUDAD DE BARCELONA";
   escjr:longitud "1274.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1009,7 +1009,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/171800> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/171800> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/171800> a
@@ -1017,12 +1017,12 @@
   cl-ciclo:distMaxExclusBici "1273.71"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/171800> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/171800> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/171800> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/171800> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/171800> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/392700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/392700> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " JESÚS APRENDIZ";
   escjr:longitud "451.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1032,7 +1032,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/392700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/392700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/392700> a
@@ -1040,12 +1040,12 @@
   cl-ciclo:distMaxExclusBici "451.02"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/392700> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/392700> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/392700> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/392700> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/392700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/392700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/392700> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " JESÚS APRENDIZ";
   escjr:longitud "297.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1055,7 +1055,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/392700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/392700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/392700> a
@@ -1063,12 +1063,12 @@
   cl-ciclo:distMaxExclusBici "297.26"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/392700> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/392700> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/392700> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/392700> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/392700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/439100> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/439100> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " LIRA";
   escjr:longitud "310.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1078,7 +1078,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/439100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/439100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/439100> a
@@ -1086,12 +1086,12 @@
   cl-ciclo:distMaxExclusBici "310.12"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/439100> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/439100> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/439100> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/439100> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/439100> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/439100> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/439100> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " LIRA";
   escjr:longitud "400.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1101,7 +1101,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/439100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/439100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/439100> a
@@ -1109,12 +1109,12 @@
   cl-ciclo:distMaxExclusBici "399.99"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/439100> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/439100> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/439100> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/439100> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/439100> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/502300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/502300> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " MENÉNDEZ PELAYO";
   escjr:longitud "2186.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1124,7 +1124,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/502300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/502300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/502300> a
@@ -1132,12 +1132,12 @@
   cl-ciclo:distMaxExclusBici "2185.76"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/502300> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/502300> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/502300> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/502300> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/502300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/502300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/502300> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " MENÉNDEZ PELAYO";
   escjr:longitud "2169.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1147,7 +1147,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/502300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/502300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/502300> a
@@ -1155,12 +1155,12 @@
   cl-ciclo:distMaxExclusBici "2169.1"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/502300> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/502300> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/502300> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/502300> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/502300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " PRÍNCIPE DE VERGARA";
   escjr:longitud "1775.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1170,7 +1170,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/610450> a
@@ -1178,12 +1178,12 @@
   cl-ciclo:distMaxExclusBici "1775.12"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/610450> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " PRÍNCIPE DE VERGARA";
   escjr:longitud "1802.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1193,7 +1193,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/610450> a
@@ -1201,12 +1201,12 @@
   cl-ciclo:distMaxExclusBici "1802.28"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/610450> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/529200> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/529200> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " NARVÁEZ";
   escjr:longitud "996.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1216,7 +1216,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/529200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/529200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/529200> a
@@ -1224,12 +1224,12 @@
   cl-ciclo:distMaxExclusBici "996.07"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/529200> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/529200> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/529200> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/529200> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/529200> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/529200> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/529200> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " NARVÁEZ";
   escjr:longitud "996.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1239,7 +1239,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/529200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/529200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/529200> a
@@ -1247,12 +1247,12 @@
   cl-ciclo:distMaxExclusBici "995.72"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/529200> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/529200> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/529200> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/529200> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/529200> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/206100> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/206100> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " CONDE DE PEÑALVER";
   escjr:longitud "1067.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1262,7 +1262,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/206100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/206100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/206100> a
@@ -1270,12 +1270,12 @@
   cl-ciclo:distMaxExclusBici "1066.65"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/206100> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/206100> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/206100> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/206100> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/206100> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/206100> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/206100> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " CONDE DE PEÑALVER";
   escjr:longitud "1070.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1285,7 +1285,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/206100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/206100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/206100> a
@@ -1293,12 +1293,12 @@
   cl-ciclo:distMaxExclusBici "1069.54"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/206100> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/206100> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/206100> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/206100> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/206100> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/405300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/405300> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " JOSE ORTEGA Y GASSET";
   escjr:longitud "1587.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1308,7 +1308,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/405300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/405300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/405300> a
@@ -1316,12 +1316,12 @@
   cl-ciclo:distMaxExclusBici "1586.78"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/405300> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/405300> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/405300> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/405300> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/405300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/405300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/405300> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " JOSE ORTEGA Y GASSET";
   escjr:longitud "1582.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1331,7 +1331,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/405300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/405300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/405300> a
@@ -1339,12 +1339,12 @@
   cl-ciclo:distMaxExclusBici "1582.17"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/405300> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/405300> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/405300> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/405300> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/405300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/310200> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/310200> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " FRANCISCO SILVELA";
   escjr:longitud "1608.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1354,7 +1354,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/310200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/310200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/310200> a
@@ -1362,12 +1362,12 @@
   cl-ciclo:distMaxExclusBici "1607.69"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/310200> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/310200> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/310200> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/310200> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/310200> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/310200> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/310200> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " FRANCISCO SILVELA";
   escjr:longitud "1614.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1377,7 +1377,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/310200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/310200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/310200> a
@@ -1385,12 +1385,12 @@
   cl-ciclo:distMaxExclusBici "1613.96"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/310200> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/310200> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/310200> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/310200> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/310200> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/241300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/241300> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " DOCTOR ESQUERDO";
   escjr:longitud "3055.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1400,7 +1400,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/241300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/241300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/241300> a
@@ -1408,12 +1408,12 @@
   cl-ciclo:distMaxExclusBici "3054.85"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/241300> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/241300> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/241300> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/241300> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/241300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/241300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/241300> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " DOCTOR ESQUERDO";
   escjr:longitud "3042.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1423,7 +1423,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/241300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/241300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/241300> a
@@ -1431,12 +1431,12 @@
   cl-ciclo:distMaxExclusBici "3041.68"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/241300> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/241300> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/241300> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/241300> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/241300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/341900> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/341900> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " GOYA";
   escjr:longitud "1795.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1446,7 +1446,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/341900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/341900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/341900> a
@@ -1454,12 +1454,12 @@
   cl-ciclo:distMaxExclusBici "1794.56"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/341900> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/341900> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/341900> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/341900> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/341900> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/341900> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/341900> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " GOYA";
   escjr:longitud "1793.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1469,7 +1469,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/341900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/341900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/341900> a
@@ -1477,12 +1477,12 @@
   cl-ciclo:distMaxExclusBici "1792.9"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/341900> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/341900> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/341900> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/341900> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/341900> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/18900> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/18900> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " ALCALÁ";
   escjr:longitud "1346.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1492,19 +1492,19 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/18900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/18900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/18900> a cl-ciclo:Ciclocarril;
   cl-ciclo:distMaxExclusBici "1346.26"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/18900> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/18900> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/18900> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/18900> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/18900> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/18900> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/18900> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " ALCALÁ";
   escjr:longitud "1371.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1514,19 +1514,19 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/18900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/18900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/18900> a cl-ciclo:Ciclocarril;
   cl-ciclo:distMaxExclusBici "1370.99"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/18900> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/18900> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/18900> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/18900> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/18900> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/352700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/352700> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " GUZMÁN EL BUENO";
   escjr:longitud "787.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1536,7 +1536,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/352700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/352700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/352700> a
@@ -1544,12 +1544,12 @@
   cl-ciclo:distMaxExclusBici "786.99"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/352700> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/352700> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/352700> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/352700> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/352700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/343000> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/343000> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " GRANADA";
   escjr:longitud "702.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1559,7 +1559,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/343000> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/343000> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/343000> a
@@ -1567,12 +1567,12 @@
   cl-ciclo:distMaxExclusBici "701.76"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/343000> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/343000> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/343000> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/343000> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/343000> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81600> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " ATOCHA";
   escjr:longitud "316.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1582,7 +1582,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/81600> cl-ciclo:distMaxExclusBici
@@ -1590,12 +1590,12 @@
   a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81600> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81600> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/81600> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81600> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81600> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " ATOCHA";
   escjr:longitud "671.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1605,7 +1605,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/81600> cl-ciclo:distMaxExclusBici
@@ -1613,12 +1613,12 @@
   a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81600> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81600> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/81600> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/81600> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/81600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/768800> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/768800> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " VALLEHERMOSO";
   escjr:longitud "959.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1628,7 +1628,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/768800> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/768800> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/768800> a
@@ -1636,12 +1636,12 @@
   cl-ciclo:distMaxExclusBici "959.47"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/768800> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/768800> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/768800> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/768800> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/768800> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " PASEO CASTELLANA";
   escjr:longitud "3464.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1651,7 +1651,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/153500> cl-ciclo:distMaxExclusBici
@@ -1659,12 +1659,12 @@
   a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/153500> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " PASEO CASTELLANA";
   escjr:longitud "3426.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1674,7 +1674,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/153500> a
@@ -1682,12 +1682,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/153500> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/153500> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/153500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " PRÍNCIPE DE VERGARA";
   escjr:longitud "3163.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1697,7 +1697,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/610450> a
@@ -1705,12 +1705,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/610450> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/610450> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/610450> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/710300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/710300> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " SERRANO";
   escjr:longitud "829.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1720,7 +1720,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/710300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/710300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/710300> a
@@ -1728,12 +1728,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/710300> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/710300> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/710300> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/710300> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/710300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/710300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/710300> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " SERRANO";
   escjr:longitud "1331.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1743,7 +1743,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/710300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/710300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/710300> a
@@ -1751,12 +1751,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/710300> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/710300> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/710300> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/710300> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/710300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/395300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/395300> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " JOAQUIN COSTA";
   escjr:longitud "1222.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1766,7 +1766,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/395300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/395300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/395300> a
@@ -1774,12 +1774,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/395300> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/395300> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/395300> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/395300> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/395300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/768800> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/768800> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " VALLEHERMOSO";
   escjr:longitud "218.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1789,7 +1789,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/768800> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/768800> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/768800> a
@@ -1797,12 +1797,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/768800> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/768800> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/768800> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/768800> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/768800> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/699700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/699700> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " SANTANDER";
   escjr:longitud "402.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1812,7 +1812,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/699700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/699700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/699700> a
@@ -1820,12 +1820,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/699700> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/699700> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/699700> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/699700> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/699700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/330200> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/330200> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " GENERAL IBAÑEZ DE IBERO";
   escjr:longitud "341.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1835,7 +1835,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/330200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/330200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/330200> a
@@ -1843,12 +1843,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/330200> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/330200> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/330200> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/330200> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/330200> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/352700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/352700> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " GUZMAN EL BUENO";
   escjr:longitud "823.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1858,7 +1858,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/352700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/352700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/352700> cl-ciclo:distMaxExclusBici
@@ -1866,12 +1866,12 @@
   a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/352700> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/352700> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/352700> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/352700> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/352700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " BRAVO MURILLO";
   escjr:longitud "2596.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1881,7 +1881,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/114600> a
@@ -1889,12 +1889,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/114600> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/311500> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/311500> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " SAN BERNARDINO SAHAGÚN";
   escjr:longitud "486.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1904,7 +1904,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/311500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/311500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/311500> a
@@ -1912,12 +1912,12 @@
   cl-ciclo:carrilExclusBici true;
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/311500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/311500> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/311500> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/311500> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/311500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/494900> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/494900> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " MATEO INURRIA";
   escjr:longitud "236.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1927,7 +1927,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/494900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/494900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/494900> a
@@ -1935,12 +1935,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/494900> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/494900> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/494900> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/494900> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/494900> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/494900> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/494900> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " MATEO INURRIA";
   escjr:longitud "1013.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1950,7 +1950,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/494900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/494900> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/494900> a
@@ -1958,12 +1958,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/494900> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/494900> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/494900> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/494900> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/494900> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/599100> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/599100> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " PLATERÍAS";
   escjr:longitud "186.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1973,7 +1973,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/599100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/599100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/599100> cl-ciclo:distMaxExclusBici
@@ -1981,12 +1981,12 @@
   a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/599100> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/599100> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/599100> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/599100> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/599100> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/661700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/661700> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " SAN BERNARDO";
   escjr:longitud "452.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -1996,7 +1996,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/661700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/661700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/661700> a
@@ -2004,12 +2004,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/661700> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/661700> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/661700> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/661700> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/661700> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/249300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/249300> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " DONOSO CORTÉS";
   escjr:longitud "1163.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -2019,7 +2019,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/249300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/249300> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/249300> cl-ciclo:distMaxExclusBici
@@ -2027,12 +2027,12 @@
   a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/249300> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/249300> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/249300> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/249300> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/249300> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/293500> escjr:tipoUso
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/293500> escjr:tipoUso
     <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES>;
   a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " FERNÁNDEZ DE LOS RIOS";
@@ -2043,7 +2043,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/293500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/293500> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/293500> a
@@ -2051,12 +2051,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/293500> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/293500> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/293500> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/293500> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/293500> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " BRAVO MURILLO";
   escjr:longitud "262.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -2066,7 +2066,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/114600> cl-ciclo:distMaxExclusBici
@@ -2074,12 +2074,12 @@
   a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/114600> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/331100> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/331100> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " GENERAL MARTINEZ CAMPOS";
   escjr:longitud "1276.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -2089,7 +2089,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/331100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/331100> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/331100> a
@@ -2097,12 +2097,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/331100> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/331100> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/331100> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/331100> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/331100> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " BRAVO MURILLO";
   escjr:longitud "1190.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -2112,7 +2112,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/114600> cl-ciclo:distMaxExclusBici
@@ -2120,12 +2120,12 @@
   a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/114600> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/114600> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/114600> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/694525> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/694525> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " SANTA ENGRACIA";
   escjr:longitud "1689.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -2135,7 +2135,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/694525> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/694525> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/694525> a
@@ -2143,12 +2143,12 @@
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/694525> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/694525> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/694525> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/694525> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/694525> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/328400> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/328400> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " GENERAL ÁLVAREZ DE CASTRO";
   escjr:longitud "369.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -2158,7 +2158,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/328400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/328400> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/328400> cl-ciclo:distMaxExclusBici
@@ -2166,12 +2166,12 @@
   a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/328400> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/328400> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/328400> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/328400> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/328400> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/512200> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/512200> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " MODESTO LAFUENTE";
   escjr:longitud "1276.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -2181,7 +2181,7 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/512200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/512200> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/512200> cl-ciclo:distMaxExclusBici
@@ -2189,12 +2189,12 @@
   a cl-ciclo:Ciclocarril;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/512200> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/512200> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/512200> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/512200> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/512200> .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/34700> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/34700> a escjr:Via;
   <http://www.geonames.org/ontology#officialName> " ALONSO CANO";
   escjr:longitud "1278.0"^^<xsd:double>;
   escjr:tipoUso <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/tipo-uso/CICLOCALLES> .
@@ -2204,14 +2204,14 @@
   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#codigoINE>
     "28079" .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/34700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/34700> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio>
     <https://datos.ign.es/recurso/municipio/28079> .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/34700> a cl-ciclo:Ciclocarril;
   cl-ciclo:distMaxExclusBici "0.0"^^<xsd:double>;
   cl-ciclo:carrilExclusBici true .
 
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/34700> a escjr:Via .
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/34700> a escjr:Via .
 
 <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/ciclo-carril/34700> geosparql:sfWithin
-    <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/34700> .
+    <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/34700> .

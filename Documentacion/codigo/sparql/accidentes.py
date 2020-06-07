@@ -3,7 +3,7 @@ String queryTxt =
         " PREFIX geo: <http://www.geonames.org/ontology> " +
         " SELECT ?nombreCalle" +
         " WHERE { " +
-        " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/" + idSearch + "> a "+
+        " <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/" + idSearch + "> a "+
              "<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;"+
         " <http://www.geonames.org/ontology/officialName> ?nombreCalle ; " +
         " }";
@@ -15,7 +15,7 @@ String queryTxt2 =
 " SELECT ?Accidente ?hour ?lesividad ?persona_afectada" +
 " WHERE { " +
 " ?Accidente a accid:Accidente;" +
-" accid:ocurreEnVia <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/"+ idSearch +">;" +
+" accid:ocurreEnVia <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/"+ idSearch +">;" +
 " accid:lesividad ?lesividad ;"+
 " accid:hour ?hour; "+
 " accid:hasPersAfectAccid ?persona_afectada; "+
