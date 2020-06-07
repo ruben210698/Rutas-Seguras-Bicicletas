@@ -49,7 +49,7 @@ public class JenaRequest {
                 " PREFIX escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/> " +
                         " SELECT ?name ?longitud" +
                         " WHERE { " +
-                        " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/" + idSearch + "> a escjr:Via;" +
+                        " <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/" + idSearch + "> a escjr:Via;" +
                         " <http://www.geonames.org/ontology#officialName> ?name ; " +
                         " escjr:longitud ?longitud ; " +
                         " }";
@@ -118,7 +118,7 @@ public class JenaRequest {
                         " PREFIX geo: <http://www.geonames.org/ontology/> " +
                         " SELECT ?name ?longitud" +
                         " WHERE { " +
-                        " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/" + idSearch + "> a escjr:Via;" +
+                        " <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/" + idSearch + "> a escjr:Via;" +
                         " geo:officialName ?name ; " +
                         " escjr:longitud ?longitud ; " +
                         " }";
@@ -177,7 +177,7 @@ public class JenaRequest {
                         " PREFIX geo: <http://www.geonames.org/ontology> " +
                         " SELECT ?nombreCalle" +
                         " WHERE { " +
-                        " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/" + idSearch + "> a "+
+                        " <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/" + idSearch + "> a "+
                         "<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via>;"+
                         " <http://www.geonames.org/ontology/officialName> ?nombreCalle ; " +
                         " }";
@@ -205,7 +205,7 @@ public class JenaRequest {
                             " SELECT ?Accidente ?hour ?lesividad ?persona_afectada" +
                             " WHERE { " +
                             " ?Accidente a accid:Accidente;" +
-                            " accid:ocurreEnVia <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/"+ idSearch +">;" +
+                            " accid:ocurreEnVia <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/"+ idSearch +">;" +
                             " accid:lesividad ?lesividad ;"+
                             " accid:hour ?hour; "+
                             " accid:hasPersAfectAccid ?persona_afectada; "+

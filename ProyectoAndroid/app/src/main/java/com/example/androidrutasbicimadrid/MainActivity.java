@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
     Context thisActivity = this;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,7 +101,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
      //           Toast.makeText(getApplicationContext(), "Realizando busqueda...", Toast.LENGTH_LONG).show();
-
+                incidenciasCiclos = "- - - - - CicloCarriles en ruta - - - - -\n";
+                incidenciasCallTranq = "- - - - - Calles Tranquilas en ruta - - - - -\n";
+                incidencasAccidentes = "- - - - - Accidentes en 2019 (Max 2 ptos por calle) - - - - -\n";
 
                 String txtOrigen = actv_origen.getText().toString() + "";
                 String txtDestino = actv_destino.getText().toString() + "";
