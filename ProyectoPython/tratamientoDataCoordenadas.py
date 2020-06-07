@@ -4,8 +4,6 @@ from re import findall
 import math
 from fase2EdicionDataSets import eliminarColumnaCompleta
 
-# Ojo, la comparacion se hara con 0.00015 de deiferencia (eso mas o menos es lo que he sacado).
-# O mas porque es muy poco en el mapa
 # 0.0001389 +-= 0.00015 = 15m
 # 1km = 0.00926 coordDec =+- 0.01
 

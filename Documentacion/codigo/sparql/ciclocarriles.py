@@ -2,7 +2,7 @@ String queryTxt =
         " PREFIX escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero/> " +
         " SELECT ?name ?longitud" +
         " WHERE { " +
-        " <http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/" + idSearch + "> a escjr:Via;" +
+        " <http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/" + idSearch + "> a escjr:Via;" +
         " <http://www.geonames.org/ontology#officialName> ?name ; " +
         " escjr:longitud ?longitud ; " +
         " }";

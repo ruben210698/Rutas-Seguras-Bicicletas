@@ -1,4 +1,4 @@
-<http://vocab.ciudadesabiertas.es/recurso/callejero/madrid/Via/75300> a escjr:Via;
+<http://datos.madrid.es/recurso/urbanismo-infraestructuras/callejero/via/75300> a escjr:Via;
     escjr:dobleSentido <http://vocab.ciudadesabiertas.es/kos/urbanismo-infraestructuras/calle/doble-sentido/SENTIDO-UNICO>;
     escjr:longitud "846"^^<xsd:double>;
     escjr:municipio <https://datos.ign.es/recurso/municipio/28079>;
